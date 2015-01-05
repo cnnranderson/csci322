@@ -1,0 +1,7 @@
+co [i = 0 to n-1] { # compute rows in parallel
+for [j = 0 to n-1] {
+c[i,j] = 0.0;
+for [k = 0 to n-1]
+c[i,j] = c[i,j] + a[i,k]*b[k,j];
+}
+}

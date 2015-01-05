@@ -1,0 +1,78 @@
+\documentclass{article}
+\usepackage[margin=.5in]{geometry}
+\usepackage{multicol}
+\newcommand{\bi}{\begin{enumerate}}
+\newcommand{\ii}{\item}
+\newcommand{\ei}{\end{enumerate}}
+\newcommand{\imp}{\Rightarrow}
+\begin{document}
+\begin{multicols}{2}
+
+\bi
+\ii $P\imp Q$
+\ii $P\land R$
+\ii $P$
+\ii $R$
+\ii $Q$
+\ii $Q\land R$
+\ii $(P\land R) \imp (Q\land R)$
+\ii $(P\imp Q)\imp ((P\land R) \imp (Q\land R))$
+\ei
+
+\bigskip
+
+\bi
+\ii $(P\imp R)\land (Q\imp S)$
+\ii $P\imp R$
+\ii $Q\imp S$
+\ii $P\land Q$
+\ii $P$
+\ii $Q$
+\ii $R$
+\ii $S$
+\ii $R\land S$
+\ii $(P\land Q) \imp (R\land S)$
+\ii $((P\imp R)\land (Q\imp S)) \imp ((P\land Q) \imp (R\land S))$
+\ei
+
+\columnbreak
+
+\bi
+\ii $P\imp (Q\imp R)$
+\ii $Q$
+\ii $P$
+\ii $Q\imp R$
+\ii $R$
+\ii $P\imp R$
+\ii $Q\imp (P\imp R)$
+\ii $(P\imp (Q\imp R))\imp (Q\imp (P\imp R))$
+\ei
+
+\bigskip
+
+\bi
+\ii $P\imp(P\imp Q)$
+\ii $P$
+\ii $P\imp Q$
+\ii $Q$
+\ii $P\imp Q$
+\ii $(P\imp(P\imp Q))\imp (P\imp Q)$
+\ei
+
+\bigskip
+
+\bi
+\ii $(P\imp Q)\imp Q$
+\ii $Q\imp P$
+\ii $\neg P$
+\ii $\neg Q$
+\ii $\neg(P\imp Q)$
+\ii $P\land \neg Q$
+\ii $P$
+\ii $(Q\imp P)\imp P$
+\ii $((P\imp Q)\imp Q)\imp ((Q\imp P)\imp P)$
+\ei
+
+
+\end{multicols}
+\end{document}

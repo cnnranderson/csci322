@@ -1,0 +1,79 @@
+\documentclass{beamer}
+\usetheme{Singapore}
+
+%\usepackage{pstricks,pst-node,pst-tree}
+\usepackage{amssymb,latexsym}
+\usepackage{graphicx}
+\usepackage{fancyvrb}
+\usepackage{multicol}
+
+\newcommand{\bi}{\begin{itemize}}
+\newcommand{\ii}{\item}
+\newcommand{\ei}{\end{itemize}}
+\newcommand{\Show}[1]{\psshadowbox{#1}}
+
+
+\newcommand{\grf}[2]{\centerline{\includegraphics[width=#1\textwidth]{#2}}}
+\newcommand{\tw}{\textwidth}
+\newcommand{\bc}{\begin{columns}}
+\newcommand{\ec}{\end{columns}}
+\newcommand{\cc}[1]{\column{#1\textwidth}}
+
+\newcommand{\bfr}[1]{\begin{frame}[fragile]\frametitle{{ #1 }}}
+\newcommand{\efr}{\end{frame}}
+
+\newcommand{\cola}[1]{\begin{columns}\begin{column}{#1\textwidth}}
+\newcommand{\colb}[1]{\end{column}\begin{column}{#1\textwidth}}
+\newcommand{\colc}{\end{column}\end{columns}}
+
+\title{Little Book of Semaphores, Chapter 2}
+\author{Geoffrey Matthews\\
+\small Western Washington University}
+
+\RecustomVerbatimEnvironment{Verbatim}{Verbatim}{frame=single}
+
+\begin{document}
+\maketitle
+
+\bfr{Semaphores}
+\bi
+\ii An integer variable, initialized to any value.
+\ii When a thread decrements, if the value is negative the thread blocks.
+\ii When a thread increments, if there are threads waiting, one gets unblocked.
+\pause
+\ii Increment and decrement are atomic.
+\pause
+\ii No getter.  Why?
+\ei
+\end{frame}
+
+\bfr{Semaphore notation}
+
+\begin{Verbatim}
+fred = Semaphore()
+fred.increment()
+fred.decrement()
+\end{Verbatim}
+\begin{Verbatim}
+fred = Semaphore()
+fred.signal()
+fred.wait()
+\end{Verbatim}
+\begin{Verbatim}
+fred = Semaphore()
+fred.V()
+fred.P()
+\end{Verbatim}
+
+\end{frame}
+\bfr{Why semaphores?}
+\bi
+\ii Semaphores impose constraints that help programmers avoid errors.
+\ii Solutions using semaphores are often clean and organized.
+\ii Semaphores can be implemented easily in hardware, so solutions are
+portable.  \pause
+\ii However, they can get complex quickly.
+\ei
+\end{frame}
+
+\end{document}

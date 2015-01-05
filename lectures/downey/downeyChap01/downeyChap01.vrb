@@ -1,0 +1,32 @@
+\frametitle{ Concurrent Updates }
+\vfill
+\cola{.4}
+\begin{Verbatim}[label=Thread A]
+x = x + 1
+\end{Verbatim}
+\colb{.4}
+\begin{Verbatim}[label=Thread B]
+x = x + 1
+\end{Verbatim}
+\colc
+\pause
+\vfill
+\cola{.4}
+\begin{Verbatim}[label=Thread A]
+load x
+add 1
+store x
+\end{Verbatim}
+\colb{.4}
+\begin{Verbatim}[label=Thread B]
+load x
+add 1
+store x
+\end{Verbatim}
+\colc
+
+\pause
+\vfill
+
+Any operation that cannot be interrupted is said to be {\bf atomic}.
+
