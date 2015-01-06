@@ -1,0 +1,11 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\title{Readings for CSCI 322}
+\begin{document}
+\begin{tabular}{lll}
+Date & Reading & Link \\\hline
+Jan 6 & Teach Yourself Scheme, 1-7 & \url{http://www.ccs.neu.edu/home/dorai/t-y-scheme/t-y-scheme-Z-H-1.html}\\
+Jan 6 & Python Tutorial & \url{http://www.sthurlow.com/python/}\\
+\end{tabular}
+\end{document}
