@@ -5,6 +5,8 @@ Readings for CSCI 322
 
 * Jan 6 Threads and semaphores from the *DrRacket* help desk
 
+* Jan 6 Classes from  the *DrRacket* help desk
+
 * Jan 12 [Python Tutorial, 1-11](http://www.sthurlow.com/python/)
 
 * Jan 12 [TLBOS, 1-4](http://greenteapress.com/semaphores/downey08semaphores.pdf)
