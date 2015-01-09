@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.5.7)  2 JAN 2015 16:52
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.5.7)  9 JAN 2015 09:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -922,25 +922,58 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 \openout4 = `downeyChap01.vrb'.
 
 
-(./downeyChap01.vrb) [10
+(./downeyChap01.vrb)
+Overfull \vbox (0.86852pt too high) detected at line 142
+ []
 
-] (./downeyChap01.vrb) [11
+[10
 
 ] (./downeyChap01.vrb)
+Overfull \vbox (0.86852pt too high) detected at line 142
+ []
+
+[11
+
+] (./downeyChap01.vrb)
+Overfull \vbox (0.86852pt too high) detected at line 142
+ []
+
 [12
 
-] (./downeyChap01.vrb) [13
+] (./downeyChap01.vrb)
+Overfull \vbox (0.86852pt too high) detected at line 142
+ []
 
-] (./downeyChap01.vrb) [14
+[13
 
 ] (./downeyChap01.vrb)
+Overfull \vbox (0.86852pt too high) detected at line 142
+ []
+
+[14
+
+] (./downeyChap01.vrb)
+Overfull \vbox (0.86852pt too high) detected at line 142
+ []
+
 [15
 
-] (./downeyChap01.vrb) [16
+] (./downeyChap01.vrb)
+Overfull \vbox (0.86852pt too high) detected at line 142
+ []
 
-] (./downeyChap01.vrb) [17
+[16
 
 ] (./downeyChap01.vrb)
+Overfull \vbox (0.86852pt too high) detected at line 142
+ []
+
+[17
+
+] (./downeyChap01.vrb)
+Overfull \vbox (0.86852pt too high) detected at line 142
+ []
+
 [18
 
 ]
@@ -977,11 +1010,11 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 \tf@snm=\write9
 \openout9 = `downeyChap01.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 204.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 204.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 205.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 205.
  (./downeyChap01.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 204.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 204.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 205.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 205.
 Package rerunfilecheck Info: File `downeyChap01.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -992,12 +1025,12 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 204.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 205.
  ) 
 Here is how much of TeX's memory you used:
  16047 strings out of 493304
  295858 string characters out of 6139872
- 381395 words of memory out of 5000000
+ 382395 words of memory out of 5000000
  19019 multiletter control sequences out of 15000+600000
  11343 words of font info for 44 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -1008,7 +1041,7 @@ e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on downeyChap01.pdf (26 pages, 120664 bytes).
+Output written on downeyChap01.pdf (26 pages, 121700 bytes).
 PDF statistics:
  716 PDF objects out of 1000 (max. 8388607)
  668 compressed objects within 7 object streams
