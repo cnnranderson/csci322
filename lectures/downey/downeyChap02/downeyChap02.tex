@@ -37,8 +37,9 @@
 
 \bfr{Semaphores}
 \bi
-\ii An integer variable, initialized to any value.
-\ii When a thread decrements, if the value is negative the thread blocks.
+\ii A non-negative integer variable, initialized to any value.
+\ii Only {\bf increment} and {\bf decrement} available.
+\ii When a thread decrements, if the value is zero the thread blocks.
 \ii When a thread increments, if there are threads waiting, one gets unblocked.
 \pause
 \ii Increment and decrement are atomic.
@@ -47,23 +48,37 @@
 \ei
 \end{frame}
 
-\bfr{Semaphore notation}
+\bfr{Notation for Semaphors}
+
+\begin{center}
+\begin{tabular}{r|l}
+ Decrement & Increment\\\hline
+ P & V\\
+ Wait & Signal\\
+ Wait & Post\\
+ Acquire & Release\\
+ Get & Release
+\end{tabular}
+\end{center}
+
+\end{frame}
+
+
+\bfr{Semaphore notation in cleaned up Python and Racket}
+
 
 \begin{Verbatim}
-fred = Semaphore()
-fred.increment()
-fred.decrement()
-\end{Verbatim}
-\begin{Verbatim}
-fred = Semaphore()
+fred = Semaphore(1)
 fred.signal()
 fred.wait()
 \end{Verbatim}
+
 \begin{Verbatim}
-fred = Semaphore()
-fred.V()
-fred.P()
+(define fred (make-semaphore 1))
+(semaphore-post fred)
+(semaphore-wait fred)
 \end{Verbatim}
+
 
 \end{frame}
 \bfr{Why semaphores?}

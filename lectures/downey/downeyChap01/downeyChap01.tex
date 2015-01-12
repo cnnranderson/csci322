@@ -100,6 +100,18 @@ which will happen first.
 \ei
 
 \end{frame}
+\bfr{Concurrent programs are {\bf non-deterministic}}
+\cola{.4}
+\begin{Verbatim}[label=Thread A]
+a1  Print "yes"
+\end{Verbatim}
+\colb{.4}
+\begin{Verbatim}[label=Thread B]
+b1  Print "no"
+\end{Verbatim}
+\colc
+
+\end{frame}
 
 \bfr{Lunch Synchronization with Shared Variables}
 \bi
@@ -200,6 +212,15 @@ store x
 
 Any operation that cannot be interrupted is said to be {\bf atomic}.
 
+\end{frame}
+
+\bfr{Which operations are atomic?}
+\bi
+\ii Each hardware implementation may be different.\pause
+\ii Require hardware to provide specific known atomic operations.
+\ii Write programs that {\em only} assume these operations are atomic.\pause
+\ii Example: {\bf semaphores}
+\ei
 \end{frame}
 
 \end{document}

@@ -63,8 +63,8 @@ b2
 \end{Verbatim}
 \end{multicols}
 \bi
-\ii A has to wait for b2
-\ii B has to wait for a2
+\ii A has to wait for b1 to finish before a2
+\ii B has to wait for a1 to finish before b2
 \ii Ideas?
 \pause
 \ii Hint: use {\tt aArrived} and {\tt bArrived}
@@ -135,6 +135,8 @@ count = count + 1
 \end{Verbatim}
 \end{multicols}
 \bi
+\ii Can't let both threads operate at the same time.
+\ii Don't care which goes first.
 \ii Ideas?
 \pause
 \ii Hint: create a semaphore {\tt mutex} initialized to 1.
@@ -233,6 +235,7 @@ critical point
   critical point}
 \ii When the first $n-1$ threads arrive, they should block until the
 $n$th thread arrives, when all should proceed.
+\ii Ideas?
 \ei
 
 
