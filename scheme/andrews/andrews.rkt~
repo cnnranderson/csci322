@@ -1,0 +1,74 @@
+#lang racket
+
+(require racket/block)
+
+(define *anderson-mutex* (make-semaphore 1))
+(define (v n) (make-vector (+ n 1)))
+(define vset! vector-set!)
+
+(define-syntax for
+  (syntax-rules ()
+    ((for i from a to b exp ...)
+     (let loop ((i a))
+       (when (<= i b)
+         exp ...
+         (loop (+ i 1)))))))
+
+(define-syntax atomic
+  (syntax-rules ()
+    ((atomic exp ...)
+     (block
+      (semaphore-wait *anderson-mutex*)
+      exp ...
+      (semaphore-post *anderson-mutex*)))))
+
+(define-syntax co
+  (syntax-rules ()
+    ((co for i from a to b exp ...)
+     (for i from a to b
+       (thread (lambda () exp ...))))
+    ((co exp ...)
+     (block
+      (thread (lambda () exp))
+      ...
+      (values)))))
+
+(define-syntax await
+  (syntax-rules ()
+    ((await b exp ...)
+     (block
+      (semaphore-wait *anderson-mutex*)
+      (do ()
+        (b exp ... (semaphore-post *anderson-mutex*))
+        (semaphore-post *anderson-mutex*)
+        (sleep 0.01)
+        (semaphore-wait *anderson-mutex*))))))
+
+(define d displayln)
+
+;(co (d 1) (d 2) (d 3) (d 4))
+;(co for i from 1 to 5 (atomic (d i) (d (* 2 i))))
+;
+;(define x 0)
+;(co
+; (await (> x 5) 
+;        (d "=====================> Yay!")
+;        (sleep 1)
+;        (d "x is bigger than 5!!!")
+;        )
+; (let loop ()
+;   (when (< x 10)
+;     (atomic
+;      (set! x (+ x 1)))
+;     (sleep .0001)
+;     (atomic (d x))
+;     (sleep .001)
+;     (loop))))
+;
+
+(define n 5)
+(define a (v n))
+(define b (v n))
+(co for i from 1 to n 
+    (vset! a i i)
+    (vset! b i 0))

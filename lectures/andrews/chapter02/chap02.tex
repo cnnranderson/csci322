@@ -1,29 +1,54 @@
 \documentclass{article}
 \sloppy
-\usepackage[margin=0.5in]{geometry}
+%\usepackage[margin=0.5in]{geometry}
+%\usepackage[landscape,margin=0.5in]{geometry}
+\usepackage[landscape,top=-1in,left=0.5in,right=0.5in,bottom=0.0in]{geometry}
 \usepackage{graphicx}
 \usepackage{multicol}
-\usepackage{alltt}
+\usepackage{overpic}
+
+\usepackage{fancyvrb}
 \setlength{\parindent}{0in}
 
 
-\newcommand{\myfig}[1]{\hspace{-1.5in}\includegraphics[width=1.5\textwidth]{{#1}}\newpage}
+%\newcommand{\myfig}[1]{\hspace{-1.5in}{\includegraphics[width=1.5\textwidth]{{#1}}}\newpage}
+
+\newcommand{\myfig}[1]{\begin{overpic}[scale=1.5]{#1}}
+\newcommand{\myfigsmall}[1]{\begin{overpic}[scale=1.25]{#1}}
+\newcommand{\myfigend}{\end{overpic}\newpage}
+\newcommand{\myput}[2]{\put(10,#1){$\bullet$ #2}}
+\newcommand{\myputn}[2]{\put(15,#1){#2}}
 
 \newcommand{\bi}{\begin{itemize}}
 \newcommand{\ii}{\item}
 \newcommand{\ei}{\end{itemize}}
-\newcommand{\ti}[1]{\centerline{\bf #1}}
+\newcommand{\ti}[1]{
+\mbox{~}
 
-\title{Andrews Figures, Chapter 02}
+\vspace{1.25in}
+\centerline{\bf #1}}
+
+\newcommand{\la}{\ensuremath{\langle}}
+\newcommand{\ra}{\ensuremath{\rangle}}
+
+\title{Andrews Figures, Chapter 03}
 \author{Geoffrey Matthews\\
 \small Western Washington University}
 
+\RecustomVerbatimEnvironment
+  {Verbatim}{Verbatim}
+  {frame=single,commandchars=\\\{\}}
 
 \begin{document}
-\maketitle
+
+
+\huge
+
+\ti{}
+\centerline{Andrews Chapter 02}
 \newpage
 
-\Large
+
 
 \ti{Semantics of concurrent programs}
 \bi
@@ -106,6 +131,8 @@ m n
 
 \myfig{chap02/p45_find_seq.pdf}
 
+\myfigend
+
 \ti{Independence of parallel processes}
 \bi
 \ii {\bf Read set:}  variables read by a part of a program.
@@ -122,9 +149,13 @@ other part.
 
 \newpage
 \myfig{chap02/p46a_find_interfere.pdf}
+\myfigend
 \myfig{chap02/p46b_find_nothing.pdf}
+\myfigend
 \myfig{chap02/p46c_find_co_inside_while.pdf}
+\myfigend
 \myfig{chap02/2_1.pdf}
+\myfigend
 
 \ti{Atomic actions and await statements}
 \begin{verbatim}
@@ -263,6 +294,7 @@ actions by other processes.
 
 \newpage
 \myfig{chap02/2_2.pdf}
+\myfigend
 
 \ti{Logic: equivalences}
 \newcommand{\eq}{&\equiv&}
@@ -558,6 +590,7 @@ Prove: $(A\imp C) \imp (A\imp (B\lor C))$
 
 \newpage
 \myfig{chap02/2_3.pdf}
+\myfigend
 \newcommand{\stm}[3]{\ensuremath{\{#1\}}\ \mbox{\tt #2}\ \ensuremath{\{#3\}}}
 
 \ti{Axiomatic Semantics}
@@ -656,14 +689,14 @@ Prove: \stm{true}{if x < 0 then x := -x}{x \geq 0}
 
 \newpage
 \ti{Proofs in Axiomatic Semantics}
-\begin{alltt}
+\begin{Verbatim}
 \(\{true\}\)
 m := x;
 \(\{m = x\}\)
 if (y > m)
   m := y;
 \(\{(m = x) \land m \geq y) \lor (m = y \land m > x)\}\)
-\end{alltt}
+\end{Verbatim}
 
 \[
 \frac{\stm{P\land C}{S}{Q}, P\land\neg C\imp Q}{\stm{P}{if C then
@@ -672,7 +705,7 @@ if (y > m)
 
 \newpage
 \ti{Proofs in Axiomatic Semantics}
-\begin{alltt}
+\begin{Verbatim}
 \(\{true\}\)
 i := 1;
 \(\{i = 1 \land \forall j: 1 \leq j < i: a[j] \not= x)\}\)
@@ -680,7 +713,7 @@ while (a[i] != x)
   \(\{(\forall j: 1 <= j < i: a[j] \not= x)\}\)
   i := i+1;
 \(\{(\forall j: 1 \leq j < i: a[j] \not= x) \land a[i] = x\}\)
-\end{alltt}
+\end{Verbatim}
 
 \[
 \frac{\stm{P\land C}{S}{P}}{\stm{P}{while C do S}{P\land\neg C}}
@@ -688,7 +721,7 @@ while (a[i] != x)
 
 \newpage
 \ti{Proofs in Axiomatic Semantics}
-\begin{alltt}
+\begin{Verbatim}
 \(\{(a>0)\land(b\geq 0)\}\)
 i := 0;
 p := 1;
@@ -698,7 +731,7 @@ while i < b do
   i := i+1;
 \(\{(P\land \neg C)\} = \{(p = a^i) \land (i\leq b) \land \neg(i<b)\}\)
 \(\{p = a^b\}\)
-\end{alltt}
+\end{Verbatim}
 
 \[
 \frac{\stm{P\land C}{S}{P}}{\stm{P}{while C do S}{P\land\neg C}}
@@ -707,14 +740,13 @@ while i < b do
 \newpage
 
 \myfig{chap02/p63_await_co_rules.pdf}
+\myfigend
 
-\newcommand{\la}{\ensuremath{\langle}}
-\newcommand{\ra}{\ensuremath{\rangle}}
 \ti{Sematics of Concurrent Execution}
 \bi
 \ii Await rule
 \[
-\frac{\stm{P\land B}{S}{Q}}{\stm{P}{\la await (B) s;\ra}{Q}}
+\frac{\stm{P\land B}{S}{Q}}{\stm{P}{\la await (B) S;\ra}{Q}}
 \]
 \ii Co rule
 \[
@@ -729,15 +761,15 @@ assignment that invalidates an assertion in the other process.
 \ti{Co example}
 \bi
 \ii
-\begin{alltt}
+\begin{Verbatim}
 \(\{x = 0\}\)
 co \la x := x+1;\ra // \la x := x+2;\ra oc
 \(\{x = 3\}\)
-\end{alltt}
+\end{Verbatim}
 \ii Neither process can assume that $x=0$ when they start.
 \ii But the following can be assumed:
 \ii
-\begin{alltt}
+\begin{Verbatim}
 \(\{x = 0\}\)
 co 
   \(\{x = 0 \lor x = 2\}\)
@@ -749,7 +781,7 @@ co
   \(\{x = 2 \lor x = 3\}\)
 oc
 \(\{ x = 3 \}\)
-\end{alltt}
+\end{Verbatim}
 \ei
 
 \newpage
@@ -771,7 +803,7 @@ following is a theorem:
 \ti{Example of noninterference}
 \bi
 \ii
-\begin{alltt}
+\begin{Verbatim}
 \(\{x = 0\}\)
 co 
   \(\{x = 0 \lor x = 2\}\)
@@ -783,15 +815,15 @@ co
   \(\{x = 2 \lor x = 3\}\)
 oc
 \(\{ x = 3 \}\)
-\end{alltt}
+\end{Verbatim}
 \ii The precondition of the first process is a critical assertion.
 \ii It is not interfered with by the second process because:
 \ii
-\begin{alltt}
+\begin{Verbatim}
 \(\{(x = 0 \lor x = 2) \land (x = 0\lor x = 1)\}\)
 x := x+2;
 \(\{x = 0 \lor x = 2\}\)
-\end{alltt}
+\end{Verbatim}
 \ei
 \newpage
 
@@ -821,7 +853,7 @@ trivial.
 than another assertion that might be true of a process in isolation.
 \ii Example:
 \ii
-\begin{alltt}
+\begin{Verbatim}
 \(\{x = 0\}\)
 co 
   \(\{x = 0 \lor x = 2\}\)
@@ -833,7 +865,7 @@ co
   \(\{x = 2 \lor x = 3\}\)
 oc
 \(\{ x = 3 \}\)
-\end{alltt}
+\end{Verbatim}
 \ei
 
 \newpage
@@ -868,7 +900,10 @@ we don't have to consider each statement by itself.
 \newpage
 
 \myfig{chap02/2_2.pdf}
-\myfig{chap02/2_4.pdf}
+\myfigend
+
+\myfigsmall{chap02/2_4.pdf}
+\myfigend
 
 \ti{Example illustrates all four techniques}
 \bi
@@ -908,13 +943,13 @@ we don't have to consider each statement by itself.
 
 \newpage
 \ti{Proving Safety Properties: exclusion of configurations}
-\begin{alltt}
+\begin{Verbatim}
 co # process 1
   ...;  \{ pre(S1) \} S1; ...
 // # process 2
   ...;  \{ pre(S2) \} S2; ...
 oc
-\end{alltt}
+\end{Verbatim}
 \bi
 \ii Suppose the preconditions do not interfere.
 \ii Suppose {\tt pre(S1) $\land$  pre(S2) == false}.
@@ -926,7 +961,8 @@ delayed  in their {\tt await} statements.
 
 \newpage
 
-\myfig{chap02/2_4.pdf}
+\myfigsmall{chap02/2_4.pdf}
+\myfigend
 
 \ti{Scheduling and Fairness}
 \bi
@@ -941,12 +977,12 @@ executed next.
 \ti{Scheduling and Fairness}
 \bi
 \ii
-\begin{alltt}
+\begin{Verbatim}
 bool continue = true;
 co while (continue);
 // continue = false;
 oc
-\end{alltt}
+\end{Verbatim}
 
 \ii If the first process always goes first, this program will never
 terminate. 
@@ -988,13 +1024,13 @@ when the condition is false.
 
 \newpage
 \ti{Difference between strong and weak fairness}
-\begin{alltt}
+\begin{Verbatim}
 bool continue = true, try = false;
 
 co while (continue) \{try = true; try = false;\}
 // \la await (try) continue = false; \ra
 oc
-\end{alltt}
+\end{Verbatim}
 \bi
 \ii With strong fairness, this program will eventually terminate.
 \ii With weak fairness, this program might not terminate, even though
@@ -1020,7 +1056,8 @@ and {\tt B} refers to only one variable altered by the other process.
 there are no more conditional atomic actions.
 \ei
 
-\myfig{chap02/2_4.pdf}
+\myfigsmall{chap02/2_4.pdf}
+\myfigend
 
 \ti{Livelock}
 \bi

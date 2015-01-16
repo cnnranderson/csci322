@@ -165,6 +165,7 @@ if items >= bufferSize:
 \ii {\tt items} is a semaphore, we can't check its size
 \ii Even if we could, we could be interrupted between checking and
 blocking.
+\ii We {\em don't} want to block inside a mutex!
 \pause
 \ii What to do?
 \ei
@@ -176,9 +177,17 @@ mutex = Semaphore(1)
 items = Semaphore(0)
 spaces = Semaphore(bufferSize)
 \end{Verbatim}
+\bi
+\ii {\tt items + spaces = bufferSize}
+\ei
 \end{frame}
 
 \bfr{Finite buffer producer-consumer solution}
+\begin{Verbatim}
+mutex = Semaphore(1)
+items = Semaphore(0)
+spaces = Semaphore(bufferSize)
+\end{Verbatim}
 \begin{multicols}{2}
 \begin{Verbatim}[label=Producer]
 event = waitForEvent()
@@ -199,11 +208,18 @@ spaces.signal()
 event.process()
 \end{Verbatim}
 \end{multicols}
+\pause
+\bi
+\ii Note that {\tt items + spaces} is a constant.
+\ii This is an {\em invariant}
+\ii Using invariants is a good way to design programs
+and help prove properties.
+\ei
 \end{frame}
 
 \bfr{Readers-writers problem}
 \bi
-\ii Suppose a number of process all access the same data.
+\ii Suppose a number of processes all access the same data.
 \ii Any number of readers can be in the critical section
 simultaneously.
 \ii Writers must have exclusive access to the critical section.
@@ -230,19 +246,8 @@ roomEmpty = Semaphore(1)
 roomEmpty.wait()
 # critical section for writer
 roomEmpty.signal()
-
-
-
-
-
-
-
-
-
-
-
-
 \end{Verbatim}
+\newpage
 \begin{Verbatim}[label=Readers]
 mutex.wait()
   readers += 1
@@ -264,6 +269,15 @@ mutex.signal()
 
 \bi
 \ii A {\bf Lightswitch}
+\ei
+
+\end{frame}
+
+\bfr{Claims useful in a proof of correctness}
+\bi
+\ii Only one reader can queue on {\tt roomEmpty}
+\ii Several writers might be queued on {\tt roomEmpty}
+\ii When a reader signals {\tt roomEmpty} the room is empty
 \ei
 
 \end{frame}
@@ -324,6 +338,8 @@ an item.)
 \pause
 \ii Puzzle:  extend the solution so that when a writer arrives, the
 existing readers can finish, but no additional readers may enter.
+\pause
+\ii Hint: Add a turnstyle and allow the writers to lock it.
 \ei
 
 
@@ -376,6 +392,8 @@ readSwitch.unlock(roomEmpty)
 to writers.  In other words, once a writer arrives, no readers are
 allowed in the critical section until {\em all} writers have left the
 system. 
+\pause
+\ii Hint: use two lightswitches
 \ei
 \end{frame}        
 

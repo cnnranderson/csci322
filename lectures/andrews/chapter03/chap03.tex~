@@ -44,6 +44,12 @@
 
 \huge
 
+\ti{Locks and Barriers}
+
+\centerline{Andrews Chapter 03}
+
+\newpage
+
 \ti{Critical Section Problem}
 \bi
 \ii Mutual Exclusion.
