@@ -6,11 +6,13 @@
 \usepackage{graphicx}
 \usepackage{multicol}
 \usepackage{overpic}
-
+\usepackage{alltt}
 \usepackage{fancyvrb}
+
 \setlength{\parindent}{0in}
 
-
+\newcommand{\lang}{\ensuremath{\langle}}
+\newcommand{\rang}{\ensuremath{\rangle}}
 %\newcommand{\myfig}[1]{\hspace{-1.5in}{\includegraphics[width=1.5\textwidth]{{#1}}}\newpage}
 
 \newcommand{\myfig}[1]{\begin{overpic}[scale=1.5]{#1}}
@@ -157,6 +159,70 @@ other part.
 \myfig{chap02/2_1.pdf}
 \myfigend
 
+\ti{Maximum of an array}
+\begin{center}
+Sequential:
+
+\begin{minipage}{2in}
+\begin{alltt}
+int m = 0;
+for [i = 0 to n-1] {
+  if (a[i] > m)
+    m = a[i];
+}
+\end{alltt}
+\end{minipage}
+\end{center}
+
+\begin{multicols}{2}
+
+{Incorrect but fast:}
+\begin{verbatim}
+int m = 0;
+co [i = 0 to n-1] {
+  if (a[i] > m)
+    m = a[i];
+}
+\end{verbatim}
+
+\vfill
+
+
+{Correct but slow:}
+\begin{alltt}
+int m = 0;
+co [i = 0 to n-1] \{
+  \lang if (a[i] > m)
+    m = a[i];\rang
+\}
+\end{alltt}
+
+\columnbreak
+
+{Pointless:}
+\begin{alltt}
+int m = 0;
+co [i = 0 to n-1] \{
+  if (a[i] > m)
+    \lang m = a[i];\rang
+\}
+\end{alltt}
+
+\vfill
+
+{Correct and fast:}
+\begin{alltt}
+int m = 0;
+co [i = 0 to n-1] \{
+  if (a[i] > m)
+    \lang if (a[i] > m)
+      m = a[i];\rang
+\}
+\end{alltt}
+
+\end{multicols}
+\newpage
+
 \ti{Atomic actions and await statements}
 \begin{verbatim}
 int y = 0, z = 0;
@@ -208,7 +274,7 @@ variable that is changed by another process.
 read by another process
 \ii {\tt e} contains no critical references
 \ei
-\ii At most one shared variable, referenced at most one time.
+\ii Such an assignment statement will appear to be atomic.
 \ei
 
 \newpage
@@ -222,7 +288,7 @@ co x = x+1; // y = y+1; oc;
 
 \vspace{1in}
 
-One critical reference:
+One critical reference and one lhs read by another:
 \begin{verbatim}
 int x = 0, y = 0;
 co x = y+1; // y = y+1; oc;
@@ -246,9 +312,9 @@ Values could be 1 and 2, 2 and 1, or even 1 and 1
 \ii {\tt B} specifies a delay condition.
 \ii {\tt S} is a sequence of statements guaranteed to terminate.
 \ii Atomic actions are specified by angle brakets, {\tt <} and {\tt >}
-\ii Therefore {\tt B} is guaranteed to be true when execution os {\tt
+\ii Therefore {\tt B} is guaranteed to be true when execution of {\tt
   S} begins.
-\ii No internal state of {\tt s} is visible to other processes.
+\ii No internal state in {\tt S} is visible to other processes.
 \ii What is this?
 
 \centerline {\tt <await (s > 0) s = s - 1;>}
@@ -296,14 +362,29 @@ actions by other processes.
 \myfig{chap02/2_2.pdf}
 \myfigend
 
+\ti{Formal Logic}
+
+\begin{center}
+\begin{tabular}{cc|ccc}
+$ A $&$ B $&$ A \wedge B $&$ A \vee B $&$ A \Rightarrow B $\\\hline
+$true$&$ true$&$ true$&$true$&$true$\\
+$true$&$ false$&$false$&$true$&$false$\\
+$false$&$ true$&$false$&$true$&$true$\\
+$false$&$ false$&$false$&$false$&$true$\\
+\end{tabular}
+\end{center}
+
+\newpage
+
 \ti{Logic: equivalences}
+\LARGE
 \newcommand{\eq}{&\equiv&}
 \newcommand{\imp}{\Rightarrow}
 
 \begin{multicols}{2}
 \begin{eqnarray*}
-A\land(B\lor C) \eq\\  (A\land B) \lor (A \land C)\\
-A\lor(B\land C) \eq\\  (A\lor B) \land (A \lor C)
+A\land(B\lor C) \eq  (A\land B) \lor (A \land C)\\
+A\lor(B\land C) \eq  (A\lor B) \land (A \lor C)
 \end{eqnarray*}
 \begin{eqnarray*}
 \neg \neg A \eq A\\
@@ -332,6 +413,7 @@ A \lor (\neg A \land B) \eq A \lor B\\
 \end{eqnarray*}
 
 \end{multicols}
+\huge
 
 \newpage
 \ti{Logic: inference rules}

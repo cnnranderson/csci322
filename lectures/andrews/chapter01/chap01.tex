@@ -47,17 +47,28 @@
 \newpage
 
 \myfig{chap01/1_1.pdf}
+\myput{64}{Temporal locality}
+\myput{62}{Cache hit}
+\myput{60}{Cache miss}
+\myput{58}{Write through cache}
+\myput{56}{Write back cache}
+\myput{54}{Cache lines}
+\myput{52}{Spatial locality}
 \myfigend
 
 \myfig{chap01/1_2.pdf}
-\myput{63}{Cache consistency problem}
+\myput{64}{Cache consistency problem}
+\myputn{62}{Snooping}
 \myput{60}{Memory consistency problem}
-\myput{57}{False sharing}
+\myputn{58}{Compilers and libraries}
+\myput{56}{False sharing}
+\myputn{54}{Padding}
 \myfigend
 
 \myfig{chap01/1_3.pdf}
 \myput{63}{Clusters}
 \myput{60}{Networks}
+\myput{57}{Message passing}
 \myfigend
 
 %\ti{Data {\em vs.} Task Parallel}
@@ -90,7 +101,7 @@
 \bi
 \ii {\bf Read set}: set of variables read by a process
 \ii {\bf Write set}: set of variables written to by a process
-\ii Two operations are {\bf independent} is the write set of each is
+\ii Two operations are {\bf independent} if the write set of each is
 disjoint from both the read and write sets of the other.
 \ei
 \newpage
