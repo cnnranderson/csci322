@@ -14,3 +14,5 @@ Readings for CSCI 322
 * Jan 12 [TLBOS, Appendix A](http://greenteapress.com/semaphores/downey08semaphores.pdf)
 
 * Jan 19 FOMPADP 1-2
+
+* Jan 21 [Syntax-rules](http://docs.racket-lang.org/guide/pattern-macros.html)
