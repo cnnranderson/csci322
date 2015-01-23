@@ -1,23 +1,30 @@
 \documentclass{article}
 \usepackage[margin=.5in]{geometry}
-\usepackage{multicol}
+\usepackage{natded}
+
 \newcommand{\bi}{\begin{enumerate}}
 \newcommand{\ii}{\item}
 \newcommand{\ei}{\end{enumerate}}
 \newcommand{\imp}{\Rightarrow}
 \begin{document}
-\begin{multicols}{2}
 
-\bi
-\ii $P\imp Q$
-\ii $P\land R$
-\ii $P$
-\ii $R$
-\ii $Q$
-\ii $Q\land R$
-\ii $(P\land R) \imp (Q\land R)$
-\ii $(P\imp Q)\imp ((P\land R) \imp (Q\land R))$
-\ei
+
+\[
+\Jproof{
+  \cablk{
+    \proofline {P\imp Q}{Assumption}
+    \cablk{
+      \proofline{P\land R}{Assumption}
+      \proofline{P}{Simplification}
+      \proofline{R}{Simplification}
+      \proofline{Q}{Modus Ponens}
+      \proofline{Q\land R}{Conjunction}
+    }
+    \proofline{(P\land R) \imp (Q\land R)}{Conditional proof}
+  }
+\proofline{(P\imp Q)\imp ((P\land R) \imp (Q\land R))}{Conditional proof}
+}
+\]
 
 \bigskip
 
@@ -35,7 +42,7 @@
 \ii $((P\imp R)\land (Q\imp S)) \imp ((P\land Q) \imp (R\land S))$
 \ei
 
-\columnbreak
+
 
 \bi
 \ii $P\imp (Q\imp R)$
@@ -74,5 +81,5 @@
 \ei
 
 
-\end{multicols}
+
 \end{document}

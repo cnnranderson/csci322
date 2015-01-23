@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.5.7)  20 JAN 2015 09:41
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.5.7)  23 JAN 2015 15:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -168,21 +168,64 @@ Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix
 \c@FancyVerbLine=\count109
 \FV@StepNumber=\count110
 \FV@OutFile=\write3
+) (/usr/share/texlive/texmf-dist/tex/latex/natded/natded.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count111
+\calc@Bcount=\count112
+\calc@Adimen=\dimen127
+\calc@Bdimen=\dimen128
+\calc@Askip=\skip45
+\calc@Bskip=\skip46
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count113
+\calc@Cskip=\skip47
+)
+\negdepth@jaska=\skip48
+\posdepth@jaska=\skip49
+\lineheight@jaska=\skip50
+\hmargin@jaska=\skip51
+\vmargin@jaska=\skip52
+\vextra@jaska=\skip53
+\cmargin@jaska=\skip54
+\borderwidth@jaska=\skip55
+\nowidth@jaska=\skip56
+\hhrulebase@jaska=\skip57
+\stdepth@jaska=\skip58
+\stwidth@jaska=\skip59
+\arrayrowheight@jaska=\skip60
+\guardspace@jaska=\skip61
+\jguard@jaska=\skip62
+\kmguard@jaska=\skip63
+\templength@jaska=\skip64
+\tempbox@jaska=\box54
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 85.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 85.
+\c@depth@jaskb=\count114
+\c@jdepth@jaskb=\count115
+\c@linecount@jaskb=\count116
+\templength@jaskb=\skip65
+\extrawin@jaskb=\skip66
+\extrawout@jaskb=\skip67
+\tempbox@jaskb=\box55
 ) (./chap02.aux)
 \openout1 = `chap02.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -220,16 +263,16 @@ LaTeX Font Info:    ... okay on input line 44.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count111
-\scratchdimen=\dimen127
-\scratchbox=\box54
-\nofMPsegments=\count112
-\nofMParguments=\count113
+\scratchcounter=\count117
+\scratchdimen=\dimen129
+\scratchbox=\box56
+\nofMPsegments=\count118
+\nofMParguments=\count119
 \everyMPshowfont=\toks16
-\MPscratchCnt=\count114
-\MPscratchDim=\dimen128
-\MPnumerator=\count115
-\makeMPintoPDFobject=\count116
+\MPscratchCnt=\count120
+\MPscratchDim=\dimen130
+\MPnumerator=\count121
+\makeMPintoPDFobject=\count122
 \everyMPtoPDFconversion=\toks17
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
@@ -278,28 +321,28 @@ e
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 57.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 58.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <20.74> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 57.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 58.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <20.74> on input line 60.
+(Font)              <20.74> on input line 61.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 60.
+(Font)              <14.4> on input line 61.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 60.
+(Font)              <12> on input line 61.
  [2] [3] [4] [5]
 <chap02/p45_find_seq.pdf, id=26, 614.295pt x 794.97pt>
 File: chap02/p45_find_seq.pdf Graphic file (type pdf)
 
 <use chap02/p45_find_seq.pdf>
-Package pdftex.def Info: chap02/p45_find_seq.pdf used on input line 134.
+Package pdftex.def Info: chap02/p45_find_seq.pdf used on input line 135.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 136--136
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 137--137
 [][] 
  []
 
@@ -312,11 +355,11 @@ Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 File: chap02/p46a_find_interfere.pdf Graphic file (type pdf)
 
 <use chap02/p46a_find_interfere.pdf>
-Package pdftex.def Info: chap02/p46a_find_interfere.pdf used on input line 153.
+Package pdftex.def Info: chap02/p46a_find_interfere.pdf used on input line 154.
 
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 154--154
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 155--155
 [][] 
  []
 
@@ -329,10 +372,10 @@ Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 File: chap02/p46b_find_nothing.pdf Graphic file (type pdf)
 
 <use chap02/p46b_find_nothing.pdf>
-Package pdftex.def Info: chap02/p46b_find_nothing.pdf used on input line 155.
+Package pdftex.def Info: chap02/p46b_find_nothing.pdf used on input line 156.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 156--156
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 157--157
 [][] 
  []
 
@@ -346,10 +389,10 @@ File: chap02/p46c_find_co_inside_while.pdf Graphic file (type pdf)
 
 <use chap02/p46c_find_co_inside_while.pdf>
 Package pdftex.def Info: chap02/p46c_find_co_inside_while.pdf used on input lin
-e 157.
+e 158.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 158--158
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 159--159
 [][] 
  []
 
@@ -361,10 +404,10 @@ Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 <chap02/2_1.pdf, id=66, 614.295pt x 794.97pt>
 File: chap02/2_1.pdf Graphic file (type pdf)
  <use chap02/2_1.pdf>
-Package pdftex.def Info: chap02/2_1.pdf used on input line 159.
+Package pdftex.def Info: chap02/2_1.pdf used on input line 160.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 160--160
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 161--161
 [][] 
  []
 
@@ -373,31 +416,31 @@ Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 
 
 [11 <./chap02/2_1.pdf>]
-Overfull \hbox (58.23665pt too wide) in paragraph at lines 169--169
+Overfull \hbox (58.23665pt too wide) in paragraph at lines 170--170
 []\OT1/cmtt/m/n/20.74 for [i = 0 to n-1] [] 
  []
 
 
-Overfull \hbox (15.54683pt too wide) in paragraph at lines 170--170
+Overfull \hbox (15.54683pt too wide) in paragraph at lines 171--171
 []  \OT1/cmtt/m/n/20.74 if (a[i] > m)[] 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 194
+LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 195
 .
 (/usr/share/texmf/tex/latex/R/tex/latex/omscmtt.fd
 File: omscmtt.fd 
 )
 LaTeX Font Info:    Font shape `OMS/cmtt/m/n' in size <20.74> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 194.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 195.
  [12] [13] [14] [15]
 [16] [17] [18] [19] [20] <chap02/2_2.pdf, id=106, 614.295pt x 794.97pt>
 File: chap02/2_2.pdf Graphic file (type pdf)
 
 <use chap02/2_2.pdf>
-Package pdftex.def Info: chap02/2_2.pdf used on input line 362.
+Package pdftex.def Info: chap02/2_2.pdf used on input line 367.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 363--363
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 368--368
 [][] 
  []
 
@@ -407,16 +450,31 @@ Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 
 [21 <./chap02/2_2.pdf>] [22]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <17.28> on input line 385.
- [23] [24] [25] [26] [27] [28] [29] [30] [31]
-[32] [33] [34] [35] [36] [37] <chap02/2_3.pdf, id=169, 614.295pt x 794.97pt>
+(Font)              <17.28> on input line 390.
+ [23] [24] [25]
+\mlevel0@jaskb=\count123
+\plevel0@jaskb=\count124
+\mlevel1@jaskb=\count125
+\plevel1@jaskb=\count126
+\blockwidth0@jaskb=\dimen131
+\blockwidth1@jaskb=\dimen132
+ [26]
+\blockwidth2@jaskb=\dimen133
+\mlevel2@jaskb=\count127
+\plevel2@jaskb=\count128
+ [27] [28] [29] [30] [31]
+[32] [33] [34] [35] [36] [37] [38]
+\blockwidth3@jaskb=\dimen134
+\mlevel3@jaskb=\count129
+\plevel3@jaskb=\count130
+ [39] [40] [41] [42] [43] [44] [45] [46]
+<chap02/2_3.pdf, id=197, 614.295pt x 794.97pt>
 File: chap02/2_3.pdf Graphic file (type pdf)
-
-<use chap02/2_3.pdf>
-Package pdftex.def Info: chap02/2_3.pdf used on input line 674.
+ <use chap02/2_3.pdf>
+Package pdftex.def Info: chap02/2_3.pdf used on input line 938.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 675--675
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 939--939
 [][] 
  []
 
@@ -424,15 +482,16 @@ Overfull \hbox (195.48764pt too wide) in paragraph at lines 675--675
 Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 
 
-[38 <./chap02/2_3.pdf>] [39] [40] [41] [42] [43] [44] [45]
-<chap02/p63_await_co_rules.pdf, id=205, 614.295pt x 794.97pt>
+[47 <./chap02/2_3.pdf>] [48] [49] [50] [51] [52] [53] [54]
+<chap02/p63_await_co_rules.pdf, id=233, 614.295pt x 794.97pt>
 File: chap02/p63_await_co_rules.pdf Graphic file (type pdf)
 
 <use chap02/p63_await_co_rules.pdf>
-Package pdftex.def Info: chap02/p63_await_co_rules.pdf used on input line 824.
+Package pdftex.def Info: chap02/p63_await_co_rules.pdf used on input line 1115.
+
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 825--825
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 1116--1116
 [][] 
  []
 
@@ -440,43 +499,43 @@ Overfull \hbox (195.48764pt too wide) in paragraph at lines 825--825
 Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 
 
-[46 <./chap02/p63_await_co_rules.pdf>] [47] [48]
-Underfull \hbox (badness 10000) in paragraph at lines 878--882
+[55 <./chap02/p63_await_co_rules.pdf>] [56] [57]
+Underfull \hbox (badness 10000) in paragraph at lines 1169--1173
 []\OT1/cmr/m/n/20.74 Let \OT1/cmtt/m/n/20.74 a \OT1/cmr/m/n/20.74 be an as-sign
 -ment ac-tion in one pro-cess and let $\OML/cmm/m/it/20.74 pre\OT1/cmr/m/n/20.7
 4 (\OML/cmm/m/it/20.74 a\OT1/cmr/m/n/20.74 )$ be
  []
 
 
-Underfull \hbox (badness 6658) in paragraph at lines 878--882
+Underfull \hbox (badness 6658) in paragraph at lines 1169--1173
 \OT1/cmr/m/n/20.74 its pre-con-di-tion. Let $\OML/cmm/m/it/20.74 C$ \OT1/cmr/m/
 n/20.74 be a crit-i-cal as-ser-tion in an-other pro-cess.
  []
 
 
-Underfull \hbox (badness 4341) in paragraph at lines 878--882
+Underfull \hbox (badness 4341) in paragraph at lines 1169--1173
 \OT1/cmr/m/n/20.74 Then \OT1/cmtt/m/n/20.74 a \OT1/cmr/bx/n/20.74 does not in-t
 er-fere \OT1/cmr/m/n/20.74 with $\OML/cmm/m/it/20.74 C$ \OT1/cmr/m/n/20.74 if t
 he fol-low-ing is a the-o-rem:
  []
 
 
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 878--882
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 1169--1173
 [] 
  []
 
-[49] [50] [51] [52] [53]
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 977--980
+[58] [59] [60] [61] [62]
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 1268--1271
 []
  []
 
-[54]
+[63]
 File: chap02/2_2.pdf Graphic file (type pdf)
  <use chap02/2_2.pdf>
-Package pdftex.def Info: chap02/2_2.pdf used on input line 984.
+Package pdftex.def Info: chap02/2_2.pdf used on input line 1275.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 985--985
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 1276--1276
 [][] 
  []
 
@@ -484,13 +543,13 @@ Overfull \hbox (195.48764pt too wide) in paragraph at lines 985--985
 Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 
 
-[55] <chap02/2_4.pdf, id=245, 614.295pt x 794.97pt>
+[64] <chap02/2_4.pdf, id=273, 614.295pt x 794.97pt>
 File: chap02/2_4.pdf Graphic file (type pdf)
  <use chap02/2_4.pdf>
-Package pdftex.def Info: chap02/2_4.pdf used on input line 987.
+Package pdftex.def Info: chap02/2_4.pdf used on input line 1278.
 (pdftex.def)             Requested size: 767.86685pt x 993.71007pt.
 
-Overfull \hbox (42.45578pt too wide) in paragraph at lines 988--988
+Overfull \hbox (42.45578pt too wide) in paragraph at lines 1279--1279
 [][] 
  []
 
@@ -498,13 +557,13 @@ Overfull \hbox (42.45578pt too wide) in paragraph at lines 988--988
 Overfull \vbox (307.14381pt too high) has occurred while \output is active []
 
 
-[56 <./chap02/2_4.pdf>] [57] [58] [59] [60]
+[65 <./chap02/2_4.pdf>] [66] [67] [68] [69]
 File: chap02/2_4.pdf Graphic file (type pdf)
  <use chap02/2_4.pdf>
-Package pdftex.def Info: chap02/2_4.pdf used on input line 1046.
+Package pdftex.def Info: chap02/2_4.pdf used on input line 1337.
 (pdftex.def)             Requested size: 767.86685pt x 993.71007pt.
 
-Overfull \hbox (42.45578pt too wide) in paragraph at lines 1047--1047
+Overfull \hbox (42.45578pt too wide) in paragraph at lines 1338--1338
 [][] 
  []
 
@@ -512,29 +571,29 @@ Overfull \hbox (42.45578pt too wide) in paragraph at lines 1047--1047
 Overfull \vbox (307.14381pt too high) has occurred while \output is active []
 
 
-[61] [62] [63] [64] [65] [66]
+[70] [71] [72] [73] [74] [75]
 File: chap02/2_4.pdf Graphic file (type pdf)
  <use chap02/2_4.pdf>
-Package pdftex.def Info: chap02/2_4.pdf used on input line 1141.
+Package pdftex.def Info: chap02/2_4.pdf used on input line 1432.
 (pdftex.def)             Requested size: 767.86685pt x 993.71007pt.
 
-Overfull \hbox (42.45578pt too wide) in paragraph at lines 1142--1142
+Overfull \hbox (42.45578pt too wide) in paragraph at lines 1433--1433
 [][] 
  []
 
-[67]
+[76]
 Overfull \vbox (307.14381pt too high) has occurred while \output is active []
 
 
-[68] [69] (./chap02.aux) ) 
+[77] [78] (./chap02.aux) ) 
 Here is how much of TeX's memory you used:
- 2655 strings out of 493304
- 38980 string characters out of 6139872
- 121939 words of memory out of 5000000
- 6084 multiletter control sequences out of 15000+600000
+ 2850 strings out of 493304
+ 41769 string characters out of 6139872
+ 126124 words of memory out of 5000000
+ 6272 multiletter control sequences out of 15000+600000
  8117 words of font info for 29 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 37i,7n,23p,235b,297s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,14n,70p,235b,297s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
@@ -543,10 +602,10 @@ cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
 hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on chap02.pdf (69 pages, 156062 bytes).
+Output written on chap02.pdf (78 pages, 168024 bytes).
 PDF statistics:
- 328 PDF objects out of 1000 (max. 8388607)
- 237 compressed objects within 3 object streams
+ 357 PDF objects out of 1000 (max. 8388607)
+ 257 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  46 words of extra memory for PDF output out of 10000 (max. 10000000)
 

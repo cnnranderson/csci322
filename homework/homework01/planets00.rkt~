@@ -21,7 +21,7 @@
 (define planet%
   (class object%
     (public m p v calculate-force move draw)
-    (init-field (mass 10)
+    (init-field (mass 1)
                 (position (vector 0 0 ))
                 (velocity (vector 0 0 ))
                 (force (vector 0 0 )))
@@ -138,8 +138,7 @@
               (y (send event get-y)))
           (send frame set-status-text (format "Mouse at ~a ~a" x y))
           (send planet-container add-planet (new planet% (position (vector x y))))
-          (send this refresh)
-          ))
+          (send this refresh)))
       )
     (super-new)
     (send (send this get-dc) set-background (make-object color% 8 8 64))
