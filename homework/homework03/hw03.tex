@@ -1,50 +1,71 @@
 \documentclass{article}
-\usepackage[margin=.5in]{geometry}
+\usepackage[margin=1in]{geometry}
 \usepackage{natded}
 
 \newcommand{\bi}{\begin{enumerate}}
 \newcommand{\ii}{\item}
 \newcommand{\ei}{\end{enumerate}}
 \newcommand{\imp}{\Rightarrow}
+
+\newcommand{\myrule}{\rule{3.5in}{1pt}}
 \begin{document}
 
-
+\noindent
+Name\hrulefill Student Number \hrulefill\\
+Homework \#3, CSCI 480, Winter 2015
+\\
+Give justifications for each line in the following proofs.
+Include line numbers wherever appropriate.
 
 
 \[
 \Jproof{
+\cablk{
+\proofline{P\imp(P\imp Q)}{\myrule}
+\cablk{
+\proofline{P}{\myrule}
+\proofline{P\imp Q}{\myrule}
+\proofline{Q}{\myrule}
+}
+\proofline{P\imp Q}{\myrule}
+}
+\proofline{(P\imp(P\imp Q))\imp (P\imp Q)}{\myrule}
+}\]
+
+\[
+\Jproof{
   \cablk{
-    \proofline {P\imp Q}{}
+    \proofline {P\imp Q}{\myrule}
     \cablk{
-      \proofline{P\land R}{}
-      \proofline{P}{}
-      \proofline{R}{}
-      \proofline{Q}{}
-      \proofline{Q\land R}{}
+      \proofline{P\land R}{\myrule}
+      \proofline{P}{\myrule}
+      \proofline{R}{\myrule}
+      \proofline{Q}{\myrule}
+      \proofline{Q\land R}{\myrule}
     }
-    \proofline{(P\land R) \imp (Q\land R)}{}
+    \proofline{(P\land R) \imp (Q\land R)}{\myrule}
   }
-\proofline{(P\imp Q)\imp ((P\land R) \imp (Q\land R))}{}
+\proofline{(P\imp Q)\imp ((P\land R) \imp (Q\land R))}{\myrule}
 }
 \]
 
 \[
 \Jproof{
 \cablk{
-\proofline{(P\imp R)\land (Q\imp S)}{}
-\proofline{P\imp R}{}
-\proofline{Q\imp S}{}
+\proofline{(P\imp R)\land (Q\imp S)}{\myrule}
+\proofline{P\imp R}{\myrule}
+\proofline{Q\imp S}{\myrule}
 \cablk{
-\proofline{P\land Q}{}
-\proofline{P}{}
-\proofline{Q}{}
-\proofline{R}{}
-\proofline{S}{}
-\proofline{R\land S}{}
+\proofline{P\land Q}{\myrule}
+\proofline{P}{\myrule}
+\proofline{Q}{\myrule}
+\proofline{R}{\myrule}
+\proofline{S}{\myrule}
+\proofline{R\land S}{\myrule}
 }
-\proofline{(P\land Q) \imp (R\land S)}{}
+\proofline{(P\land Q) \imp (R\land S)}{\myrule}
 }
-\proofline{((P\imp R)\land (Q\imp S)) \imp ((P\land Q) \imp (R\land S))}{}
+\proofline{((P\imp R)\land (Q\imp S)) \imp ((P\land Q) \imp (R\land S))}{\myrule}
 }\]
 
 
@@ -52,55 +73,44 @@
 \[
 \Jproof{
 \cablk{
-\proofline{P\imp (Q\imp R)}{}
+\proofline{P\imp (Q\imp R)}{\myrule}
 \cablk{
-\proofline{Q}{}
+\proofline{Q}{\myrule}
 \cablk{
-\proofline{P}{}
-\proofline{Q\imp R}{}
-\proofline{R}{}
-}\proofline{P\imp R}{}
+\proofline{P}{\myrule}
+\proofline{Q\imp R}{\myrule}
+\proofline{R}{\myrule}
+}\proofline{P\imp R}{\myrule}
 }
-\proofline{Q\imp (P\imp R)}{}
+\proofline{Q\imp (P\imp R)}{\myrule}
 }
-\proofline{(P\imp (Q\imp R))\imp (Q\imp (P\imp R))}{}
+\proofline{(P\imp (Q\imp R))\imp (Q\imp (P\imp R))}{\myrule}
 }\]
+
 
 
 \[
 \Jproof{
 \cablk{
-\proofline{P\imp(P\imp Q)}{}
+\proofline{(P\imp Q)\imp Q}{\myrule}
 \cablk{
-\proofline{P}{}
-\proofline{P\imp Q}{}
-\proofline{Q}{}
+\proofline{Q\imp P}{\myrule}
+\cablk{
+\proofline{\neg P}{\myrule}
+\proofline{\neg Q}{\myrule}
+\proofline{\neg(P\imp Q)}{\myrule}
+\proofline{P\land \neg Q}{\myrule}
+\proofline{P}{\myrule}
+}\proofline{P}{\myrule}
 }
-\proofline{P\imp Q}{}
+\proofline{(Q\imp P)\imp P}{\myrule}
 }
-\proofline{(P\imp(P\imp Q))\imp (P\imp Q)}{}
+\proofline{((P\imp Q)\imp Q)\imp ((Q\imp P)\imp P)}{\myrule}
 }\]
 
+\vfill
 
-\[
-\Jproof{
-\cablk{
-\proofline{(P\imp Q)\imp Q}{}
-\cablk{
-\proofline{Q\imp P}{}
-\cablk{
-\proofline{\neg P}{}
-\proofline{\neg Q}{}
-\proofline{\neg(P\imp Q)}{}
-\proofline{P\land \neg Q}{}
-\proofline{P}{}
-}\proofline{P}{}
-}
-\proofline{(Q\imp P)\imp P}{}
-}
-\proofline{((P\imp Q)\imp Q)\imp ((Q\imp P)\imp P)}{}
-}\]
+\centerline{\bf Due date:  Monday, February 2, at the start of class.}
 
-
-
+\vfill
 \end{document}
