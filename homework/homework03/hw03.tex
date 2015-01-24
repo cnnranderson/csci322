@@ -1,0 +1,106 @@
+\documentclass{article}
+\usepackage[margin=.5in]{geometry}
+\usepackage{natded}
+
+\newcommand{\bi}{\begin{enumerate}}
+\newcommand{\ii}{\item}
+\newcommand{\ei}{\end{enumerate}}
+\newcommand{\imp}{\Rightarrow}
+\begin{document}
+
+
+
+
+\[
+\Jproof{
+  \cablk{
+    \proofline {P\imp Q}{}
+    \cablk{
+      \proofline{P\land R}{}
+      \proofline{P}{}
+      \proofline{R}{}
+      \proofline{Q}{}
+      \proofline{Q\land R}{}
+    }
+    \proofline{(P\land R) \imp (Q\land R)}{}
+  }
+\proofline{(P\imp Q)\imp ((P\land R) \imp (Q\land R))}{}
+}
+\]
+
+\[
+\Jproof{
+\cablk{
+\proofline{(P\imp R)\land (Q\imp S)}{}
+\proofline{P\imp R}{}
+\proofline{Q\imp S}{}
+\cablk{
+\proofline{P\land Q}{}
+\proofline{P}{}
+\proofline{Q}{}
+\proofline{R}{}
+\proofline{S}{}
+\proofline{R\land S}{}
+}
+\proofline{(P\land Q) \imp (R\land S)}{}
+}
+\proofline{((P\imp R)\land (Q\imp S)) \imp ((P\land Q) \imp (R\land S))}{}
+}\]
+
+
+
+\[
+\Jproof{
+\cablk{
+\proofline{P\imp (Q\imp R)}{}
+\cablk{
+\proofline{Q}{}
+\cablk{
+\proofline{P}{}
+\proofline{Q\imp R}{}
+\proofline{R}{}
+}\proofline{P\imp R}{}
+}
+\proofline{Q\imp (P\imp R)}{}
+}
+\proofline{(P\imp (Q\imp R))\imp (Q\imp (P\imp R))}{}
+}\]
+
+
+\[
+\Jproof{
+\cablk{
+\proofline{P\imp(P\imp Q)}{}
+\cablk{
+\proofline{P}{}
+\proofline{P\imp Q}{}
+\proofline{Q}{}
+}
+\proofline{P\imp Q}{}
+}
+\proofline{(P\imp(P\imp Q))\imp (P\imp Q)}{}
+}\]
+
+
+\[
+\Jproof{
+\cablk{
+\proofline{(P\imp Q)\imp Q}{}
+\cablk{
+\proofline{Q\imp P}{}
+\cablk{
+\proofline{\neg P}{}
+\proofline{\neg Q}{}
+\proofline{\neg(P\imp Q)}{}
+\proofline{P\land \neg Q}{}
+\proofline{P}{}
+}\proofline{P}{}
+}
+\proofline{(Q\imp P)\imp P}{}
+}
+\proofline{((P\imp Q)\imp Q)\imp ((Q\imp P)\imp P)}{}
+}\]
+
+
+
+\end{document}
