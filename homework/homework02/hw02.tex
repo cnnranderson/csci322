@@ -1,0 +1,41 @@
+\documentclass{article}
+\pagestyle{empty}
+\sloppy
+\usepackage[margin=1.5in]{geometry}
+\title{Planets!}
+\author{Homework \#2, CSCI 322, Winter 2015\\
+Geoffrey Matthews}
+
+\begin{document}
+\maketitle
+\begin{description}
+\item[Description:] This is a continuation of homework \#1.  Fix any
+  errors in your version of {\tt planets02.rkt} (see me if you need
+  help) and then create two new versions of this program:
+\begin{enumerate}
+\item A program called {\tt planets03.rkt} that uses a new thread for
+  each planet, and also uses the synchronization methods in {\em The
+    Little Book of Semaphors}, Listing 3.10, to assure that all planet
+  forces are updated before any planet moves, and that all planets
+  move before any update their forces.
+\item A program called {\tt planets04.rkt} that behaves just like {\tt
+    planets03.rkt} except that the thread that refreshes the view {\em
+    does not execute} while the planets are updating their positions.
+  It can update the view any time the planets are calculating their
+  forces, but not when they are changing their positions.  Make sure
+  you use {\em only basic semaphores} ({\tt semaphore-post} and {\tt
+    semaphore-wait}) to accomplish this task.  
+
+  Give meaningful names to all your semaphores, and explain in the
+  comments in the file how your program assures that refresh never
+  happens while the planets are moving.  If you use an example from
+  {\em The Little Book}, reference it and discuss how it works in our
+  example.
+  
+\end{enumerate}
+\item[Due date:] Friday, February 6, midnight.
+  50\% of this assignment's grade points for each stage.
+
+
+\end{description}
+\end{document}
