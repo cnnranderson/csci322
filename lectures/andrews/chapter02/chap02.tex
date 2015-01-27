@@ -11,6 +11,7 @@
 \usepackage{natded}
 
 \setlength{\parindent}{0in}
+\newcommand{\stm}[3]{\ensuremath{\{#1\}}\ \mbox{\tt #2}\ \ensuremath{\{#3\}}}
 
 \newcommand{\lang}{\ensuremath{\langle}}
 \newcommand{\rang}{\ensuremath{\rangle}}
@@ -560,7 +561,7 @@ Prove: $A\imp (B\imp A)$
 \[
 \Jproof{
 \cablk{
-  \proofline{\neg(A\imp (B\imp A)}{assumption for indirect proof}
+  \proofline{\neg(A\imp (B\imp A))}{assumption for indirect proof}
   \proofline{...}{}
   \proofline{Z}{}
   \proofline{...}{}
@@ -923,7 +924,42 @@ Prove: $(P\lor\neg Q)\imp (Q\imp P)$
 }\]
 
 \newpage
-\newcommand{\stm}[3]{\ensuremath{\{#1\}}\ \mbox{\tt #2}\ \ensuremath{\{#3\}}}
+\ti{Formal Logical Systems}
+\bi
+\ii A set of {\em symbols}
+\ii A set of {\em formulas}
+\ii A set of {\em axioms}
+\ii A set of {\em inference rules}
+\ei
+
+\bigskip
+
+To this we added proof strategies with boxes.
+
+
+\newpage
+\ti{Soundness and Completeness}
+
+\bi
+\ii Sound:
+\[ \mbox{Theorems} \subseteq \mbox{Facts} \]
+\ii Complete:
+\[ \mbox{Facts} \subseteq \mbox{Theorems} \]
+\bigskip
+\ii{G\"odel's Incompleteness Theorem:}
+\bi\ii Any logical system for arithmetic must be incomplete.\ei
+\ii However, extending a logical system can be {\em relatively complete}.
+\ei
+
+\newpage
+\ti{Programming Logic}
+\bi
+\ii We extend basic logic with a logic for programming languages: {\bf PL}.
+\ii Our system for programming languages is relatively complete.
+\ii We take on trust that facts about arithmetic are true.
+\ei
+
+\newpage
 
 \ti{Axiomatic Semantics}
 \[
@@ -931,7 +967,50 @@ Prove: $(P\lor\neg Q)\imp (Q\imp P)$
 \]
 \bi
 \ii If $P$ is true before {\tt S} is executed, and {\tt S} terminates, then
-$Q$ is true after the execution of {\tt S}.
+$Q$ is true after {\tt S} executes.
+\ii $P$ and $Q$ are {\em assertions}
+\ii $P$ is the {\em precondition}
+\ii $Q$ is the {\em postcondition}
+\ei
+
+\newpage
+\ti{Logic should be sound}
+\bi
+\ii This should be a theorem:
+\[ \stm{x=0}{x = x + 1;}{x = 1} \]
+\ii This should not be a theorem:
+\[ \stm{x=0}{x = x + 1;}{y = 1} \]
+\ei
+
+\newpage
+\ti{Assignment Axiom}
+
+\[
+ \stm{P_{x\leftarrow e}}{x = e}{P}
+\]
+
+\bi
+\ii Examples:
+\[
+ \stm{1 = 1}{x = 1}{x = 1}
+\]
+\[
+ \stm{true}{x = 1}{x = 1}
+\]
+
+\[
+\stm{x+1 = 1}{x = x + 1}{x = 1}
+\]
+\[
+\stm{x = 0}{x = x + 1}{x = 1}
+\]
+
+\[
+\stm{x+ 1 = n}{x = x + 1}{x = n}
+\]
+\[
+\stm{x = n-1}{x = x + 1}{x = n}
+\]
 \ei
 
 \newpage
@@ -940,29 +1019,28 @@ $Q$ is true after the execution of {\tt S}.
 
 \newpage
 \ti{Axiomatic Semantics}
-\begin{multicols}{2}
-\bi
-\ii Assignment Axiom
+{\bf Assignment Axiom:}
 \[
-\stm{Q(x/t)}{x := t}{Q}
+\stm{P_{x\leftarrow t}}{x = t}{P}
 \]
 
+{\bf Inference rules:}
+\bi
 \ii Composition
 \[
 \frac{\stm{P}{S1}{R}, \stm{R}{S2}{Q}}{\stm{P}{S1;S2}{Q}}
 \]
 
 \ii Consequence
+\begin{multicols}{2}
 \[
 \frac{P\imp R, \stm{R}{S}{Q}}{\stm{P}{S}{Q}}
 \]
 \[
 \frac{\stm{P}{S}{T}, T\imp Q}{\stm{P}{S}{Q}}
 \]
-\ei
 \end{multicols}
 
-\bi
 \ii If-then
 \[
 \frac{\stm{P\land C}{S}{Q}, P\land\neg C\imp Q}{\stm{P}{if C then
@@ -983,16 +1061,16 @@ $Q$ is true after the execution of {\tt S}.
 
 \newpage
 \ti{Proofs in Axiomatic Semantics}
-Prove: \stm{x<5}{x := x + 1}{x < 7}
+Prove: \stm{x<5}{x = x + 1}{x < 7}
 
 
 \[
-\stm{Q(x/t)}{x := t}{Q}
+\stm{P_{x\leftarrow t}}{x = t}{P}
 \]
 
 \[
 \Jproof{
-\proofline{\stm{x + 1 < 7}{x := x + 1}{x < 7}}{Axiom}
+\proofline{\stm{x + 1 < 7}{x = x + 1}{x < 7}}{Axiom}
 \cablk{
   \proofline{x<5}{Assumption}
   \proofline{x+1<6}{2, arithmetic}
@@ -1000,33 +1078,33 @@ Prove: \stm{x<5}{x := x + 1}{x < 7}
   \proofline{x+1 < 7}{3,4, transitive}
 }
 \proofline{(x<5)\imp (x+1<7)}{2,5, conditional proof}
-\proofline{\stm{x<5}{x := x + 1}{x < 7}}{1,6, consequence}
+\proofline{\stm{x<5}{x = x + 1}{x < 7}}{1,6, consequence}
 }
 \]
 \newpage
 \ti{We can assume variables don't change in assertions.}
-Prove: \stm{x<5}{x := x + 1}{x < 7}
+Prove: \stm{x<5}{x = x + 1}{x < 7}
 
 
 \[
-\stm{Q(x/t)}{x := t}{Q}
+\stm{P_{x\leftarrow t}}{x = t}{P}
 \]
 
 \[
 \Jproof{
-\proofline{\stm{x + 1 < 7}{x := x + 1}{x < 7}}{Axiom}
+\proofline{\stm{x + 1 < 7}{x = x + 1}{x < 7}}{Axiom}
 \proofline{(x<5)\imp (x+1<7)}{arithmetic}
-\proofline{\stm{x<5}{x := x + 1}{x < 7}}{1,2, consequence}
+\proofline{\stm{x<5}{x = x + 1}{x < 7}}{1,2, consequence}
 }
 \]
 
 \newpage
 \ti{Proofs in Axiomatic Semantics}
-Prove: \stm{true}{if x < 0 then x := -x}{x \geq 0}
+Prove: \stm{true}{if x < 0 then x = -x}{x \geq 0}
 
 \[
 \Jproof{
-\proofline{\stm{-x \geq 0}{x := -x}{x \geq 0}}{Axiom}
+\proofline{\stm{-x \geq 0}{x = -x}{x \geq 0}}{Axiom}
 \cablk{
   \proofline{true \land (x < 0)}{assumption}
   \proofline{x < 0}{2, simplification}
@@ -1034,14 +1112,14 @@ Prove: \stm{true}{if x < 0 then x := -x}{x \geq 0}
   \proofline{-x \geq 0}{4, arithmetic}
 }
 \proofline{true \land (x < 0)\imp (-x \geq 0)}{2,5, conditional proof}
-\proofline{\stm{true \land (x < 0)}{x := -x}{x \geq 0}}{1,6, consequence}
+\proofline{\stm{true \land (x < 0)}{x = -x}{x \geq 0}}{1,6, consequence}
 \cablk{
   \proofline{true \land \neg(x < 0)}{assumption}
   \proofline{\neg(x<0)}{8, simplification}
   \proofline{x\geq 0}{9, arithmetic}
 }
 \proofline{true \land \neg(x<0)\imp (x \geq 0)}{8,10, conditional proof}
-\proofline{\stm{true}{if x < 0 then x := -x}{x \geq 0}}{7,11,if-then}
+\proofline{\stm{true}{if x < 0 then x = -x}{x \geq 0}}{7,11,if-then}
 }\]
 
 \[
@@ -1053,10 +1131,10 @@ Prove: \stm{true}{if x < 0 then x := -x}{x \geq 0}
 \ti{Abbreviated Proofs in Axiomatic Semantics}
 \begin{Verbatim}
 \(\{true\}\)
-m := x;
+m = x;
 \(\{m = x\}\)
 if (y > m)
-  m := y;
+  m = y;
 \(\{(m = x) \land m \geq y) \lor (m = y \land m > x)\}\)
 \end{Verbatim}
 
@@ -1065,9 +1143,9 @@ Assumes you can prove both
 
 \begin{enumerate}
 \item
-{\stm{true}{m := x}{m = x}}
+{\stm{true}{m = x}{m = x}}
 \item
-{\stm{m = x}{if (y > m) m := y;}{(m = x) \land m \geq y) \lor (m = y \land m > x)}}
+{\stm{m = x}{if (y > m) m = y;}{(m = x) \land m \geq y) \lor (m = y \land m > x)}}
 \end{enumerate}
 Use an axiom for the first and if-then for the second:
 \[
@@ -1079,11 +1157,11 @@ Use an axiom for the first and if-then for the second:
 \ti{Proofs in Axiomatic Semantics}
 \begin{Verbatim}
 \(\{true\}\)
-i := 1;
+i = 1;
 \(\{i = 1 \land \forall j: 1 \leq j < i: a[j] \not= x)\}\)
 while (a[i] != x)
   \(\{(\forall j: 1 <= j < i: a[j] \not= x)\}\)
-  i := i+1;
+  i = i+1;
 \(\{(\forall j: 1 \leq j < i: a[j] \not= x) \land a[i] = x\}\)
 \end{Verbatim}
 
@@ -1096,12 +1174,12 @@ while (a[i] != x)
 \ti{Proofs in Axiomatic Semantics}
 \begin{Verbatim}
 \(\{(a>0)\land(b\geq 0)\}\)
-i := 0;
-p := 1;
+i = 0;
+p = 1;
 \(\{P\} = \{(p = a^i) \land (i\leq b)\}\)
 while i < b do
-  p := p*a;
-  i := i+1;
+  p = p*a;
+  i = i+1;
 \(\{(P\land \neg C)\} = \{(p = a^i) \land (i\leq b) \land \neg(i<b)\}\)
 \(\{p = a^b\}\)
 \end{Verbatim}
@@ -1126,6 +1204,8 @@ while i < b do
 \frac{\stm{P_i}{Si}{Q_i}\mbox{\ are interference free}}
      {\stm{P_1\land ... \land P_n}{co S1; // ... // Sn; oc}{Q_1\land ... \land Q_n}}
 \]
+
+\bigskip
 \ii One process {\bf interferes} with another if it executes an
 assignment that invalidates an assertion in the other process. 
 \ei
@@ -1136,7 +1216,7 @@ assignment that invalidates an assertion in the other process.
 \ii
 \begin{Verbatim}
 \(\{x = 0\}\)
-co \la x := x+1;\ra // \la x := x+2;\ra oc
+co \la x = x+1;\ra // \la x = x+2;\ra oc
 \(\{x = 3\}\)
 \end{Verbatim}
 \ii Neither process can assume that $x=0$ when they start.
@@ -1146,11 +1226,11 @@ co \la x := x+1;\ra // \la x := x+2;\ra oc
 \(\{x = 0\}\)
 co 
   \(\{x = 0 \lor x = 2\}\)
-  \la x := x + 1; \ra
+  \la x = x + 1; \ra
   \(\{x = 1 \lor x = 3\}\)
 //
   \(\{x = 0 \lor x = 1\}\)
-  \la x := x + 2; \ra
+  \la x = x + 2; \ra
   \(\{x = 2 \lor x = 3\}\)
 oc
 \(\{ x = 3 \}\)
@@ -1180,11 +1260,11 @@ following is a theorem:
 \(\{x = 0\}\)
 co 
   \(\{x = 0 \lor x = 2\}\)
-  \la x := x + 1; \ra
+  \la x = x + 1; \ra
   \(\{x = 1 \lor x = 3\}\)
 //
   \(\{x = 0 \lor x = 1\}\)
-  \la x := x + 2; \ra
+  \la x = x + 2; \ra
   \(\{x = 2 \lor x = 3\}\)
 oc
 \(\{ x = 3 \}\)
@@ -1194,7 +1274,7 @@ oc
 \ii
 \begin{Verbatim}
 \(\{(x = 0 \lor x = 2) \land (x = 0\lor x = 1)\}\)
-x := x+2;
+x = x+2;
 \(\{x = 0 \lor x = 2\}\)
 \end{Verbatim}
 \ei
@@ -1209,10 +1289,10 @@ assertions of a proof of that process.
 \ii If the write set of one process is disjoint from the reference set
 of a second, and vice versa, the two processes cannot interfere.
 \ii Example:
-\ii {\tt co x := x+1; // y := y+1; oc}
+\ii {\tt co x = x+1; // y = y+1; oc}
 \ii Both of the following are theorems:
-\ii \stm{x = 0}{x := x + 1;}{x = 1}
-\ii \stm{y = 0}{y := y + 1;}{y = 1}
+\ii \stm{x = 0}{x = x + 1;}{x = 1}
+\ii \stm{y = 0}{y = y + 1;}{y = 1}
 \ii Each statement contains one assignment and two assertions, so
 there are four noninterference theorems to prove, but they are all
 trivial. 
@@ -1230,11 +1310,11 @@ than another assertion that might be true of a process in isolation.
 \(\{x = 0\}\)
 co 
   \(\{x = 0 \lor x = 2\}\)
-  \la x := x + 1; \ra
+  \la x = x + 1; \ra
   \(\{x = 1 \lor x = 3\}\)
 //
   \(\{x = 0 \lor x = 1\}\)
-  \la x := x + 2; \ra
+  \la x = x + 2; \ra
   \(\{x = 2 \lor x = 3\}\)
 oc
 \(\{ x = 3 \}\)
@@ -1266,7 +1346,7 @@ other processes.
 \ii Hence we can ignore them when considering interference, and
 consider only {\em entire} sequences.
 \ii For example, in the statement\\
-\centerline{\tt \la x := x+1; y := y+1; \ra}
+\centerline{\tt \la x = x+1; y = y+1; \ra}
 we don't have to consider each statement by itself.
 \ei
 
@@ -1281,7 +1361,7 @@ we don't have to consider each statement by itself.
 \ti{Example illustrates all four techniques}
 \bi
 \ii Many statements and parts are disjoint.
-\ii Weakened assertions, e.g. {\tt buf == A[p-1]} but only when \verb|p == c+1|
+\ii Weakened assertions, e.g. {\tt buf = A[p-1]} but only when \verb|p = c+1|
 \ii Global invariant {\em PC}
 \ii Synchronization using {\tt await}
 \ei
@@ -1325,7 +1405,7 @@ oc
 \end{Verbatim}
 \bi
 \ii Suppose the preconditions do not interfere.
-\ii Suppose {\tt pre(S1) $\land$  pre(S2) == false}.
+\ii Suppose {\tt pre(S1) $\land$  pre(S2) = false}.
 \ii Then the two processes cannot be at these statements at the same time!
 \ii {\tt false} means that the program is {\em never} in this state.
 \ii In the array copy example, both processes cannot simultaneously be
@@ -1422,7 +1502,7 @@ stays true until after the other process continues.
 and {\tt B} refers to only one variable altered by the other process.
 \ii Both {\tt await} statements could be implemented with busy loops:
 
-\centerline{{\tt \la await (p == c)\ra} $\equiv$ {\tt while (p != c)}}
+\centerline{{\tt \la await (p = c)\ra} $\equiv$ {\tt while (p != c)}}
 
 \ei
 \ii This program will terminate only on unconditional fairness, since

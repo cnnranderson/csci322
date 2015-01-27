@@ -101,29 +101,30 @@ A \lor (\neg A \land B) \eq A \lor B\\
 \newpage
 \centerline{\bf Axiomatic Semantics}
 
-\begin{multicols}{2}
-\bi
-\ii Assignment Axiom
+{\bf Assignment Axiom}
 \[
-\stm{Q(x/t)}{x := t}{Q}
+\stm{P_{x\leftarrow t}}{x = t}{P}
 \]
 
+{\bf Inference Rules}
+\bi
 \ii Composition
 \[
 \frac{\stm{P}{S1}{R}, \stm{R}{S2}{Q}}{\stm{P}{S1;S2}{Q}}
 \]
 
+\begin{multicols}{2}
 \ii Consequence
 \[
 \frac{P\imp R, \stm{R}{S}{Q}}{\stm{P}{S}{Q}}
 \]
+
 \[
 \frac{\stm{P}{S}{T}, T\imp Q}{\stm{P}{S}{Q}}
 \]
-\ei
 \end{multicols}
 
-\bi
+
 \ii If-then
 \[
 \frac{\stm{P\land C}{S}{Q}, P\land\neg C\imp Q}{\stm{P}{if C then

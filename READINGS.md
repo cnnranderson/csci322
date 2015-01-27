@@ -16,3 +16,5 @@ Readings for CSCI 322
 * Jan 19 FOMPADP 1-2
 
 * Jan 21 [Syntax-rules](http://docs.racket-lang.org/guide/pattern-macros.html)
+
+* Jan 26 [Natural deduction](http://homepage.univie.ac.at/christian.damboeck/ps06/clemente_nat_ded.pdf)  Reading this is optional, but may help you understand what's going on.  The notation is slightly different from that used in class.
