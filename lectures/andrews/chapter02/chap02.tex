@@ -1135,7 +1135,7 @@ m = x;
 \(\{m = x\}\)
 if (y > m)
   m = y;
-\(\{(m = x) \land m \geq y) \lor (m = y \land m > x)\}\)
+\(\{(m = x \land m \geq y) \lor (m = y \land m > x)\}\)
 \end{Verbatim}
 
 
@@ -1145,13 +1145,105 @@ Assumes you can prove both
 \item
 {\stm{true}{m = x}{m = x}}
 \item
-{\stm{m = x}{if (y > m) m = y;}{(m = x) \land m \geq y) \lor (m = y \land m > x)}}
+{\stm{m = x}{if (y > m) m = y;}{(m = x \land m \geq y) \lor (m = y \land m > x)}}
 \end{enumerate}
 Use an axiom for the first and if-then for the second:
 \[
 \frac{\stm{P\land C}{S}{Q}, P\land\neg C\imp Q}{\stm{P}{if C then
     S}{Q}}
 \]
+
+\newpage
+\ti{Proof of second part}
+
+Prove: \stm{m = x}{if (y > m) m = y;}{(m = x \land m \geq y) \lor (m = y \land m > x)}
+
+\[
+\frac{\stm{P\land C}{S}{Q}, P\land\neg C\imp Q}{\stm{P}{if C then
+    S}{Q}}
+\]
+{\LARGE
+\[
+\Jproof{
+\proofline{...}{}
+\proofline{\stm{m=x\land y>m}{m = y}{(m = x \land m \geq y) \lor (m = y \land m > x)}}{}
+\proofline{...}{}
+\proofline{[m=x\land \neg(y>m)]\imp [(m = x \land m \geq y) \lor (m = y \land m > x)]}{}
+\proofline{\stm{m = x}{if (y > m) m = y;}{(m = x \land m \geq y) \lor (m = y \land m > x)}}{2, 4, if-then}
+}\]
+}
+
+\newpage
+\ti{Proof of second part}
+
+Prove: \stm{m = x}{if (y > m) m = y;}{(m = x \land m \geq y) \lor (m = y \land m > x)}
+
+\[
+\frac{\stm{P\land C}{S}{Q}, P\land\neg C\imp Q}{\stm{P}{if C then
+    S}{Q}}
+\]
+{\LARGE
+\[
+\Jproof{
+\proofline{\stm{(y = x \land y \geq y) \lor (y = y \land y > x)}{m = y}{(m = x \land m \geq y) \lor (m = y \land m > x)}}{AA}
+\proofline{...}{}
+\proofline{\stm{m=x\land y>m}{m = y}{(m = x \land m \geq y) \lor (m = y \land m > x)}}{}
+\proofline{...}{}
+\proofline{[m=x\land \neg(y>m)]\imp [(m = x \land m \geq y) \lor (m = y \land m > x)]}{}
+\proofline{\stm{m = x}{if (y > m) m = y;}{(m = x \land m \geq y) \lor (m = y \land m > x)}}{if-then}
+}\]
+}
+
+\bi
+\ii Probably not going to work.
+\ii Why?
+\ii What else can we do?
+\ei
+\newpage
+\ti{Proof of second part}
+
+Prove: \stm{m = x}{if (y > m) m = y;}{(m = x \land m \geq y) \lor (m = y \land m > x)}
+
+\[
+\frac{\stm{P\land C}{S}{Q}, P\land\neg C\imp Q}{\stm{P}{if C then
+    S}{Q}}
+\]
+{\LARGE
+\[
+\Jproof{
+\proofline{\stm{(y = y \land y > x)}{m = y}{(m = y \land m > x)}}{AA}
+\proofline{...}{}
+\proofline{\stm{m=x\land y>m}{m = y}{(m = x \land m \geq y) \lor (m = y \land m > x)}}{}
+\proofline{...}{}
+\proofline{[m=x\land \neg(y>m)]\imp [(m = x \land m \geq y) \lor (m = y \land m > x)]}{}
+\proofline{\stm{m = x}{if (y > m) m = y;}{(m = x \land m \geq y) \lor (m = y \land m > x)}}{if-then}
+}\]
+}
+
+\bi
+\ii Need to prove two more things.  What are they?
+\ei
+
+\newpage
+\ti{Proof of second part}
+
+Prove: \stm{m = x}{if (y > m) m = y;}{(m = x \land m \geq y) \lor (m = y \land m > x)}
+
+\[
+\frac{\stm{P\land C}{S}{Q}, P\land\neg C\imp Q}{\stm{P}{if C then
+    S}{Q}}
+\]
+{\LARGE
+\[
+\Jproof{
+\proofline{\stm{(y = y \land y > x)}{m = y}{(m = y \land m > x)}}{AA}
+\proofline{(m=x\land y>m)\imp(y=y\land y> x)}{logic}
+\proofline{(m = y \land m > x)\imp(m = x \land m \geq y) \lor (m = y \land m > x)}{logic}
+\proofline{\stm{m=x\land y>m}{m = y}{(m = x \land m \geq y) \lor (m = y \land m > x)}}{Consequence}
+\proofline{[m=x\land \neg(y>m)]\imp [(m = x \land m \geq y) \lor (m = y \land m > x)]}{logic}
+\proofline{\stm{m = x}{if (y > m) m = y;}{(m = x \land m \geq y) \lor (m = y \land m > x)}}{if-then}
+}\]
+}
 
 \newpage
 \ti{Proofs in Axiomatic Semantics}
