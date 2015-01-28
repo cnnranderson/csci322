@@ -966,6 +966,7 @@ To this we added proof strategies with boxes.
 \stm{P}{S}{Q}
 \]
 \bi
+\ii Called a {\em triple}
 \ii If $P$ is true before {\tt S} is executed, and {\tt S} terminates, then
 $Q$ is true after {\tt S} executes.
 \ii $P$ and $Q$ are {\em assertions}
@@ -1195,12 +1196,34 @@ Prove: \stm{m = x}{if (y > m) m = y;}{(m = x \land m \geq y) \lor (m = y \land m
 }
 
 \bi
-\ii Probably not going to work.
-\ii Why?
-\ii What else can we do?
+\ii What else do we need?
 \ei
+
 \newpage
 \ti{Proof of second part}
+
+Prove: \stm{m = x}{if (y > m) m = y;}{(m = x \land m \geq y) \lor (m = y \land m > x)}
+
+\[
+\frac{\stm{P\land C}{S}{Q}, P\land\neg C\imp Q}{\stm{P}{if C then
+    S}{Q}}
+\]
+{\LARGE
+\[
+\Jproof{
+\proofline{\stm{(y = x \land y \geq y) \lor (y = y \land y > x)}{m = y}{(m = x \land m \geq y) \lor (m = y \land m > x)}}{AA}
+\proofline{...}{}
+\proofline{(m=x\land y>m)\imp(y = x \land y \geq y) \lor (y = y \land y > x)}{logic}
+\proofline{\stm{m=x\land y>m}{m = y}{(m = x \land m \geq y) \lor (m = y \land m > x)}}{consequence}
+\proofline{...}{}
+\proofline{[m=x\land \neg(y>m)]\imp [(m = x \land m \geq y) \lor (m = y \land m > x)]}{logic}
+\proofline{\stm{m = x}{if (y > m) m = y;}{(m = x \land m \geq y) \lor (m = y \land m > x)}}{if-then}
+}\]
+}
+
+
+\newpage
+\ti{Proof of second part, alternate}
 
 Prove: \stm{m = x}{if (y > m) m = y;}{(m = x \land m \geq y) \lor (m = y \land m > x)}
 
@@ -1225,7 +1248,7 @@ Prove: \stm{m = x}{if (y > m) m = y;}{(m = x \land m \geq y) \lor (m = y \land m
 \ei
 
 \newpage
-\ti{Proof of second part}
+\ti{Proof of second part, alternate}
 
 Prove: \stm{m = x}{if (y > m) m = y;}{(m = x \land m \geq y) \lor (m = y \land m > x)}
 
@@ -1342,7 +1365,10 @@ processes have the same local variable names.
 another process.  Then {\tt a} {\bf does not interfere} with $C$ if the
 following is a theorem:
 \centerline{\stm{C\land pre(a)}{a}{C}}
+\ii $C$ is {\em invariant} with respect to assignment {\tt a}
+
 \ei
+
 \newpage
 
 \ti{Example of noninterference}
@@ -1377,7 +1403,8 @@ x = x+2;
 \ii {\bf Read set:} set of variables read by a process.
 \ii {\bf Write set:} set of variables written to by a process.
 \ii {\bf Reference set:} set of variables that appear in the
-assertions of a proof of that process.
+assertions of a proof of that process.  
+\ii Reference set is usually the union of the read and write sets.
 \ii If the write set of one process is disjoint from the reference set
 of a second, and vice versa, the two processes cannot interfere.
 \ii Example:
