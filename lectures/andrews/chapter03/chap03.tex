@@ -13,6 +13,7 @@
 
 %\newcommand{\myfig}[1]{\hspace{-1.5in}{\includegraphics[width=1.5\textwidth]{{#1}}}\newpage}
 
+\newcommand{\nop}[1]{}
 \newcommand{\myfig}[1]{\begin{overpic}[scale=1.5]{#1}}
 \newcommand{\myfigsmall}[1]{\begin{overpic}[scale=1.25]{#1}}
 \newcommand{\myfigend}{\end{overpic}\newpage}
@@ -66,6 +67,8 @@ Three safety properties, one liveness property.
 \myfigend
 
 \myfig{chap03/3_02.pdf}
+\myput{52}{Can be used by arbitrarily many processes.}
+\myput{49}{{\tt lock} as a boolean is equivalent to $\mbox{in1}\lor\mbox{in2}$}
 \myfigend
 
 \ti{Test and Set}
@@ -79,17 +82,24 @@ bool TS(bool lock) \{
   \ra
 \}
 \end{Verbatim}
+\bi
+\ii Implemented in hardware.
+\ei
 
 
 \myfig{chap03/3_03.pdf}
+\myput{63}{Such a solution is called a {\bf spin-lock}.}
 \myput{60}{In spin-lock solution, exit protocol simply resets shared
   variables.}
+\myput{57}{Requires strong fairness.}
+\myput{54}{Weak fairness usually enough.}
 \myfigend
 
 
 
 
 \myfig{chap03/3_04.pdf}
+\myput{58}{Avoids repeated unecessary setting of lock.}
 \myfigend
 
 \ti{Implementing Await Statements}
@@ -179,7 +189,14 @@ CSexit;
 \end{Verbatim}
 \end{multicols}
 \ii Gives more chance for other processes to change {\tt B}
-\ii Used in Ethernet {\bf binary exponential backoff protocol.}
+\ii Used in Ethernet {\bf truncated binary exponential backoff protocol.}
+\bi
+\ii After one fail, randomly wait 0 or 1 time units.
+\ii After two fails, randomly wait 0 or 1 or 2 or 3 time units.
+\ii After three fails, randomly wait 0 or 1 or ... or 7 time units.
+\ii ...
+\ii After $n$ or greater fails, randomly wait 0 ... $2^n-1$ time units
+\ei
 \ii Shown to be useful in critical section entry protocols, too.
 \ei
 
@@ -187,7 +204,7 @@ CSexit;
 \ti{Critical Sections:  Fair Solutions}
 \bi
 \ii Spin-lock solutions we've seen require a strongly fair scheduler.
-\ii This is impractical.
+\ii This is impractical, real schedulers are usually weakly fair.
 \ii Three user-defined critical section protocols, only requiring weak fairness:
 \bi
 \ii Tie breaker algorithm
@@ -196,18 +213,66 @@ CSexit;
 \ei
 \ei
 
+\myfig{chap03/3_01.pdf}
+\myput{50}{Not guaranteed for weakly fair scheduler.}
+\myfigend
+
+\ti{Tie breaking attempted protocol 1}
+\begin{multicols}{2}
+\begin{Verbatim}
+while (in2) skip;
+in1 = true;
+\end{Verbatim}
+\begin{Verbatim}
+while (in1) skip;
+in2 = true;
+\end{Verbatim}
+\end{multicols}
+\bi
+\ii Problem?
+\ei
+\newpage
+
+\ti{Tie breaking attempted protocol 2}
+\begin{multicols}{2}
+\begin{Verbatim}
+in1 = true;
+while (in2) skip;
+\end{Verbatim}
+\begin{Verbatim}
+in2 = true;
+while (in1) skip;
+\end{Verbatim}
+\end{multicols}
+\bi
+\ii Problem?
+\ei
+
+\newpage
+\ti{Solution to deadlock problem}
+\bi
+\ii Add a variable {\tt last} to break ties when deadlocked.
+\ei
 
 
 \myfig{chap03/3_05.pdf}
+\myput{47}{Are the {\tt await} statements at-most-once?}
 \myfigend
+
 \myfig{chap03/3_06.pdf}
+\myput{47}{At-most-once not required here.}
 \myfigend
+
 \myfig{chap03/3_07.pdf}
+\myfigend
+
+
+
+\myfig{chap03/3_08.pdf}
 \myfigend
 
 \ti{TICKET}
 \newcommand{\imp}{\Rightarrow}
-
 \begin{eqnarray*}
 \mbox{next} > 0 \\
 \land\\
@@ -220,18 +285,26 @@ CSexit;
 \newpage
 
 
-\myfig{chap03/3_08.pdf}
-\myfigend
-
 \ti{Fetch and Add}
 \begin{Verbatim}
 FA(var, incr):
-  \la int tmp = var; var = var + incr; return(tmp); \ra
+  \la 
+  int tmp = var; 
+  var = var + incr; 
+  return(tmp); 
+  \ra
 \end{Verbatim}
+\bi
+\ii Implemented in hardware.
+\ei
 
 \newpage
 \myfig{chap03/3_09.pdf}
 \myfigend
+
+\ti{Skipping Bakery Algorithm}
+\newpage
+\nop{
 \ti{BAKERY}
 
 
@@ -320,8 +393,13 @@ while (turn1 != 0 and turn2 >= turn1) skip;
 \ti{Generalized ``Less Than''}
 
 \begin{eqnarray*}
-(a,b) > (c,d) &= \mbox{true}&  (a > c) \lor (a = c \land b > d)\\
-              &= \mbox{false}& \mbox{otherwise}
+(a,b) > (c,d) &=&
+\left\{
+\begin{array}{l}
+\mbox{true when } (a > c) \lor (a = c \land b > d)\\
+\mbox{false otherwise}
+\end{array}
+\right.
 \end{eqnarray*}
 \newpage
 \ti{Symmetric Entry Protocols}
@@ -344,6 +422,7 @@ while (turn1 != 0 and (turn2,2) >= (turn1,1)) skip;
 
 \myfig{chap03/3_11.pdf}
 \myfigend
+}
 
 \ti{Barrier Synchronization}
 

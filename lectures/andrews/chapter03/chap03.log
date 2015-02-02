@@ -1,21 +1,14 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.3.7)  15 FEB 2013 21:48
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.5.7)  2 FEB 2015 09:38
 entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
 **chap03
-(C:\Users\matthews\Documents\csci322\lectures\andrews\chap03.tex
+(./chap03.tex
 LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
-abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
-croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
-lician, german, german-x-2009-06-19, greek, gujarati, hindi, hungarian, iceland
-ic, indonesian, interlingua, irish, italian, kannada, kurmanji, lao, latin, lat
-vian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerm
-an, ngerman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese, 
-romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swis
-sgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, u
-senglishmax, welsh, loaded.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\article.cls"
+Babel <3.9h> and hyphenation patterns for 78 languages loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size10.clo"
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -30,22 +23,22 @@ File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
-Package: ifvtex 2010/03/01 v1.5 Switches for detecting VTeX and its modes (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count87
@@ -60,37 +53,36 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layouthoffset=\dimen109
 \Gm@layoutvoffset=\dimen110
 \Gm@dimlist=\toks15
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
-File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
-Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count90
 ))
 \Gin@req@height=\dimen111
 \Gin@req@width=\dimen112
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\multicol.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
 \c@tracingmulticols=\count91
 \mult@box=\box26
@@ -138,11 +130,11 @@ Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
 \colbreak@box=\box51
 \multicol@sort@counter=\count99
 )
-(C:\Users\matthews\AppData\Roaming\MiKTeX\2.9\tex\latex\overpic\overpic.sty
+(/usr/share/texlive/texmf-dist/tex/latex/overpic/overpic.sty
 Package: overpic 2010/09/13 v0.53  Overwriting graphics
 
 Package: overpic v0.53 <2010/09/13> (RN)
-(C:\Users\matthews\AppData\Roaming\MiKTeX\2.9\tex\latex\eepic\epic.sty
+(/usr/share/texlive/texmf-dist/tex/latex/eepic/epic.sty
 Enhancements to Picture Environment. Version 1.2 - Released June 1, 1986
 \@@multicnt=\count100
 \d@lta=\count101
@@ -162,7 +154,7 @@ Enhancements to Picture Environment. Version 1.2 - Released June 1, 1986
 \@datafile=\read1
 )
 overpic: relative positioning in percent
-) (C:\Users\matthews\AppData\Roaming\MiKTeX\2.9\tex\latex\fancyvrb\fancyvrb.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2008/02/07
 
 Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
@@ -173,20 +165,21 @@ Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix
 \c@FancyVerbLine=\count109
 \FV@StepNumber=\count110
 \FV@OutFile=\write3
-)
-(C:\Users\matthews\Documents\csci322\lectures\andrews\chap03.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
+) (./chap03.aux)
+\openout1 = `chap03.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -222,7 +215,7 @@ LaTeX Font Info:    ... okay on input line 42.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(C:\Users\matthews\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count111
 \scratchdimen=\dimen127
@@ -235,24 +228,68 @@ LaTeX Font Info:    ... okay on input line 42.
 \MPnumerator=\count115
 \makeMPintoPDFobject=\count116
 \everyMPtoPDFconversion=\toks17
-) [1
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
 
-{C:/Users/matthews/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 55.
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 56.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <20.74> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 55.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 56.
  [2]
-<chap03/3_01.pdf, id=12, 614.295pt x 794.97pt>
+<chap03/3_01.pdf, id=13, 614.295pt x 794.97pt>
 File: chap03/3_01.pdf Graphic file (type pdf)
  <use chap03/3_01.pdf>
-Package pdftex.def Info: chap03/3_01.pdf used on input line 65.
+Package pdftex.def Info: chap03/3_01.pdf used on input line 66.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 66--66
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 67--67
 [][] 
  []
 
@@ -260,14 +297,20 @@ Overfull \hbox (195.48764pt too wide) in paragraph at lines 66--66
 Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 
 
-[3 <C:/Users/matthews/Documents/csci322/lectures/andrews/chap03/3_01.pdf>]
-<chap03/3_02.pdf, id=25, 614.295pt x 794.97pt>
+[3 <./chap03/3_01.pdf>] <chap03/3_02.pdf, id=26, 614.295pt x 794.97pt>
 File: chap03/3_02.pdf Graphic file (type pdf)
- <use chap03/3_02.pdf>
-Package pdftex.def Info: chap03/3_02.pdf used on input line 68.
-(pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 69--69
+<use chap03/3_02.pdf>
+Package pdftex.def Info: chap03/3_02.pdf used on input line 69.
+(pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <20.74> on input line 70.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 70.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 70.
+
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 72--72
 [][] 
  []
 
@@ -275,29 +318,22 @@ Overfull \hbox (195.48764pt too wide) in paragraph at lines 69--69
 Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 
 
-[4 <C:/Users/matthews/Documents/csci322/lectures/andrews/chap03/3_02.pdf>]
-LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 74.
+[4 <./chap03/3_02.pdf>]
+LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 77.
 
-LaTeX Font Info:    No file OMScmtt.fd. on input line 74.
+ (/usr/share/texmf/tex/latex/R/tex/latex/omscmtt.fd
+File: omscmtt.fd 
+)
+LaTeX Font Info:    Font shape `OMS/cmtt/m/n' in size <20.74> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 77.
 
-
-LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
-(Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbraceleft' on input line 74.
-
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <20.74> on input line 75.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 75.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 75.
-<chap03/3_03.pdf, id=36, 614.295pt x 794.97pt>
+<chap03/3_03.pdf, id=38, 614.295pt x 794.97pt>
 File: chap03/3_03.pdf Graphic file (type pdf)
  <use chap03/3_03.pdf>
-Package pdftex.def Info: chap03/3_03.pdf used on input line 84.
+Package pdftex.def Info: chap03/3_03.pdf used on input line 90.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 87--87
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 96--96
 [][] 
  []
 
@@ -305,14 +341,14 @@ Overfull \hbox (195.48764pt too wide) in paragraph at lines 87--87
 Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 
 
-[6 <C:/Users/matthews/Documents/csci322/lectures/andrews/chap03/3_03.pdf>]
-<chap03/3_04.pdf, id=50, 614.295pt x 794.97pt>
+[6 <./chap03/3_03.pdf>] <chap03/3_04.pdf, id=51, 614.295pt x 794.97pt>
 File: chap03/3_04.pdf Graphic file (type pdf)
- <use chap03/3_04.pdf>
-Package pdftex.def Info: chap03/3_04.pdf used on input line 92.
+
+<use chap03/3_04.pdf>
+Package pdftex.def Info: chap03/3_04.pdf used on input line 101.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 93--93
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 103--103
 [][] 
  []
 
@@ -320,15 +356,13 @@ Overfull \hbox (195.48764pt too wide) in paragraph at lines 93--93
 Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 
 
-[7 <C:/Users/matthews/Documents/csci322/lectures/andrews/chap03/3_04.pdf>]
-[8] [9] [10] [11] <chap03/3_05.pdf, id=73, 614.295pt x 794.97pt>
-File: chap03/3_05.pdf Graphic file (type pdf)
-
-<use chap03/3_05.pdf>
-Package pdftex.def Info: chap03/3_05.pdf used on input line 201.
+[7 <./chap03/3_04.pdf>] [8] [9] [10] [11]
+File: chap03/3_01.pdf Graphic file (type pdf)
+ <use chap03/3_01.pdf>
+Package pdftex.def Info: chap03/3_01.pdf used on input line 216.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 202--202
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 218--218
 [][] 
  []
 
@@ -336,14 +370,29 @@ Overfull \hbox (195.48764pt too wide) in paragraph at lines 202--202
 Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 
 
-[13 <C:/Users/matthews/Documents/csci322/lectures/andrews/chap03/3_05.pdf>]
-<chap03/3_06.pdf, id=88, 614.295pt x 794.97pt>
+[13] [14] [15] <chap03/3_05.pdf, id=88, 614.295pt x 794.97pt>
+File: chap03/3_05.pdf Graphic file (type pdf)
+
+<use chap03/3_05.pdf>
+Package pdftex.def Info: chap03/3_05.pdf used on input line 258.
+(pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
+
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 260--260
+[][] 
+ []
+
+[16]
+Overfull \vbox (505.88649pt too high) has occurred while \output is active []
+
+
+[17 <./chap03/3_05.pdf>] <chap03/3_06.pdf, id=102, 614.295pt x 794.97pt>
 File: chap03/3_06.pdf Graphic file (type pdf)
- <use chap03/3_06.pdf>
-Package pdftex.def Info: chap03/3_06.pdf used on input line 203.
+
+<use chap03/3_06.pdf>
+Package pdftex.def Info: chap03/3_06.pdf used on input line 262.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 204--204
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 264--264
 [][] 
  []
 
@@ -351,14 +400,14 @@ Overfull \hbox (195.48764pt too wide) in paragraph at lines 204--204
 Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 
 
-[14 <C:/Users/matthews/Documents/csci322/lectures/andrews/chap03/3_06.pdf>]
-<chap03/3_07.pdf, id=98, 614.295pt x 794.97pt>
+[18 <./chap03/3_06.pdf>] <chap03/3_07.pdf, id=112, 614.295pt x 794.97pt>
 File: chap03/3_07.pdf Graphic file (type pdf)
- <use chap03/3_07.pdf>
-Package pdftex.def Info: chap03/3_07.pdf used on input line 205.
+
+<use chap03/3_07.pdf>
+Package pdftex.def Info: chap03/3_07.pdf used on input line 266.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 206--206
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 267--267
 [][] 
  []
 
@@ -366,14 +415,14 @@ Overfull \hbox (195.48764pt too wide) in paragraph at lines 206--206
 Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 
 
-[15 <C:/Users/matthews/Documents/csci322/lectures/andrews/chap03/3_07.pdf>]
-[16] <chap03/3_08.pdf, id=113, 614.295pt x 794.97pt>
+[19 <./chap03/3_07.pdf>] <chap03/3_08.pdf, id=123, 614.295pt x 794.97pt>
 File: chap03/3_08.pdf Graphic file (type pdf)
- <use chap03/3_08.pdf>
-Package pdftex.def Info: chap03/3_08.pdf used on input line 223.
+
+<use chap03/3_08.pdf>
+Package pdftex.def Info: chap03/3_08.pdf used on input line 271.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 224--224
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 272--272
 [][] 
  []
 
@@ -381,14 +430,14 @@ Overfull \hbox (195.48764pt too wide) in paragraph at lines 224--224
 Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 
 
-[17 <C:/Users/matthews/Documents/csci322/lectures/andrews/chap03/3_08.pdf>]
-[18] <chap03/3_09.pdf, id=128, 614.295pt x 794.97pt>
+[20 <./chap03/3_08.pdf>] [21] [22]
+<chap03/3_09.pdf, id=142, 614.295pt x 794.97pt>
 File: chap03/3_09.pdf Graphic file (type pdf)
  <use chap03/3_09.pdf>
-Package pdftex.def Info: chap03/3_09.pdf used on input line 233.
+Package pdftex.def Info: chap03/3_09.pdf used on input line 302.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 234--234
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 303--303
 [][] 
  []
 
@@ -396,47 +445,16 @@ Overfull \hbox (195.48764pt too wide) in paragraph at lines 234--234
 Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 
 
-[19 <C:/Users/matthews/Documents/csci322/lectures/andrews/chap03/3_09.pdf>]
-[20] <chap03/3_10.pdf, id=142, 614.295pt x 794.97pt>
-File: chap03/3_10.pdf Graphic file (type pdf)
- <use chap03/3_10.pdf>
-Package pdftex.def Info: chap03/3_10.pdf used on input line 251.
-(pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
-
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 254--254
-[][] 
- []
-
-
-Overfull \vbox (505.88649pt too high) has occurred while \output is active []
-
-
-[21 <C:/Users/matthews/Documents/csci322/lectures/andrews/chap03/3_10.pdf>]
-[22] [23] [24] [25] [26] <chap03/3_11.pdf, id=170, 614.295pt x 794.97pt>
-File: chap03/3_11.pdf Graphic file (type pdf)
-
-<use chap03/3_11.pdf>
-Package pdftex.def Info: chap03/3_11.pdf used on input line 345.
-(pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
-
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 346--346
-[][] 
- []
-
-
-Overfull \vbox (505.88649pt too high) has occurred while \output is active []
-
-
-[27 <C:/Users/matthews/Documents/csci322/lectures/andrews/chap03/3_11.pdf>]
-[28] <chap03/p116_counter_barrier.pdf, id=183, 614.295pt x 794.97pt>
+[23 <./chap03/3_09.pdf>] [24] [25]
+<chap03/p116_counter_barrier.pdf, id=160, 614.295pt x 794.97pt>
 File: chap03/p116_counter_barrier.pdf Graphic file (type pdf)
 
 <use chap03/p116_counter_barrier.pdf>
-Package pdftex.def Info: chap03/p116_counter_barrier.pdf used on input line 373
+Package pdftex.def Info: chap03/p116_counter_barrier.pdf used on input line 452
 .
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 380--380
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 459--459
 [][] 
  []
 
@@ -444,30 +462,29 @@ Overfull \hbox (195.48764pt too wide) in paragraph at lines 380--380
 Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 
 
-[29 <C:/Users/matthews/Documents/csci322/lectures/andrews/chap03/p116_counter_b
-arrier.pdf>] [30] <chap03/3_12.pdf, id=196, 614.295pt x 794.97pt>
+[26 <./chap03/p116_counter_barrier.pdf>] [27]
+<chap03/3_12.pdf, id=173, 614.295pt x 794.97pt>
 File: chap03/3_12.pdf Graphic file (type pdf)
-
-<use chap03/3_12.pdf>
-Package pdftex.def Info: chap03/3_12.pdf used on input line 415.
+ <use chap03/3_12.pdf>
+Package pdftex.def Info: chap03/3_12.pdf used on input line 494.
 (pdftex.def)             Requested size: 767.86685pt x 993.71007pt.
 
-Overfull \hbox (42.45578pt too wide) in paragraph at lines 420--420
+Overfull \hbox (42.45578pt too wide) in paragraph at lines 499--499
 [][] 
  []
 
-[31]
+[28]
 Overfull \vbox (307.14381pt too high) has occurred while \output is active []
 
 
-[32 <C:/Users/matthews/Documents/csci322/lectures/andrews/chap03/3_12.pdf>]
-<chap03/3_13.pdf, id=211, 614.295pt x 794.97pt>
+[29 <./chap03/3_12.pdf>] <chap03/3_13.pdf, id=187, 614.295pt x 794.97pt>
 File: chap03/3_13.pdf Graphic file (type pdf)
- <use chap03/3_13.pdf>
-Package pdftex.def Info: chap03/3_13.pdf used on input line 423.
+
+<use chap03/3_13.pdf>
+Package pdftex.def Info: chap03/3_13.pdf used on input line 502.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 425--425
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 504--504
 [][] 
  []
 
@@ -475,14 +492,14 @@ Overfull \hbox (195.48764pt too wide) in paragraph at lines 425--425
 Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 
 
-[33 <C:/Users/matthews/Documents/csci322/lectures/andrews/chap03/3_13.pdf>]
-<chap03/3_14.pdf, id=224, 614.295pt x 794.97pt>
+[30 <./chap03/3_13.pdf>] <chap03/3_14.pdf, id=200, 614.295pt x 794.97pt>
 File: chap03/3_14.pdf Graphic file (type pdf)
- <use chap03/3_14.pdf>
-Package pdftex.def Info: chap03/3_14.pdf used on input line 427.
+
+<use chap03/3_14.pdf>
+Package pdftex.def Info: chap03/3_14.pdf used on input line 506.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 430--430
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 509--509
 [][] 
  []
 
@@ -490,15 +507,15 @@ Overfull \hbox (195.48764pt too wide) in paragraph at lines 430--430
 Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 
 
-[34 <C:/Users/matthews/Documents/csci322/lectures/andrews/chap03/3_14.pdf>]
-<chap03/p121_sym_barrier.pdf, id=235, 614.295pt x 794.97pt>
+[31 <./chap03/3_14.pdf>]
+<chap03/p121_sym_barrier.pdf, id=212, 614.295pt x 794.97pt>
 File: chap03/p121_sym_barrier.pdf Graphic file (type pdf)
 
 <use chap03/p121_sym_barrier.pdf>
-Package pdftex.def Info: chap03/p121_sym_barrier.pdf used on input line 433.
+Package pdftex.def Info: chap03/p121_sym_barrier.pdf used on input line 512.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 441--441
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 520--520
 [][] 
  []
 
@@ -506,14 +523,14 @@ Overfull \hbox (195.48764pt too wide) in paragraph at lines 441--441
 Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 
 
-[35 <C:/Users/matthews/Documents/csci322/lectures/andrews/chap03/p121_sym_barri
-er.pdf>] <chap03/3_15.pdf, id=245, 614.295pt x 794.97pt>
+[32 <./chap03/p121_sym_barrier.pdf>]
+<chap03/3_15.pdf, id=222, 614.295pt x 794.97pt>
 File: chap03/3_15.pdf Graphic file (type pdf)
  <use chap03/3_15.pdf>
-Package pdftex.def Info: chap03/3_15.pdf used on input line 443.
+Package pdftex.def Info: chap03/3_15.pdf used on input line 522.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 447--447
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 526--526
 [][] 
  []
 
@@ -521,120 +538,11 @@ Overfull \hbox (195.48764pt too wide) in paragraph at lines 447--447
 Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 
 
-[36 <C:/Users/matthews/Documents/csci322/lectures/andrews/chap03/3_15.pdf>]
-<chap03/3_16.pdf, id=259, 614.295pt x 794.97pt>
+[33 <./chap03/3_15.pdf>] <chap03/3_16.pdf, id=236, 614.295pt x 794.97pt>
 File: chap03/3_16.pdf Graphic file (type pdf)
- <use chap03/3_16.pdf>
-Package pdftex.def Info: chap03/3_16.pdf used on input line 449.
-(pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 455--455
-[][] 
- []
-
-
-Overfull \vbox (505.88649pt too high) has occurred while \output is active []
-
-
-[37 <C:/Users/matthews/Documents/csci322/lectures/andrews/chap03/3_16.pdf>]
-File: chap03/3_15.pdf Graphic file (type pdf)
-
-<use chap03/3_15.pdf>
-Package pdftex.def Info: chap03/3_15.pdf used on input line 457.
-(pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
-
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 464--464
-[][] 
- []
-
-
-Overfull \vbox (505.88649pt too high) has occurred while \output is active []
-
-
-[38] [39] <chap03/3_17.pdf, id=280, 614.295pt x 794.97pt>
-File: chap03/3_17.pdf Graphic file (type pdf)
-
-<use chap03/3_17.pdf>
-Package pdftex.def Info: chap03/3_17.pdf used on input line 495.
-(pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
-
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 501--501
-[][] 
- []
-
-[40]
-Overfull \vbox (505.88649pt too high) has occurred while \output is active []
-
-
-[41 <C:/Users/matthews/Documents/csci322/lectures/andrews/chap03/3_17.pdf>]
-<chap03/3_18.pdf, id=294, 614.295pt x 794.97pt>
-File: chap03/3_18.pdf Graphic file (type pdf)
- <use chap03/3_18.pdf>
-Package pdftex.def Info: chap03/3_18.pdf used on input line 504.
-(pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
-
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 506--506
-[][] 
- []
-
-
-Overfull \vbox (505.88649pt too high) has occurred while \output is active []
-
-
-[42 <C:/Users/matthews/Documents/csci322/lectures/andrews/chap03/3_18.pdf>]
-<chap03/3_19.pdf, id=305, 614.295pt x 794.97pt>
-File: chap03/3_19.pdf Graphic file (type pdf)
- <use chap03/3_19.pdf>
-Package pdftex.def Info: chap03/3_19.pdf used on input line 508.
-(pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
-
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 513--513
-[][] 
- []
-
-
-Overfull \vbox (505.88649pt too high) has occurred while \output is active []
-
-
-[43 <C:/Users/matthews/Documents/csci322/lectures/andrews/chap03/3_19.pdf>]
-<chap03/p131_partial_sums_SIMD.pdf, id=316, 614.295pt x 794.97pt>
-File: chap03/p131_partial_sums_SIMD.pdf Graphic file (type pdf)
-
-<use chap03/p131_partial_sums_SIMD.pdf>
-Package pdftex.def Info: chap03/p131_partial_sums_SIMD.pdf used on input line 5
-15.
-(pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
-
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 522--522
-[][] 
- []
-
-
-Overfull \vbox (505.88649pt too high) has occurred while \output is active []
-
-
-[44 <C:/Users/matthews/Documents/csci322/lectures/andrews/chap03/p131_partial_s
-ums_SIMD.pdf>] <chap03/p132_bag_of_tasks.pdf, id=325, 614.295pt x 794.97pt>
-File: chap03/p132_bag_of_tasks.pdf Graphic file (type pdf)
-
-<use chap03/p132_bag_of_tasks.pdf>
-Package pdftex.def Info: chap03/p132_bag_of_tasks.pdf used on input line 525.
-(pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
-
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 531--531
-[][] 
- []
-
-
-Overfull \vbox (505.88649pt too high) has occurred while \output is active []
-
-
-[45 <C:/Users/matthews/Documents/csci322/lectures/andrews/chap03/p132_bag_of_ta
-sks.pdf>] <chap03/3_20.pdf, id=334, 614.295pt x 794.97pt>
-File: chap03/3_20.pdf Graphic file (type pdf)
-
-<use chap03/3_20.pdf>
-Package pdftex.def Info: chap03/3_20.pdf used on input line 533.
+<use chap03/3_16.pdf>
+Package pdftex.def Info: chap03/3_16.pdf used on input line 528.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
 Overfull \hbox (195.48764pt too wide) in paragraph at lines 534--534
@@ -645,14 +553,121 @@ Overfull \hbox (195.48764pt too wide) in paragraph at lines 534--534
 Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 
 
-[46 <C:/Users/matthews/Documents/csci322/lectures/andrews/chap03/3_20.pdf>]
-<chap03/3_21.pdf, id=345, 614.295pt x 794.97pt>
+[34 <./chap03/3_16.pdf>]
+File: chap03/3_15.pdf Graphic file (type pdf)
+ <use chap03/3_15.pdf>
+Package pdftex.def Info: chap03/3_15.pdf used on input line 536.
+(pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
+
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 543--543
+[][] 
+ []
+
+
+Overfull \vbox (505.88649pt too high) has occurred while \output is active []
+
+
+[35] [36] <chap03/3_17.pdf, id=256, 614.295pt x 794.97pt>
+File: chap03/3_17.pdf Graphic file (type pdf)
+
+<use chap03/3_17.pdf>
+Package pdftex.def Info: chap03/3_17.pdf used on input line 574.
+(pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
+
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 580--580
+[][] 
+ []
+
+[37]
+Overfull \vbox (505.88649pt too high) has occurred while \output is active []
+
+
+[38 <./chap03/3_17.pdf>] <chap03/3_18.pdf, id=271, 614.295pt x 794.97pt>
+File: chap03/3_18.pdf Graphic file (type pdf)
+
+<use chap03/3_18.pdf>
+Package pdftex.def Info: chap03/3_18.pdf used on input line 583.
+(pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
+
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 585--585
+[][] 
+ []
+
+
+Overfull \vbox (505.88649pt too high) has occurred while \output is active []
+
+
+[39 <./chap03/3_18.pdf>] <chap03/3_19.pdf, id=283, 614.295pt x 794.97pt>
+File: chap03/3_19.pdf Graphic file (type pdf)
+
+<use chap03/3_19.pdf>
+Package pdftex.def Info: chap03/3_19.pdf used on input line 587.
+(pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
+
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 592--592
+[][] 
+ []
+
+
+Overfull \vbox (505.88649pt too high) has occurred while \output is active []
+
+
+[40 <./chap03/3_19.pdf>]
+<chap03/p131_partial_sums_SIMD.pdf, id=293, 614.295pt x 794.97pt>
+File: chap03/p131_partial_sums_SIMD.pdf Graphic file (type pdf)
+
+<use chap03/p131_partial_sums_SIMD.pdf>
+Package pdftex.def Info: chap03/p131_partial_sums_SIMD.pdf used on input line 5
+94.
+(pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
+
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 601--601
+[][] 
+ []
+
+
+Overfull \vbox (505.88649pt too high) has occurred while \output is active []
+
+
+[41 <./chap03/p131_partial_sums_SIMD.pdf>]
+<chap03/p132_bag_of_tasks.pdf, id=302, 614.295pt x 794.97pt>
+File: chap03/p132_bag_of_tasks.pdf Graphic file (type pdf)
+
+<use chap03/p132_bag_of_tasks.pdf>
+Package pdftex.def Info: chap03/p132_bag_of_tasks.pdf used on input line 604.
+(pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
+
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 610--610
+[][] 
+ []
+
+
+Overfull \vbox (505.88649pt too high) has occurred while \output is active []
+
+
+[42 <./chap03/p132_bag_of_tasks.pdf>]
+<chap03/3_20.pdf, id=311, 614.295pt x 794.97pt>
+File: chap03/3_20.pdf Graphic file (type pdf)
+ <use chap03/3_20.pdf>
+Package pdftex.def Info: chap03/3_20.pdf used on input line 612.
+(pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
+
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 613--613
+[][] 
+ []
+
+
+Overfull \vbox (505.88649pt too high) has occurred while \output is active []
+
+
+[43 <./chap03/3_20.pdf>] <chap03/3_21.pdf, id=323, 614.295pt x 794.97pt>
 File: chap03/3_21.pdf Graphic file (type pdf)
- <use chap03/3_21.pdf>
-Package pdftex.def Info: chap03/3_21.pdf used on input line 536.
+
+<use chap03/3_21.pdf>
+Package pdftex.def Info: chap03/3_21.pdf used on input line 615.
 (pdftex.def)             Requested size: 767.86685pt x 993.71007pt.
 
-Overfull \hbox (42.45578pt too wide) in paragraph at lines 538--538
+Overfull \hbox (42.45578pt too wide) in paragraph at lines 617--617
 [][] 
  []
 
@@ -660,31 +675,27 @@ Overfull \hbox (42.45578pt too wide) in paragraph at lines 538--538
 Overfull \vbox (307.14381pt too high) has occurred while \output is active []
 
 
-[47 <C:/Users/matthews/Documents/csci322/lectures/andrews/chap03/3_21.pdf>]
-(C:\Users\matthews\Documents\csci322\lectures\andrews\chap03.aux)
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
- ) 
+[44 <./chap03/3_21.pdf>] (./chap03.aux) ) 
 Here is how much of TeX's memory you used:
- 2353 strings out of 494045
- 34178 string characters out of 3145961
- 96139 words of memory out of 3000000
- 5630 multiletter control sequences out of 15000+200000
- 7372 words of font info for 27 fonts, out of 3000000 for 9000
- 715 hyphenation exceptions out of 8191
- 27i,6n,19p,235b,548s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C
-:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/P
-rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Prog
-ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program
- Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program F
-iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Fil
-es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on chap03.pdf (47 pages, 182701 bytes).
+ 2700 strings out of 493304
+ 39842 string characters out of 6139872
+ 109702 words of memory out of 5000000
+ 6118 multiletter control sequences out of 15000+600000
+ 7372 words of font info for 27 fonts, out of 8000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 37i,6n,23p,235b,548s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on chap03.pdf (44 pages, 138975 bytes).
 PDF statistics:
- 384 PDF objects out of 1000 (max. 8388607)
+ 363 PDF objects out of 1000 (max. 8388607)
+ 278 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 126 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 116 words of extra memory for PDF output out of 10000 (max. 10000000)
 

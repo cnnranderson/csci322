@@ -1509,6 +1509,10 @@ we don't have to consider each statement by itself.
 \bi
 \ii Show that {\em BAD} is false in every state.
 \ii Show that {\em GOOD} is true in every state.
+\begin{description}
+\ii {\em GOOD} = $\neg${\em BAD}
+\ii {\em GOOD} will be an invariant.
+\end{description}
 \ei
 
 
@@ -1534,6 +1538,8 @@ delayed  in their {\tt await} statements.
 \newpage
 
 \myfigsmall{chap02/2_4.pdf}
+\put(50,73){$PC\land (p < n) \land (p \not= c)$}
+\put(50,51.5){$IC\land (c < n) \land (p \leq c)$}
 \myfigend
 
 \ti{Scheduling and Fairness}
@@ -1575,9 +1581,14 @@ eventually, assuming that its condition becomes true and then remains
 true until it is seen by the process executing the conditional atomic
 action.
 \end{enumerate}
-\ii In other words, assuming that if {\tt \la await (B) S;\ra} is
-eligible and {\tt B} becomes true, then {\tt B} remains true until
-after {\tt S}.  \ii Round-robin and time slicing are weakly fair.  \ii
+\ii In other words, assuming that
+\begin{description}
+\item (a) if {\tt \la await (B) S;\ra} is
+eligible and {\tt B} becomes true then {\tt B} remains true 
+until {\tt S}, then
+\item (b) {\tt \la await (B) S;\ra} will be executed eventually.  
+\end{description}
+\ii Round-robin and time slicing are weakly fair.  \ii
 Not sufficient to guarantee that any eligible {\tt await} statement
 eventually executes.  \ei
 
