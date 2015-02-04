@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.5.7)  2 FEB 2015 09:38
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.5.7)  3 FEB 2015 11:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -454,7 +454,7 @@ Package pdftex.def Info: chap03/p116_counter_barrier.pdf used on input line 452
 .
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 459--459
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 460--460
 [][] 
  []
 
@@ -466,25 +466,25 @@ Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 <chap03/3_12.pdf, id=173, 614.295pt x 794.97pt>
 File: chap03/3_12.pdf Graphic file (type pdf)
  <use chap03/3_12.pdf>
-Package pdftex.def Info: chap03/3_12.pdf used on input line 494.
-(pdftex.def)             Requested size: 767.86685pt x 993.71007pt.
+Package pdftex.def Info: chap03/3_12.pdf used on input line 502.
+(pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
-Overfull \hbox (42.45578pt too wide) in paragraph at lines 499--499
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 507--507
 [][] 
  []
 
 [28]
-Overfull \vbox (307.14381pt too high) has occurred while \output is active []
+Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 
 
 [29 <./chap03/3_12.pdf>] <chap03/3_13.pdf, id=187, 614.295pt x 794.97pt>
 File: chap03/3_13.pdf Graphic file (type pdf)
 
 <use chap03/3_13.pdf>
-Package pdftex.def Info: chap03/3_13.pdf used on input line 502.
+Package pdftex.def Info: chap03/3_13.pdf used on input line 510.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 504--504
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 512--512
 [][] 
  []
 
@@ -496,10 +496,10 @@ Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 File: chap03/3_14.pdf Graphic file (type pdf)
 
 <use chap03/3_14.pdf>
-Package pdftex.def Info: chap03/3_14.pdf used on input line 506.
+Package pdftex.def Info: chap03/3_14.pdf used on input line 514.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 509--509
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 519--519
 [][] 
  []
 
@@ -512,10 +512,10 @@ Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 File: chap03/p121_sym_barrier.pdf Graphic file (type pdf)
 
 <use chap03/p121_sym_barrier.pdf>
-Package pdftex.def Info: chap03/p121_sym_barrier.pdf used on input line 512.
+Package pdftex.def Info: chap03/p121_sym_barrier.pdf used on input line 522.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 520--520
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 530--530
 [][] 
  []
 
@@ -527,10 +527,10 @@ Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 <chap03/3_15.pdf, id=222, 614.295pt x 794.97pt>
 File: chap03/3_15.pdf Graphic file (type pdf)
  <use chap03/3_15.pdf>
-Package pdftex.def Info: chap03/3_15.pdf used on input line 522.
+Package pdftex.def Info: chap03/3_15.pdf used on input line 532.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 526--526
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 536--536
 [][] 
  []
 
@@ -542,10 +542,10 @@ Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 File: chap03/3_16.pdf Graphic file (type pdf)
 
 <use chap03/3_16.pdf>
-Package pdftex.def Info: chap03/3_16.pdf used on input line 528.
+Package pdftex.def Info: chap03/3_16.pdf used on input line 538.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 534--534
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 544--544
 [][] 
  []
 
@@ -556,10 +556,10 @@ Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 [34 <./chap03/3_16.pdf>]
 File: chap03/3_15.pdf Graphic file (type pdf)
  <use chap03/3_15.pdf>
-Package pdftex.def Info: chap03/3_15.pdf used on input line 536.
+Package pdftex.def Info: chap03/3_15.pdf used on input line 546.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 543--543
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 553--553
 [][] 
  []
 
@@ -571,10 +571,10 @@ Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 File: chap03/3_17.pdf Graphic file (type pdf)
 
 <use chap03/3_17.pdf>
-Package pdftex.def Info: chap03/3_17.pdf used on input line 574.
+Package pdftex.def Info: chap03/3_17.pdf used on input line 584.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 580--580
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 590--590
 [][] 
  []
 
@@ -586,10 +586,10 @@ Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 File: chap03/3_18.pdf Graphic file (type pdf)
 
 <use chap03/3_18.pdf>
-Package pdftex.def Info: chap03/3_18.pdf used on input line 583.
+Package pdftex.def Info: chap03/3_18.pdf used on input line 593.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 585--585
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 595--595
 [][] 
  []
 
@@ -601,10 +601,10 @@ Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 File: chap03/3_19.pdf Graphic file (type pdf)
 
 <use chap03/3_19.pdf>
-Package pdftex.def Info: chap03/3_19.pdf used on input line 587.
+Package pdftex.def Info: chap03/3_19.pdf used on input line 597.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 592--592
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 602--602
 [][] 
  []
 
@@ -617,11 +617,11 @@ Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 File: chap03/p131_partial_sums_SIMD.pdf Graphic file (type pdf)
 
 <use chap03/p131_partial_sums_SIMD.pdf>
-Package pdftex.def Info: chap03/p131_partial_sums_SIMD.pdf used on input line 5
-94.
+Package pdftex.def Info: chap03/p131_partial_sums_SIMD.pdf used on input line 6
+04.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 601--601
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 611--611
 [][] 
  []
 
@@ -634,10 +634,10 @@ Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 File: chap03/p132_bag_of_tasks.pdf Graphic file (type pdf)
 
 <use chap03/p132_bag_of_tasks.pdf>
-Package pdftex.def Info: chap03/p132_bag_of_tasks.pdf used on input line 604.
+Package pdftex.def Info: chap03/p132_bag_of_tasks.pdf used on input line 614.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 610--610
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 620--620
 [][] 
  []
 
@@ -649,10 +649,10 @@ Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 <chap03/3_20.pdf, id=311, 614.295pt x 794.97pt>
 File: chap03/3_20.pdf Graphic file (type pdf)
  <use chap03/3_20.pdf>
-Package pdftex.def Info: chap03/3_20.pdf used on input line 612.
+Package pdftex.def Info: chap03/3_20.pdf used on input line 622.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 613--613
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 623--623
 [][] 
  []
 
@@ -664,10 +664,10 @@ Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 File: chap03/3_21.pdf Graphic file (type pdf)
 
 <use chap03/3_21.pdf>
-Package pdftex.def Info: chap03/3_21.pdf used on input line 615.
+Package pdftex.def Info: chap03/3_21.pdf used on input line 625.
 (pdftex.def)             Requested size: 767.86685pt x 993.71007pt.
 
-Overfull \hbox (42.45578pt too wide) in paragraph at lines 617--617
+Overfull \hbox (42.45578pt too wide) in paragraph at lines 627--627
 [][] 
  []
 
@@ -692,7 +692,7 @@ s/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 r17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on chap03.pdf (44 pages, 138975 bytes).
+Output written on chap03.pdf (44 pages, 139931 bytes).
 PDF statistics:
  363 PDF objects out of 1000 (max. 8388607)
  278 compressed objects within 3 object streams

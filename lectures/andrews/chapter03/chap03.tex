@@ -134,7 +134,7 @@ CSexit;
 \columnbreak
 \begin{Verbatim}
 CSenter;
-while (B) \{ ??? \}
+while (not B) \{ ??? \}
 S;
 CSexit;
 \end{Verbatim}
@@ -155,7 +155,7 @@ processes are blocked.
 \columnbreak
 \begin{Verbatim}
 CSenter;
-while (B) \{
+while (not B) \{
   CSexit; 
   CSenter; 
 \}
@@ -179,7 +179,7 @@ CSexit;
 \columnbreak
 \begin{Verbatim}
 CSenter;
-while (B) \{
+while (not B) \{
   CSexit;
   Delay;
   CSenter; 
@@ -454,8 +454,9 @@ process Worker[i = 1 to n] \{
 \myputn{60}{\tt FA(count, 1);}
 \myputn{58}{\tt while (count != n) skip;}
 
-\myput{55}{Problem is resetting {\tt count} and looping}
-\myput{52}{{\tt count} is a global variable for each process}
+\myput{55}{Problem is resetting {\tt count} and looping.}
+\myput{52}{{\tt count} is a global variable for each process.}
+\myput{49}{Only feasible with small {\tt n}.}
 \myfigend
 
 \ti{Flags and Coordinators}
@@ -470,17 +471,24 @@ process Worker[i = 1 to n] \{
 \centerline{\tt \la await ((arrive[1] + ... + arrive[n]) == n); \ra}
 
 \ii Use a coordinator task.  
-\ii 
+\begin{multicols}{2}
 \begin{Verbatim}[label=Task i]
 arrive[i] = 1;
 \la await (continue[i] == 1);
 \end{Verbatim}
-
-\ii 
+\columnbreak
 \begin{Verbatim}[label=Coordinator]
-for [i = 1 to n] \la await (arrive[i] == 1); \ra
-for [i = 1 to n] continue[i] = 1;
+for [i = 1 to n] 
+  \la await (arrive[i] == 1); \ra
+for [i = 1 to n]
+  continue[i] = 1;
 \end{Verbatim}
+\end{multicols}
+
+
+\ii {\tt arrive} and {\tt continue} are {\bf flag variables}:
+\bi\ii variable raised in one process to signal that a synchronization condition is true\ei
+\ii Remaining problem is resetting flags.
 \ei
 
 \newpage
@@ -491,11 +499,11 @@ one that should clear that flag.
 \ii A flag should not be set until it is known that it is clear.
 \ei
 
-\myfigsmall{chap03/3_12.pdf}
-\myput{46}{Avoids memory contention.}
-\myput{43}{Is not symmetric.}
-\myput{40}{Coordinator spends most of its time waiting.}
-\myput{37}{Tasks have a linear time wait for coordinator.}
+\myfig{chap03/3_12.pdf}
+\put(10,51){$\bullet$ Avoids memory contention.}
+\put(10,49){$\bullet$ Is not symmetric.}
+\put(10,47){$\bullet$ Coordinator spends most of its time waiting.}
+\put(10,45){$\bullet$ Tasks have a linear time wait for coordinator.}
 \myfigend
 
 
@@ -504,18 +512,20 @@ one that should clear that flag.
 \myfigend
 
 \myfig{chap03/3_14.pdf}
-\myput{50}{More symmetric, each task does some real computation.}
-\myput{47}{But still three different kinds of nodes.}
+\myput{53}{More symmetric, each task does some real computation.}
+\myput{51}{But still three different kinds of nodes.}
+\myput{49}{Can have a single {\tt continue} set by root.}
+\myput{47}{Global {\tt continue} can be double-buffered or even/odd.}
 \myfigend
 
 
 \myfig{chap03/p121_sym_barrier.pdf}
 \myput{60}{A symmetric two-process barrier.}
 \myputn{57}{Wait clearing own flag.}
-\myputn{54}{Set own flag.}
-\myputn{51}{Wait setting other flag.}
-\myputn{48}{Clear other flag.}
-\myput{45}{First line is necessary to prevent a process racing
+\myputn{55}{Set own flag.}
+\myputn{53}{Wait setting other flag.}
+\myputn{51}{Clear other flag.}
+\myput{48}{First line is necessary to prevent a process racing
   around.}
 \myfigend
 

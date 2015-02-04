@@ -40,7 +40,10 @@
 \begin{document}
 \huge
 
+
 \ti{Semaphores}
+
+\centerline{Andrews Chapter 04}
 
 \bi
 \ii Chapter 3 used busy-waiting loops.
@@ -95,19 +98,48 @@
 \myfigend
 
 \myfig{chap04/4_11.pdf}
+\myput{51}{Waiting on {\em two} variables: no simple semaphore works.}
+\myput{48}{Our implementation of {\tt await} with semaphores uses busy waiting.}
+\myput{45}{Is there a better way to simulate {\tt await} with semaphores?}
 \myfigend
 
 \myfig{chap04/p173_signal_code.pdf}
-\myput{60}{Signal {\em exactly one} of the semaphores.}
-\myput{57}{{\tt r}, {\tt w}, and {\tt e} are a split binary semaphore.}
+\myput{63}{{\tt e} is a mutex for the readers/writers.}
+\myput{60}{Instead of releasing {\tt e}, signal {\em exactly one} of
+  the semaphores.} 
+\myput{57}{{\tt r}, {\tt w}, and {\tt e} are a split binary semaphore:
+  only one  is nonzero.}
 \myput{54}{{\bf Passing the baton} to one another.}
+\myput{51}{The signaller {\em also} decrements the counter.}
 \myfigend
 
 \myfigsmall{chap04/4_12.pdf}
 \myfigend
 
 \myfigsmall{chap04/4_13.pdf}
+\put(40,30){Some of the {\tt SIGNAL} code can be simplified.}
 \myfigend
+
+\ti{Passing the baton more flexible}
+\bi
+\ii Can give writers precedence by switching the {\tt if} in {\tt Writer}:
+\begin{Verbatim}
+if (dw > 0) { dw = dw-1; V(w); }
+elseif (dr > 0) { dr = dr - 1; V(r); }
+else V(e);
+\end{Verbatim}
+\ii This change can be made without restructuring the code.
+\\\\
+\ii Can force readers and writers to alternate when both are waiting:
+\bi
+\ii delay a new reader when a writer is waiting
+\ii delay a new writer when a reader is waiting
+\ii awaken one waiting writer (if any) when a reader finishes
+\ii awaken all waiting readers (if any) when a writer finishes;\\
+ otherwise awaken one waiting writer (if any)
+\ei
+\ei
+\newpage
 
 \myfig{chap04/4_14.pdf}
 \myfigend
