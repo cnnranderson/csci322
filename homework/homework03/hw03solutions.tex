@@ -1,0 +1,117 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{natded}
+
+\newcommand{\bi}{\begin{enumerate}}
+\newcommand{\ii}{\item}
+\newcommand{\ei}{\end{enumerate}}
+\newcommand{\imp}{\Rightarrow}
+
+\newcommand{\myrule}{\rule{3.5in}{1pt}}
+\begin{document}
+
+\noindent
+Name\hrulefill Student Number \hrulefill\\
+Homework \#3, CSCI 480, Winter 2015
+\\
+Give justifications for each line in the following proofs.
+Include line numbers wherever appropriate.
+
+
+\[
+\Jproof{
+\cablk{
+\proofline{P\imp(P\imp Q)}{Assumption}
+\cablk{
+\proofline{P}{Assumption}
+\proofline{P\imp Q}{1,2,Modus Ponens}
+\proofline{Q}{2,3,Modus Ponens}
+}
+\proofline{P\imp Q}{2-4,Conditional proof}
+}
+\proofline{(P\imp(P\imp Q))\imp (P\imp Q)}{1-5,Conditional proof}
+}\]
+
+\[
+\Jproof{
+  \cablk{
+    \proofline {P\imp Q}{Assumption}
+    \cablk{
+      \proofline{P\land R}{Assumption}
+      \proofline{P}{2,Simplification}
+      \proofline{R}{2,Simplification}
+      \proofline{Q}{1,3,Modus Ponens}
+      \proofline{Q\land R}{4,5,Conjunction}
+    }
+    \proofline{(P\land R) \imp (Q\land R)}{2-6,Conditional proof}
+  }
+\proofline{(P\imp Q)\imp ((P\land R) \imp (Q\land R))}{1-7,Conditional proof}
+}
+\]
+
+\[
+\Jproof{
+\cablk{
+\proofline{(P\imp R)\land (Q\imp S)}{Assumption}
+\proofline{P\imp R}{1, Simplification}
+\proofline{Q\imp S}{1, Simplification}
+\cablk{
+\proofline{P\land Q}{Assumption}
+\proofline{P}{4, Simplification}
+\proofline{Q}{4, Simplification}
+\proofline{R}{2,5,Modus Ponens}
+\proofline{S}{3,6,Modus Ponens}
+\proofline{R\land S}{7,8,Conjunction}
+}
+\proofline{(P\land Q) \imp (R\land S)}{4-9,Conditional proof}
+}
+\proofline{((P\imp R)\land (Q\imp S)) \imp ((P\land Q) \imp (R\land S))}
+{1-10,Conditional proof}
+}\]
+
+
+
+\[
+\Jproof{
+\cablk{
+\proofline{P\imp (Q\imp R)}{Assumption}
+\cablk{
+\proofline{Q}{Assumption}
+\cablk{
+\proofline{P}{Assumption}
+\proofline{Q\imp R}{1,3,Modus Ponens}
+\proofline{R}{2,4,Modus Ponens}
+}\proofline{P\imp R}{3-5,Conditional proof}
+}
+\proofline{Q\imp (P\imp R)}{2-6,Conditional proof}
+}
+\proofline{(P\imp (Q\imp R))\imp (Q\imp (P\imp R))}{1-7,Conditional proof}
+}\]
+
+
+
+\[
+\Jproof{
+\cablk{
+\proofline{(P\imp Q)\imp Q}{Assumption}
+\cablk{
+\proofline{Q\imp P}{Assumption}
+\cablk{
+\proofline{\neg P}{Assumption}
+\proofline{\neg Q}{2,3,Modus Tollens}
+\proofline{\neg(P\imp Q)}{1,4,Modus Tollens}
+\proofline{P\land \neg Q}{5, Equivalent by Axiom}
+\proofline{P}{6,Simplification}
+}\proofline{P}{3,7,Indirect proof}
+}
+\proofline{(Q\imp P)\imp P}{2-8,Conditional proof}
+}
+\proofline{((P\imp Q)\imp Q)\imp ((Q\imp P)\imp P)}{1-9,Conditional proof}
+}\]
+
+\vfill
+
+\centerline{\bf Due date:  Monday, February 2, at the start of class.}
+
+\vfill
+\end{document}

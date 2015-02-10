@@ -11,7 +11,7 @@
 \setlength{\parindent}{0in}
 
 
-
+\newcommand{\nop}[1]{}
 \newcommand{\myfig}[1]{\newpage\begin{overpic}[scale=1.5]{#1}}
 \newcommand{\myfigs}[2]{\newpage\begin{overpic}[scale=#1]{#2}}
 \newcommand{\myfigsp}[3]{\newpage\begin{overpic}[scale=#1,page=#2]{#3}}
@@ -44,6 +44,7 @@
 \huge\sf
 
 \ti{Monitors}
+\centerline{Andrews, Chapter 05}
 \bi
 \ii More structure than semaphores.
 \ii Can be implemented easily.
@@ -52,6 +53,10 @@
 procedures in the same monitor cannot be executed concurrently.
 \ii Condition synchronization is by {\bf condition variables}.
 \ei
+
+\myfig{chap05/5_03.pdf}
+\myput{50}{Example monitor}
+\myfigend
 
 \ti{Monitors}
 \bi
@@ -115,16 +120,38 @@ uses {\bf condition variables.}
 \myput{63}{FIFO queue implicit, unless {\tt rank} specified.}
 \myfigend
 
-\myfig{chap05/5_01.pdf}
-\myput{63}{\bf Signal and Continue:} 
-\myputn{60}{The signaler continues and the
+
+\ti{Signal and continue}
+
+\bigskip
+
+\includegraphics[width=\textwidth]{figures/signalandcontinue.png}
+\bi
+\ii{The signaler continues and the
 signaled process waits.}
-\myputn{57}{Nonpreemptive.}
-\myput{54}{\bf Signal and Wait:} 
-\myputn{51}{The signaler waits
+\ii{Nonpreemptive.}
+\ei
+\newpage
+
+\ti{Signal and Wait} 
+
+\bigskip
+
+\includegraphics[width=\textwidth]{figures/signalandwait.png}
+
+\bi
+\ii{The signaler waits
 and the signaled process executes now.}
-\myputn{48}{Preemptive.}
+\ii{Preemptive.}
+\ei
+\newpage
+
+\myfig{chap05/5_01.pdf}
+\myput{60}{Signal and continue used in Java and Pthreads.}
+\myput{57}{If signaled process put at front of entry queue: }
+\myputn{55}{\bf signal and urgent wait}
 \myfigend
+
 
 \myfig{chap05/5_02.pdf}
 \myput{57}{Works for both SC and SW.}
@@ -174,6 +201,10 @@ and the signaled process executes now.}
 \myfigend
 \myfig{chap05/5_10.pdf}
 \myfigend
+
+\ti{Skipping disk scheduler}
+\newpage
+\nop{
 \myfig{chap05/5_11.pdf}
 \myfigend
 \myfig{chap05/5_12.pdf}
@@ -188,11 +219,12 @@ and the signaled process executes now.}
 \myfigend
 \myfig{chap05/5_17.pdf}
 \myfigend
+\myfig{chap05/p236_Disk_Access.pdf}
+\myfigend
+}
 \myfigsp{.9}{1}{chap05/5_18.pdf}
 \myfigend
 \myfigsp{.9}{2}{chap05/5_18.pdf}
-\myfigend
-\myfig{chap05/p236_Disk_Access.pdf}
 \myfigend
 \myfigs{1}{chap05/p241_Java_rw_parallel.pdf}
 \myfigend
