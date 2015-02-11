@@ -202,7 +202,18 @@ and the signaled process executes now.}
 \myfig{chap05/5_10.pdf}
 \myfigend
 
-\ti{Skipping disk scheduler}
+\ti{Skipping disk scheduler \S5.3...except}
+
+\bigskip
+
+\centerline{\Huge {\em Open} and {\em Closed} monitors }
+\bi
+\ii When a procedure in one monitor calls a procedure in a different monitor:
+\bi
+\ii If it releases the original monitor it is an {\em open} call.
+\ii If it retains the lock on the original monitor it is a {\em closed} call.
+\ei
+\ei
 \newpage
 \nop{
 \myfig{chap05/5_11.pdf}
@@ -222,14 +233,97 @@ and the signaled process executes now.}
 \myfig{chap05/p236_Disk_Access.pdf}
 \myfigend
 }
-\myfigsp{.9}{1}{chap05/5_18.pdf}
-\myfigend
-\myfigsp{.9}{2}{chap05/5_18.pdf}
-\myfigend
+
+\ti{Java:  synchronized methods}
+
+\begin{Verbatim}
+  class Counter \{
+    private int c = 0;
+    public void increment() \{
+      c++;
+    \}
+    public int value() \{
+      return c;
+    \}
+  \}
+  
+  class SynchronizedCounter \{
+    private int c = 0;
+    public synchronized void increment() \{
+      c++;
+    \}
+    public synchronized int value() \{
+      return c;
+    \}
+  \}
+\end{Verbatim}
+\newpage
+
+\ti{Java: {\tt wait} and {\tt notify}}
+
+\bi
+\ii Methods of the class {\tt Object}
+\ii Can only be used in {\tt synchronized} methods
+\ii Only a single delay queue per object
+\ii There are no condition variables
+\bi\ii exactly one (implied) condition variable per object\ei
+\ii FIFO not guaranteed
+\ii {\tt notifyAll}
+\ii Nested calls are closed calls
+\ei
+\newpage
+
+
 \myfigs{1}{chap05/p241_Java_rw_parallel.pdf}
 \myfigend
 \myfig{chap05/p244_Java_rw_exclusive.pdf}
 \myfigend
 \myfig{chap05/p245_Java_rw_true.pdf}
+\myfigend
+
+\ti{Pthreads: locks and condition variables}
+
+\begin{multicols}{2}
+\begin{Verbatim}[label=Lock]
+...
+pthread_mutex_t mutex;
+...
+pthread_mutex_init(&mutex, NULL);
+...
+\end{Verbatim}
+
+\begin{Verbatim}[label=Condition variable]
+...
+pthread_cond_t cv;
+...
+pthread_cond_init(&cv, NULL);
+...
+\end{Verbatim}
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{Verbatim}[label=Thread 0]
+...
+pthread_mutex_lock(&mutex);
+...
+pthread_cond_wait(&cv, &mutex);
+...
+pthread_mutex_unlock(&mutex);
+\end{Verbatim}
+\begin{Verbatim}[label=Thread 1]
+...
+pthread_mutex_lock(&mutex);
+...
+pthread_cond_signal(&cv);
+...
+pthread_mutex_unlock(&mutex);
+\end{Verbatim}
+\end{multicols}
+
+
+\newpage
+\myfigsp{.9}{1}{chap05/5_18.pdf}
+\myfigend
+\myfigsp{.9}{2}{chap05/5_18.pdf}
 \myfigend
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.5.7)  10 FEB 2015 09:44
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.5.7)  11 FEB 2015 09:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -495,50 +495,43 @@ Overfull \hbox (195.48764pt too wide) in paragraph at lines 203--204
 Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 
 
-[22 <./chap05/5_10.pdf>] [23]
-<chap05/5_18.pdf, id=168, page=1, 614.295pt x 794.97pt>
-File: chap05/5_18.pdf Graphic file (type pdf)
-
-<use chap05/5_18.pdf, page 1>
-Package pdftex.def Info: chap05/5_18.pdf, page1 used on input line 225.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-
-Overfull \vbox (28.90132pt too high) has occurred while \output is active []
+[22 <./chap05/5_10.pdf>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 205.
 
 
-[24 <./chap05/5_18.pdf>]
-<chap05/5_18.pdf, id=174, page=2, 614.295pt x 794.97pt>
-File: chap05/5_18.pdf Graphic file (type pdf)
-
-<use chap05/5_18.pdf, page 2>
-Package pdftex.def Info: chap05/5_18.pdf, page2 used on input line 227.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-
-Overfull \vbox (28.90132pt too high) has occurred while \output is active []
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <20.74> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 205.
 
 
-[25 <./chap05/5_18.pdf>]
-<chap05/p241_Java_rw_parallel.pdf, id=185, 614.295pt x 794.97pt>
+LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <24.88> not available
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 209.
+
+
+[23] [24] [25]
+<chap05/p241_Java_rw_parallel.pdf, id=176, 614.295pt x 794.97pt>
 File: chap05/p241_Java_rw_parallel.pdf Graphic file (type pdf)
 
 <use chap05/p241_Java_rw_parallel.pdf>
-Package pdftex.def Info: chap05/p241_Java_rw_parallel.pdf used on input line 22
-9.
+Package pdftex.def Info: chap05/p241_Java_rw_parallel.pdf used on input line 27
+7.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
 Overfull \vbox (108.40266pt too high) has occurred while \output is active []
 
 
 [26 <./chap05/p241_Java_rw_parallel.pdf>]
-<chap05/p244_Java_rw_exclusive.pdf, id=194, 614.295pt x 794.97pt>
+<chap05/p244_Java_rw_exclusive.pdf, id=185, 614.295pt x 794.97pt>
 File: chap05/p244_Java_rw_exclusive.pdf Graphic file (type pdf)
 
 <use chap05/p244_Java_rw_exclusive.pdf>
 Package pdftex.def Info: chap05/p244_Java_rw_exclusive.pdf used on input line 2
-31.
+79.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 232--233
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 280--281
 [][] 
  []
 
@@ -547,14 +540,14 @@ Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 
 
 [27 <./chap05/p244_Java_rw_exclusive.pdf>]
-<chap05/p245_Java_rw_true.pdf, id=203, 614.295pt x 794.97pt>
+<chap05/p245_Java_rw_true.pdf, id=194, 614.295pt x 794.97pt>
 File: chap05/p245_Java_rw_true.pdf Graphic file (type pdf)
 
 <use chap05/p245_Java_rw_true.pdf>
-Package pdftex.def Info: chap05/p245_Java_rw_true.pdf used on input line 233.
+Package pdftex.def Info: chap05/p245_Java_rw_true.pdf used on input line 281.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 234--235
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 282--283
 [][] 
  []
 
@@ -562,29 +555,52 @@ Overfull \hbox (195.48764pt too wide) in paragraph at lines 234--235
 Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 
 
-[28 <./chap05/p245_Java_rw_true.pdf>] (./chap05.aux)
+[28 <./chap05/p245_Java_rw_true.pdf>] [29]
+<chap05/5_18.pdf, id=206, page=1, 614.295pt x 794.97pt>
+File: chap05/5_18.pdf Graphic file (type pdf)
+
+<use chap05/5_18.pdf, page 1>
+Package pdftex.def Info: chap05/5_18.pdf, page1 used on input line 325.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+
+Overfull \vbox (28.90132pt too high) has occurred while \output is active []
+
+
+[30 <./chap05/5_18.pdf>]
+<chap05/5_18.pdf, id=212, page=2, 614.295pt x 794.97pt>
+File: chap05/5_18.pdf Graphic file (type pdf)
+
+<use chap05/5_18.pdf, page 2>
+Package pdftex.def Info: chap05/5_18.pdf, page2 used on input line 327.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+
+Overfull \vbox (28.90132pt too high) has occurred while \output is active []
+
+
+[31 <./chap05/5_18.pdf>] (./chap05.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 2669 strings out of 493304
- 39346 string characters out of 6139872
- 106689 words of memory out of 5000000
- 6091 multiletter control sequences out of 15000+600000
- 7520 words of font info for 27 fonts, out of 8000000 for 9000
+ 2689 strings out of 493304
+ 39692 string characters out of 6139872
+ 111689 words of memory out of 5000000
+ 6107 multiletter control sequences out of 15000+600000
+ 8439 words of font info for 30 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  37i,5n,23p,235b,319s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi17.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on chap05.pdf (28 pages, 120856 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmssi17.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on chap05.pdf (31 pages, 136675 bytes).
 PDF statistics:
- 233 PDF objects out of 1000 (max. 8388607)
- 175 compressed objects within 2 object streams
+ 247 PDF objects out of 1000 (max. 8388607)
+ 185 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  91 words of extra memory for PDF output out of 10000 (max. 10000000)
 
