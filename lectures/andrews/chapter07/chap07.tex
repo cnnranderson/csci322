@@ -1,55 +1,156 @@
 \documentclass{article}
-\usepackage[margin=0in]{geometry}
+\sloppy
+%\usepackage[margin=0.5in]{geometry}
+%\usepackage[landscape,margin=0.5in]{geometry}
+\usepackage[landscape,top=-1in,left=0.5in,right=0.5in,bottom=0.0in]{geometry}
 \usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{overpic}
 
-\newcommand{\myfig}[1]
-{\hspace{-1.5in}\includegraphics[width=1.5\textwidth]{{#1}}\newpage}
+\usepackage{fancyvrb}
+\setlength{\parindent}{0in}
 
-\newcommand{\myfigbig}[1]
-{\hspace{-1.0in}\includegraphics[height=1.1\textheight]{{#1}}\newpage}
 
-\newcommand{\myfigbigbig}[1]
-{\hspace{-1.0in}\includegraphics[height=1\textheight]{{#1}}\newpage}
+\newcommand{\nop}[1]{}
+\newcommand{\myfig}[1]{\newpage\begin{overpic}[scale=1.5]{figures/#1}}
+\newcommand{\myfigs}[2]{\newpage\begin{overpic}[scale=#1]{figures/#2}}
+\newcommand{\myfigsp}[3]{\newpage\begin{overpic}[scale=#1,page=#2]{figures/#3}}
+\newcommand{\myfigend}{\end{overpic}}
+\newcommand{\myput}[2]{\put(10,#1){$\bullet$ #2}}
+\newcommand{\myputn}[2]{\put(15,#1){#2}}
 
-\title{Andrews Figures, Chapter 01}
-\author{Geoffrey Matthews\\
-\small Western Washington University}
+\newcommand{\bi}{\begin{itemize}}
+\newcommand{\ii}{\item}
+\newcommand{\ei}{\end{itemize}}
+\newcommand{\ti}[1]{
+\newpage
+\mbox{~}
 
+\vspace{1.25in}
+\centerline{\bf #1}
+}
+
+\newcommand{\la}{\ensuremath{\langle}}
+\newcommand{\ra}{\ensuremath{\rangle}}
+
+
+\RecustomVerbatimEnvironment
+  {Verbatim}{Verbatim}
+  {frame=single,commandchars=\\\{\}}
 
 \begin{document}
-\maketitle
-
-\myfig{chap07/000_II_1.pdf}
-\myfig{chap07/7_01.pdf}
-\myfig{chap07/7_02.pdf}
-\myfig{chap07/7_03.pdf}
-\myfig{chap07/7_04.pdf}
-\myfig{chap07/7_05.pdf}
-\myfig{chap07/7_06.pdf}
-\myfigbig{chap07/7_07.pdf}
-\myfig{chap07/table7_1.pdf}
-\myfig{chap07/7_08.pdf}
-\myfig{chap07/7_09.pdf}
-\myfigbig{chap07/7_10.pdf}
-\myfig{chap07/7_11.pdf}
-\myfig{chap07/7_12.pdf}
-\myfig{chap07/7_13.pdf}
-\myfig{chap07/7_14.pdf}
-\myfig{chap07/p318_pc_synchmp.pdf}
-\myfig{chap07/p320_exchange_synchmp.pdf}
-\myfig{chap07/p322_GCD_csp.pdf}
-\myfig{chap07/p324_copy_csp.pdf}
-\myfig{chap07/p325_allocator_csp.pdf}
-\myfig{chap07/p326_exchange_csp.pdf}
-\myfig{chap07/7_15.pdf}
-\myfig{chap07/p330_pc_occam.pdf}
-\myfig{chap07/p331_copy_occam.pdf}
-\myfig{chap07/p333_modernCSP.pdf}
 
 
-\myfigbigbig{chap07/7_16.pdf}
+\huge\sf
 
-\myfig{chap07/7_17.pdf}
-\myfigbig{chap07/7_18.pdf}
-\myfig{chap07/7_19.pdf}
+\ti{Distributed Programming}
+
+\bi
+\ii Distributed memory architectures.
+\ii Concurrent programs here are usually called {\em distributed} programs.
+\ii No shared variables.
+\bi\ii No mutual exclusion necessary!\ei
+\ii Communicate and synchronize with {\em channels}:
+\bi
+\ii one-way or two-way
+\ii synchronous (blocking) or asynchronous (nonblocking)
+\ei
+\ii Four basic mechanisms:
+\bi
+\ii Chapter 7:
+\bi
+\ii asynchronous message passing
+\ii synchronous message passing
+\ei
+\ii Chapter 8:
+\bi
+\ii RPC (remote procedure call)
+\ii rendezvous
+\ei
+\ei
+\ii Chapter 9 describes several paradigms for distributed programming:
+\bi\ii managers/workers, hearbeat, pipeline, probe/echo, broadcast, \\
+token passing, decentralized servers\ei
+\ei
+
+\myfig{000_II_1.pdf}
+\myput{60}{Monitors combine implicit exclusion with explicit signalling}
+\myput{57}{Message passing adds data to semaphore}
+\myput{54}{RPC and Rendezvous combine procedural interface of monitors}
+\myputn{52}{with implicit message passing}
+\myfigend
+
+
+\ti{Message Passing}
+\centerline{Andrews, Chapter 07}
+
+\bi
+\ii Asynchronous message passing: channels are like semaphores.
+\ii {\tt send} and {\tt receive} are like {\tt V} and {\tt P}
+\ii The number of queued ``messages'' is the value of the semaphore.
+\ei
+
+\myfig{7_01.pdf}
+\myfigend
+\myfig{7_02.pdf}
+\myfigend
+\myfig{7_03.pdf}
+\myfigend
+\myfig{7_04.pdf}
+\myfigend
+\myfig{7_05.pdf}
+\myfigend
+\myfig{7_06.pdf}
+\myfigend
+\myfigs{1.25}{7_07.pdf}
+\myfigend
+\myfig{table7_1.pdf}
+\myfigend
+\myfig{7_08.pdf}
+\myfigend
+\myfigs{1.4}{7_09.pdf}
+\myfigend
+\myfigs{1.2}{7_10.pdf}
+\myfigend
+\myfig{7_11.pdf}
+\myfigend
+\myfig{7_12.pdf}
+\myfigend
+\myfig{7_13.pdf}
+\myfigend
+\myfig{7_14.pdf}
+\myfigend
+\myfig{p318_pc_synchmp.pdf}
+\myfigend
+\myfig{p320_exchange_synchmp.pdf}
+\myfigend
+\myfig{p322_GCD_csp.pdf}
+\myfigend
+\myfig{p324_copy_csp.pdf}
+\myfigend
+\myfig{p325_allocator_csp.pdf}
+\myfigend
+\myfig{p326_exchange_csp.pdf}
+\myfigend
+\myfig{7_15.pdf}
+\myfigend
+\myfig{p330_pc_occam.pdf}
+\myfigend
+\myfig{p331_copy_occam.pdf}
+\myfigend
+\myfig{p333_modernCSP.pdf}
+\myfigend
+
+
+\myfigsp{.9}{1}{7_16.pdf}
+\myfigend
+\myfigsp{.9}{2}{7_16.pdf}
+\myfigend
+
+\myfig{7_17.pdf}
+\myfigend
+\myfigs{1.1}{7_18.pdf}
+\myfigend
+\myfigs{1.3}{7_19.pdf}
+\myfigend
 \end{document}
