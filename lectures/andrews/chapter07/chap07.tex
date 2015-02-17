@@ -87,14 +87,36 @@ token passing, decentralized servers\ei
 \bi
 \ii Asynchronous message passing: channels are like semaphores.
 \ii {\tt send} and {\tt receive} are like {\tt V} and {\tt P}
+\ii {\tt receive} is {\em blocking}
+\ii May want to avoid blocking:  {\tt empty(ch)}
+\bi\ii use with caution:  may be unreliable\ei
 \ii The number of queued ``messages'' is the value of the semaphore.
+\ii We assume messages are atomic and delivery is reliable and
+error-free. 
 \ei
 
 \myfig{7_01.pdf}
+\myput{50}{Channels like this are called {\em mailboxes}}
 \myfigend
+
+\ti{Filters: Sorting}
+\begin{Verbatim}
+process Sort \{
+  \mbox{\rm receive all numbers from channel} input;
+  \mbox{\rm sort the numbers};
+  \mbox{\rm send the sorted numbers to channel} output;
+\}
+\end{Verbatim}
+\bi
+\ii Suitable for ``heavyweight'' processes.
+\ii Alternative: network of lightweight {\em merge} processes.
+\ei
+
 \myfig{7_02.pdf}
 \myfigend
 \myfig{7_03.pdf}
+\myput{60}{Original values can be lists sorted by ``mediumweight''
+  processes.} 
 \myfigend
 \myfig{7_04.pdf}
 \myfigend

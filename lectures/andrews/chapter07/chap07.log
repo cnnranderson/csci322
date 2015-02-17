@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.5.7)  12 FEB 2015 08:45
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.5.7)  17 FEB 2015 09:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -312,52 +312,7 @@ Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 <figures/7_01.pdf, id=23, 614.295pt x 794.97pt>
 File: figures/7_01.pdf Graphic file (type pdf)
  <use figures/7_01.pdf>
-Package pdftex.def Info: figures/7_01.pdf used on input line 93.
-(pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
-
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 94--95
-[][] 
- []
-
-
-Overfull \vbox (505.88649pt too high) has occurred while \output is active []
-
-
-[4 <./figures/7_01.pdf>] <figures/7_02.pdf, id=33, 614.295pt x 794.97pt>
-File: figures/7_02.pdf Graphic file (type pdf)
-
-<use figures/7_02.pdf>
-Package pdftex.def Info: figures/7_02.pdf used on input line 95.
-(pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
-
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 96--97
-[][] 
- []
-
-
-Overfull \vbox (505.88649pt too high) has occurred while \output is active []
-
-
-[5 <./figures/7_02.pdf>] <figures/7_03.pdf, id=44, 614.295pt x 794.97pt>
-File: figures/7_03.pdf Graphic file (type pdf)
-
-<use figures/7_03.pdf>
-Package pdftex.def Info: figures/7_03.pdf used on input line 97.
-(pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
-
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 98--99
-[][] 
- []
-
-
-Overfull \vbox (505.88649pt too high) has occurred while \output is active []
-
-
-[6 <./figures/7_03.pdf>] <figures/7_04.pdf, id=57, 614.295pt x 794.97pt>
-File: figures/7_04.pdf Graphic file (type pdf)
-
-<use figures/7_04.pdf>
-Package pdftex.def Info: figures/7_04.pdf used on input line 99.
+Package pdftex.def Info: figures/7_01.pdf used on input line 98.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
 Overfull \hbox (195.48764pt too wide) in paragraph at lines 100--101
@@ -368,116 +323,19 @@ Overfull \hbox (195.48764pt too wide) in paragraph at lines 100--101
 Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 
 
-[7 <./figures/7_04.pdf>] <figures/7_05.pdf, id=69, 614.295pt x 794.97pt>
-File: figures/7_05.pdf Graphic file (type pdf)
+[4 <./figures/7_01.pdf>]
+LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 104
+.
+ (/usr/share/texmf/tex/latex/R/tex/latex/omscmtt.fd
+File: omscmtt.fd 
+)
+LaTeX Font Info:    Font shape `OMS/cmtt/m/n' in size <20.74> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 104.
 
-<use figures/7_05.pdf>
-Package pdftex.def Info: figures/7_05.pdf used on input line 101.
-(pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
-
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 102--103
-[][] 
- []
-
-
-Overfull \vbox (505.88649pt too high) has occurred while \output is active []
-
-
-[8 <./figures/7_05.pdf>] <figures/7_06.pdf, id=80, 614.295pt x 794.97pt>
-File: figures/7_06.pdf Graphic file (type pdf)
-
-<use figures/7_06.pdf>
-Package pdftex.def Info: figures/7_06.pdf used on input line 103.
-(pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
-
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 104--105
-[][] 
- []
-
-
-Overfull \vbox (505.88649pt too high) has occurred while \output is active []
-
-
-[9 <./figures/7_06.pdf>] <figures/7_07.pdf, id=90, 614.295pt x 794.97pt>
-File: figures/7_07.pdf Graphic file (type pdf)
-
-<use figures/7_07.pdf>
-Package pdftex.def Info: figures/7_07.pdf used on input line 105.
-(pdftex.def)             Requested size: 767.86685pt x 993.71007pt.
-
-Overfull \hbox (42.45578pt too wide) in paragraph at lines 106--107
-[][] 
- []
-
-
-Overfull \vbox (307.14381pt too high) has occurred while \output is active []
-
-
-[10 <./figures/7_07.pdf>] <figures/table7_1.pdf, id=101, 614.295pt x 794.97pt>
-File: figures/table7_1.pdf Graphic file (type pdf)
-
-<use figures/table7_1.pdf>
-Package pdftex.def Info: figures/table7_1.pdf used on input line 107.
-(pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
-
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 108--109
-[][] 
- []
-
-
-Overfull \vbox (505.88649pt too high) has occurred while \output is active []
-
-
-[11 <./figures/table7_1.pdf>] <figures/7_08.pdf, id=112, 614.295pt x 794.97pt>
-File: figures/7_08.pdf Graphic file (type pdf)
-
-<use figures/7_08.pdf>
-Package pdftex.def Info: figures/7_08.pdf used on input line 109.
-(pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
-
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 110--111
-[][] 
- []
-
-
-Overfull \vbox (505.88649pt too high) has occurred while \output is active []
-
-
-[12 <./figures/7_08.pdf>] <figures/7_09.pdf, id=127, 614.295pt x 794.97pt>
-File: figures/7_09.pdf Graphic file (type pdf)
-
-<use figures/7_09.pdf>
-Package pdftex.def Info: figures/7_09.pdf used on input line 111.
-(pdftex.def)             Requested size: 860.00713pt x 1112.95042pt.
-
-Overfull \hbox (134.2716pt too wide) in paragraph at lines 112--113
-[][] 
- []
-
-
-Overfull \vbox (426.38515pt too high) has occurred while \output is active []
-
-
-[13 <./figures/7_09.pdf>] <figures/7_10.pdf, id=139, 614.295pt x 794.97pt>
-File: figures/7_10.pdf Graphic file (type pdf)
-
-<use figures/7_10.pdf>
-Package pdftex.def Info: figures/7_10.pdf used on input line 113.
-(pdftex.def)             Requested size: 737.1503pt x 953.95924pt.
-
-Overfull \hbox (11.84776pt too wide) in paragraph at lines 114--115
-[][] 
- []
-
-
-Overfull \vbox (267.39314pt too high) has occurred while \output is active []
-
-
-[14 <./figures/7_10.pdf>] <figures/7_11.pdf, id=150, 614.295pt x 794.97pt>
-File: figures/7_11.pdf Graphic file (type pdf)
-
-<use figures/7_11.pdf>
-Package pdftex.def Info: figures/7_11.pdf used on input line 115.
+[5] <figures/7_02.pdf, id=37, 614.295pt x 794.97pt>
+File: figures/7_02.pdf Graphic file (type pdf)
+ <use figures/7_02.pdf>
+Package pdftex.def Info: figures/7_02.pdf used on input line 115.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
 Overfull \hbox (195.48764pt too wide) in paragraph at lines 116--117
@@ -488,26 +346,11 @@ Overfull \hbox (195.48764pt too wide) in paragraph at lines 116--117
 Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 
 
-[15 <./figures/7_11.pdf>] <figures/7_12.pdf, id=160, 614.295pt x 794.97pt>
-File: figures/7_12.pdf Graphic file (type pdf)
+[6 <./figures/7_02.pdf>] <figures/7_03.pdf, id=48, 614.295pt x 794.97pt>
+File: figures/7_03.pdf Graphic file (type pdf)
 
-<use figures/7_12.pdf>
-Package pdftex.def Info: figures/7_12.pdf used on input line 117.
-(pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
-
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 118--119
-[][] 
- []
-
-
-Overfull \vbox (505.88649pt too high) has occurred while \output is active []
-
-
-[16 <./figures/7_12.pdf>] <figures/7_13.pdf, id=170, 614.295pt x 794.97pt>
-File: figures/7_13.pdf Graphic file (type pdf)
-
-<use figures/7_13.pdf>
-Package pdftex.def Info: figures/7_13.pdf used on input line 119.
+<use figures/7_03.pdf>
+Package pdftex.def Info: figures/7_03.pdf used on input line 117.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
 Overfull \hbox (195.48764pt too wide) in paragraph at lines 120--121
@@ -518,11 +361,11 @@ Overfull \hbox (195.48764pt too wide) in paragraph at lines 120--121
 Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 
 
-[17 <./figures/7_13.pdf>] <figures/7_14.pdf, id=180, 614.295pt x 794.97pt>
-File: figures/7_14.pdf Graphic file (type pdf)
+[7 <./figures/7_03.pdf>] <figures/7_04.pdf, id=62, 614.295pt x 794.97pt>
+File: figures/7_04.pdf Graphic file (type pdf)
 
-<use figures/7_14.pdf>
-Package pdftex.def Info: figures/7_14.pdf used on input line 121.
+<use figures/7_04.pdf>
+Package pdftex.def Info: figures/7_04.pdf used on input line 121.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
 Overfull \hbox (195.48764pt too wide) in paragraph at lines 122--123
@@ -533,12 +376,11 @@ Overfull \hbox (195.48764pt too wide) in paragraph at lines 122--123
 Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 
 
-[18 <./figures/7_14.pdf>]
-<figures/p318_pc_synchmp.pdf, id=192, 614.295pt x 794.97pt>
-File: figures/p318_pc_synchmp.pdf Graphic file (type pdf)
+[8 <./figures/7_04.pdf>] <figures/7_05.pdf, id=73, 614.295pt x 794.97pt>
+File: figures/7_05.pdf Graphic file (type pdf)
 
-<use figures/p318_pc_synchmp.pdf>
-Package pdftex.def Info: figures/p318_pc_synchmp.pdf used on input line 123.
+<use figures/7_05.pdf>
+Package pdftex.def Info: figures/7_05.pdf used on input line 123.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
 Overfull \hbox (195.48764pt too wide) in paragraph at lines 124--125
@@ -549,13 +391,11 @@ Overfull \hbox (195.48764pt too wide) in paragraph at lines 124--125
 Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 
 
-[19 <./figures/p318_pc_synchmp.pdf>]
-<figures/p320_exchange_synchmp.pdf, id=202, 614.295pt x 794.97pt>
-File: figures/p320_exchange_synchmp.pdf Graphic file (type pdf)
+[9 <./figures/7_05.pdf>] <figures/7_06.pdf, id=84, 614.295pt x 794.97pt>
+File: figures/7_06.pdf Graphic file (type pdf)
 
-<use figures/p320_exchange_synchmp.pdf>
-Package pdftex.def Info: figures/p320_exchange_synchmp.pdf used on input line 1
-25.
+<use figures/7_06.pdf>
+Package pdftex.def Info: figures/7_06.pdf used on input line 125.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
 Overfull \hbox (195.48764pt too wide) in paragraph at lines 126--127
@@ -566,28 +406,26 @@ Overfull \hbox (195.48764pt too wide) in paragraph at lines 126--127
 Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 
 
-[20 <./figures/p320_exchange_synchmp.pdf>]
-<figures/p322_GCD_csp.pdf, id=211, 614.295pt x 794.97pt>
-File: figures/p322_GCD_csp.pdf Graphic file (type pdf)
+[10 <./figures/7_06.pdf>] <figures/7_07.pdf, id=94, 614.295pt x 794.97pt>
+File: figures/7_07.pdf Graphic file (type pdf)
 
-<use figures/p322_GCD_csp.pdf>
-Package pdftex.def Info: figures/p322_GCD_csp.pdf used on input line 127.
-(pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
+<use figures/7_07.pdf>
+Package pdftex.def Info: figures/7_07.pdf used on input line 127.
+(pdftex.def)             Requested size: 767.86685pt x 993.71007pt.
 
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 128--129
+Overfull \hbox (42.45578pt too wide) in paragraph at lines 128--129
 [][] 
  []
 
 
-Overfull \vbox (505.88649pt too high) has occurred while \output is active []
+Overfull \vbox (307.14381pt too high) has occurred while \output is active []
 
 
-[21 <./figures/p322_GCD_csp.pdf>]
-<figures/p324_copy_csp.pdf, id=220, 614.295pt x 794.97pt>
-File: figures/p324_copy_csp.pdf Graphic file (type pdf)
+[11 <./figures/7_07.pdf>] <figures/table7_1.pdf, id=105, 614.295pt x 794.97pt>
+File: figures/table7_1.pdf Graphic file (type pdf)
 
-<use figures/p324_copy_csp.pdf>
-Package pdftex.def Info: figures/p324_copy_csp.pdf used on input line 129.
+<use figures/table7_1.pdf>
+Package pdftex.def Info: figures/table7_1.pdf used on input line 129.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
 Overfull \hbox (195.48764pt too wide) in paragraph at lines 130--131
@@ -598,13 +436,11 @@ Overfull \hbox (195.48764pt too wide) in paragraph at lines 130--131
 Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 
 
-[22 <./figures/p324_copy_csp.pdf>]
-<figures/p325_allocator_csp.pdf, id=229, 614.295pt x 794.97pt>
-File: figures/p325_allocator_csp.pdf Graphic file (type pdf)
+[12 <./figures/table7_1.pdf>] <figures/7_08.pdf, id=116, 614.295pt x 794.97pt>
+File: figures/7_08.pdf Graphic file (type pdf)
 
-<use figures/p325_allocator_csp.pdf>
-Package pdftex.def Info: figures/p325_allocator_csp.pdf used on input line 131.
-
+<use figures/7_08.pdf>
+Package pdftex.def Info: figures/7_08.pdf used on input line 131.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
 Overfull \hbox (195.48764pt too wide) in paragraph at lines 132--133
@@ -615,43 +451,41 @@ Overfull \hbox (195.48764pt too wide) in paragraph at lines 132--133
 Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 
 
-[23 <./figures/p325_allocator_csp.pdf>]
-<figures/p326_exchange_csp.pdf, id=238, 614.295pt x 794.97pt>
-File: figures/p326_exchange_csp.pdf Graphic file (type pdf)
+[13 <./figures/7_08.pdf>] <figures/7_09.pdf, id=132, 614.295pt x 794.97pt>
+File: figures/7_09.pdf Graphic file (type pdf)
 
-<use figures/p326_exchange_csp.pdf>
-Package pdftex.def Info: figures/p326_exchange_csp.pdf used on input line 133.
-(pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
+<use figures/7_09.pdf>
+Package pdftex.def Info: figures/7_09.pdf used on input line 133.
+(pdftex.def)             Requested size: 860.00713pt x 1112.95042pt.
 
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 134--135
+Overfull \hbox (134.2716pt too wide) in paragraph at lines 134--135
 [][] 
  []
 
 
-Overfull \vbox (505.88649pt too high) has occurred while \output is active []
+Overfull \vbox (426.38515pt too high) has occurred while \output is active []
 
 
-[24 <./figures/p326_exchange_csp.pdf>]
-<figures/7_15.pdf, id=247, 614.295pt x 794.97pt>
-File: figures/7_15.pdf Graphic file (type pdf)
- <use figures/7_15.pdf>
-Package pdftex.def Info: figures/7_15.pdf used on input line 135.
-(pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
+[14 <./figures/7_09.pdf>] <figures/7_10.pdf, id=144, 614.295pt x 794.97pt>
+File: figures/7_10.pdf Graphic file (type pdf)
 
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 136--137
+<use figures/7_10.pdf>
+Package pdftex.def Info: figures/7_10.pdf used on input line 135.
+(pdftex.def)             Requested size: 737.1503pt x 953.95924pt.
+
+Overfull \hbox (11.84776pt too wide) in paragraph at lines 136--137
 [][] 
  []
 
 
-Overfull \vbox (505.88649pt too high) has occurred while \output is active []
+Overfull \vbox (267.39314pt too high) has occurred while \output is active []
 
 
-[25 <./figures/7_15.pdf>]
-<figures/p330_pc_occam.pdf, id=258, 614.295pt x 794.97pt>
-File: figures/p330_pc_occam.pdf Graphic file (type pdf)
+[15 <./figures/7_10.pdf>] <figures/7_11.pdf, id=154, 614.295pt x 794.97pt>
+File: figures/7_11.pdf Graphic file (type pdf)
 
-<use figures/p330_pc_occam.pdf>
-Package pdftex.def Info: figures/p330_pc_occam.pdf used on input line 137.
+<use figures/7_11.pdf>
+Package pdftex.def Info: figures/7_11.pdf used on input line 137.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
 Overfull \hbox (195.48764pt too wide) in paragraph at lines 138--139
@@ -662,12 +496,11 @@ Overfull \hbox (195.48764pt too wide) in paragraph at lines 138--139
 Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 
 
-[26 <./figures/p330_pc_occam.pdf>]
-<figures/p331_copy_occam.pdf, id=267, 614.295pt x 794.97pt>
-File: figures/p331_copy_occam.pdf Graphic file (type pdf)
+[16 <./figures/7_11.pdf>] <figures/7_12.pdf, id=164, 614.295pt x 794.97pt>
+File: figures/7_12.pdf Graphic file (type pdf)
 
-<use figures/p331_copy_occam.pdf>
-Package pdftex.def Info: figures/p331_copy_occam.pdf used on input line 139.
+<use figures/7_12.pdf>
+Package pdftex.def Info: figures/7_12.pdf used on input line 139.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
 Overfull \hbox (195.48764pt too wide) in paragraph at lines 140--141
@@ -678,12 +511,11 @@ Overfull \hbox (195.48764pt too wide) in paragraph at lines 140--141
 Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 
 
-[27 <./figures/p331_copy_occam.pdf>]
-<figures/p333_modernCSP.pdf, id=277, 614.295pt x 794.97pt>
-File: figures/p333_modernCSP.pdf Graphic file (type pdf)
+[17 <./figures/7_12.pdf>] <figures/7_13.pdf, id=174, 614.295pt x 794.97pt>
+File: figures/7_13.pdf Graphic file (type pdf)
 
-<use figures/p333_modernCSP.pdf>
-Package pdftex.def Info: figures/p333_modernCSP.pdf used on input line 141.
+<use figures/7_13.pdf>
+Package pdftex.def Info: figures/7_13.pdf used on input line 141.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
 Overfull \hbox (195.48764pt too wide) in paragraph at lines 142--143
@@ -694,36 +526,14 @@ Overfull \hbox (195.48764pt too wide) in paragraph at lines 142--143
 Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 
 
-[28 <./figures/p333_modernCSP.pdf>]
-<figures/7_16.pdf, id=286, page=1, 614.295pt x 794.97pt>
-File: figures/7_16.pdf Graphic file (type pdf)
+[18 <./figures/7_13.pdf>] <figures/7_14.pdf, id=184, 614.295pt x 794.97pt>
+File: figures/7_14.pdf Graphic file (type pdf)
 
-<use figures/7_16.pdf, page 1>
-Package pdftex.def Info: figures/7_16.pdf, page1 used on input line 145.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-
-Overfull \vbox (28.90132pt too high) has occurred while \output is active []
-
-
-[29 <./figures/7_16.pdf>]
-<figures/7_16.pdf, id=292, page=2, 614.295pt x 794.97pt>
-File: figures/7_16.pdf Graphic file (type pdf)
-
-<use figures/7_16.pdf, page 2>
-Package pdftex.def Info: figures/7_16.pdf, page2 used on input line 147.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-
-Overfull \vbox (28.90132pt too high) has occurred while \output is active []
-
-
-[30 <./figures/7_16.pdf>] <figures/7_17.pdf, id=302, 614.295pt x 794.97pt>
-File: figures/7_17.pdf Graphic file (type pdf)
-
-<use figures/7_17.pdf>
-Package pdftex.def Info: figures/7_17.pdf used on input line 150.
+<use figures/7_14.pdf>
+Package pdftex.def Info: figures/7_14.pdf used on input line 143.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
-Overfull \hbox (195.48764pt too wide) in paragraph at lines 151--152
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 144--145
 [][] 
  []
 
@@ -731,24 +541,222 @@ Overfull \hbox (195.48764pt too wide) in paragraph at lines 151--152
 Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 
 
-[31 <./figures/7_17.pdf>] <figures/7_18.pdf, id=313, 614.295pt x 794.97pt>
+[19 <./figures/7_14.pdf>]
+<figures/p318_pc_synchmp.pdf, id=197, 614.295pt x 794.97pt>
+File: figures/p318_pc_synchmp.pdf Graphic file (type pdf)
+
+<use figures/p318_pc_synchmp.pdf>
+Package pdftex.def Info: figures/p318_pc_synchmp.pdf used on input line 145.
+(pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
+
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 146--147
+[][] 
+ []
+
+
+Overfull \vbox (505.88649pt too high) has occurred while \output is active []
+
+
+[20 <./figures/p318_pc_synchmp.pdf>]
+<figures/p320_exchange_synchmp.pdf, id=206, 614.295pt x 794.97pt>
+File: figures/p320_exchange_synchmp.pdf Graphic file (type pdf)
+
+<use figures/p320_exchange_synchmp.pdf>
+Package pdftex.def Info: figures/p320_exchange_synchmp.pdf used on input line 1
+47.
+(pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
+
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 148--149
+[][] 
+ []
+
+
+Overfull \vbox (505.88649pt too high) has occurred while \output is active []
+
+
+[21 <./figures/p320_exchange_synchmp.pdf>]
+<figures/p322_GCD_csp.pdf, id=215, 614.295pt x 794.97pt>
+File: figures/p322_GCD_csp.pdf Graphic file (type pdf)
+
+<use figures/p322_GCD_csp.pdf>
+Package pdftex.def Info: figures/p322_GCD_csp.pdf used on input line 149.
+(pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
+
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 150--151
+[][] 
+ []
+
+
+Overfull \vbox (505.88649pt too high) has occurred while \output is active []
+
+
+[22 <./figures/p322_GCD_csp.pdf>]
+<figures/p324_copy_csp.pdf, id=224, 614.295pt x 794.97pt>
+File: figures/p324_copy_csp.pdf Graphic file (type pdf)
+
+<use figures/p324_copy_csp.pdf>
+Package pdftex.def Info: figures/p324_copy_csp.pdf used on input line 151.
+(pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
+
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 152--153
+[][] 
+ []
+
+
+Overfull \vbox (505.88649pt too high) has occurred while \output is active []
+
+
+[23 <./figures/p324_copy_csp.pdf>]
+<figures/p325_allocator_csp.pdf, id=233, 614.295pt x 794.97pt>
+File: figures/p325_allocator_csp.pdf Graphic file (type pdf)
+
+<use figures/p325_allocator_csp.pdf>
+Package pdftex.def Info: figures/p325_allocator_csp.pdf used on input line 153.
+
+(pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
+
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 154--155
+[][] 
+ []
+
+
+Overfull \vbox (505.88649pt too high) has occurred while \output is active []
+
+
+[24 <./figures/p325_allocator_csp.pdf>]
+<figures/p326_exchange_csp.pdf, id=242, 614.295pt x 794.97pt>
+File: figures/p326_exchange_csp.pdf Graphic file (type pdf)
+
+<use figures/p326_exchange_csp.pdf>
+Package pdftex.def Info: figures/p326_exchange_csp.pdf used on input line 155.
+(pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
+
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 156--157
+[][] 
+ []
+
+
+Overfull \vbox (505.88649pt too high) has occurred while \output is active []
+
+
+[25 <./figures/p326_exchange_csp.pdf>]
+<figures/7_15.pdf, id=252, 614.295pt x 794.97pt>
+File: figures/7_15.pdf Graphic file (type pdf)
+ <use figures/7_15.pdf>
+Package pdftex.def Info: figures/7_15.pdf used on input line 157.
+(pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
+
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 158--159
+[][] 
+ []
+
+
+Overfull \vbox (505.88649pt too high) has occurred while \output is active []
+
+
+[26 <./figures/7_15.pdf>]
+<figures/p330_pc_occam.pdf, id=262, 614.295pt x 794.97pt>
+File: figures/p330_pc_occam.pdf Graphic file (type pdf)
+
+<use figures/p330_pc_occam.pdf>
+Package pdftex.def Info: figures/p330_pc_occam.pdf used on input line 159.
+(pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
+
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 160--161
+[][] 
+ []
+
+
+Overfull \vbox (505.88649pt too high) has occurred while \output is active []
+
+
+[27 <./figures/p330_pc_occam.pdf>]
+<figures/p331_copy_occam.pdf, id=271, 614.295pt x 794.97pt>
+File: figures/p331_copy_occam.pdf Graphic file (type pdf)
+
+<use figures/p331_copy_occam.pdf>
+Package pdftex.def Info: figures/p331_copy_occam.pdf used on input line 161.
+(pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
+
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 162--163
+[][] 
+ []
+
+
+Overfull \vbox (505.88649pt too high) has occurred while \output is active []
+
+
+[28 <./figures/p331_copy_occam.pdf>]
+<figures/p333_modernCSP.pdf, id=281, 614.295pt x 794.97pt>
+File: figures/p333_modernCSP.pdf Graphic file (type pdf)
+
+<use figures/p333_modernCSP.pdf>
+Package pdftex.def Info: figures/p333_modernCSP.pdf used on input line 163.
+(pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
+
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 164--165
+[][] 
+ []
+
+
+Overfull \vbox (505.88649pt too high) has occurred while \output is active []
+
+
+[29 <./figures/p333_modernCSP.pdf>]
+<figures/7_16.pdf, id=290, page=1, 614.295pt x 794.97pt>
+File: figures/7_16.pdf Graphic file (type pdf)
+
+<use figures/7_16.pdf, page 1>
+Package pdftex.def Info: figures/7_16.pdf, page1 used on input line 167.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+
+Overfull \vbox (28.90132pt too high) has occurred while \output is active []
+
+
+[30 <./figures/7_16.pdf>]
+<figures/7_16.pdf, id=296, page=2, 614.295pt x 794.97pt>
+File: figures/7_16.pdf Graphic file (type pdf)
+
+<use figures/7_16.pdf, page 2>
+Package pdftex.def Info: figures/7_16.pdf, page2 used on input line 169.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+
+Overfull \vbox (28.90132pt too high) has occurred while \output is active []
+
+
+[31 <./figures/7_16.pdf>] <figures/7_17.pdf, id=307, 614.295pt x 794.97pt>
+File: figures/7_17.pdf Graphic file (type pdf)
+
+<use figures/7_17.pdf>
+Package pdftex.def Info: figures/7_17.pdf used on input line 172.
+(pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
+
+Overfull \hbox (195.48764pt too wide) in paragraph at lines 173--174
+[][] 
+ []
+
+
+Overfull \vbox (505.88649pt too high) has occurred while \output is active []
+
+
+[32 <./figures/7_17.pdf>] <figures/7_18.pdf, id=317, 614.295pt x 794.97pt>
 File: figures/7_18.pdf Graphic file (type pdf)
 
 <use figures/7_18.pdf>
-Package pdftex.def Info: figures/7_18.pdf used on input line 152.
+Package pdftex.def Info: figures/7_18.pdf used on input line 174.
 (pdftex.def)             Requested size: 675.72658pt x 874.46971pt.
 
 Overfull \vbox (187.904pt too high) has occurred while \output is active []
 
 
-[32 <./figures/7_18.pdf>] <figures/7_19.pdf, id=324, 614.295pt x 794.97pt>
+[33 <./figures/7_18.pdf>] <figures/7_19.pdf, id=328, 614.295pt x 794.97pt>
 File: figures/7_19.pdf Graphic file (type pdf)
 
 <use figures/7_19.pdf>
-Package pdftex.def Info: figures/7_19.pdf used on input line 154.
+Package pdftex.def Info: figures/7_19.pdf used on input line 176.
 (pdftex.def)             Requested size: 798.5834pt x 1033.4609pt.
 
-Overfull \hbox (73.0638pt too wide) in paragraph at lines 155--156
+Overfull \hbox (73.0638pt too wide) in paragraph at lines 177--178
 [][] 
  []
 
@@ -756,29 +764,30 @@ Overfull \hbox (73.0638pt too wide) in paragraph at lines 155--156
 Overfull \vbox (346.89449pt too high) has occurred while \output is active []
 
 
-[33 <./figures/7_19.pdf>] (./chap07.aux)
+[34 <./figures/7_19.pdf>] (./chap07.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 2713 strings out of 493304
- 40410 string characters out of 6139872
+ 2732 strings out of 493304
+ 40767 string characters out of 6139872
  108713 words of memory out of 5000000
- 6128 multiletter control sequences out of 15000+600000
+ 6143 multiletter control sequences out of 15000+600000
  7520 words of font info for 27 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 37i,5n,23p,239b,214s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,5n,23p,239b,262s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi17.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on chap07.pdf (33 pages, 99709 bytes).
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmssi17.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on chap07.pdf (34 pages, 115100 bytes).
 PDF statistics:
- 356 PDF objects out of 1000 (max. 8388607)
- 276 compressed objects within 3 object streams
+ 363 PDF objects out of 1000 (max. 8388607)
+ 281 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  156 words of extra memory for PDF output out of 10000 (max. 10000000)
 
