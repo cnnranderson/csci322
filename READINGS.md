@@ -20,3 +20,12 @@ Readings for CSCI 322
 * Jan 26 [Natural deduction](http://homepage.univie.ac.at/christian.damboeck/ps06/clemente_nat_ded.pdf)  Reading this is optional, but may help you understand what's going on.  The notation is slightly different from that used in class.
 
 * Feb 17 [OpenMP](http://booksite.elsevier.com/9780123742605/LS/Chapter_5.ppt) A nice introduction to OpenMP, the goto thread programming library for speed.
+
+* Feb 17 [OpenMP](http://ezproxy.library.wwu.edu/login?url=http://proquest.safaribooksonline.com/?uicode=wwu)  The book to go with the above slides is avialable for free from our library.  Also has good stuff on MPI.
+
+* Feb 18 Read section 6.5 in the Andrews text on implementing monitors with sema
+phores.
+
+* Feb 23 Read about channels and asynchronous channels in DrRacket's Reference Manual, Chapter 11.
+
+* Feb 23 [Ada tasking and rendezvous](http://en.wikibooks.org/wiki/Ada_Programming/Tasking)
