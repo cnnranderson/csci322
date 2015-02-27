@@ -1,0 +1,48 @@
+\documentclass{article}
+\pagestyle{empty}
+\sloppy
+\usepackage[margin=1.5in]{geometry}
+\title{Message Passing}
+\author{Homework \#5, CSCI 322, Winter 2015\\
+Geoffrey Matthews}
+
+\begin{document}
+\maketitle
+\begin{description}
+\item[Description:] \ 
+
+This is based on Exercise 7.9 from the text.  
+Implement your solutions in {\bf Racket} using only channels for
+synchronization.  You may choose to use either synchronous or
+asynchronous channels.
+
+Two kinds of processes, {\tt A}'s and {\tt B}'s, enter a room.  An
+{\tt A} process cannot leave until it meets two {\tt B} processes, and
+a {\tt B} process cannot leave until it meets one {\tt A} process.
+Each kind of process leaves the room---without meeting any other
+processes---once it has met the required number of other processes.
+
+{(a)}  
+Develop a server process to implement this synchronization.  Show the
+interface of {\tt A} and {\tt B} processes to the server.
+
+{(b)} 
+Modify your answer to (a) so that the first of the two {\tt B}
+processes that meets an {\tt A} process does not leave the room until
+after the {\tt A} process meets a second {\tt B} process.
+
+\item[Turn in:]\ 
+
+(a) A single racket file demonstrating your solution to (a)
+
+(b) A single racket file demonstrating your solution to (b)
+
+(c) A writeup, explaining your strategy for both solutions.
+
+\item[Due date:] \ 
+
+Wednesday, March 11, midnight.
+
+
+\end{description}
+\end{document}
