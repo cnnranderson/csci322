@@ -13,8 +13,8 @@
 
 %\newcommand{\myfig}[1]{\hspace{-1.5in}{\includegraphics[width=1.5\textwidth]{{#1}}}\newpage}
 
-\newcommand{\myfig}[1]{\begin{overpic}[scale=1.5]{#1}}
-\newcommand{\myfigsmall}[1]{\begin{overpic}[scale=1.25]{#1}}
+\newcommand{\myfig}[1]{\begin{overpic}[scale=1.5]{figures/#1}}
+\newcommand{\myfigsmall}[1]{\begin{overpic}[scale=1.25]{figures/#1}}
 \newcommand{\myfigend}{\end{overpic}\newpage}
 \newcommand{\myput}[2]{\put(10,#1){$\bullet$ #2}}
 \newcommand{\myputn}[2]{\put(15,#1){#2}}
@@ -46,7 +46,7 @@
 
 \newpage
 
-\myfig{chap01/1_1.pdf}
+\myfig{1_1.pdf}
 \myput{64}{Temporal locality}
 \myput{62}{Cache hit}
 \myput{60}{Cache miss}
@@ -56,7 +56,7 @@
 \myput{52}{Spatial locality}
 \myfigend
 
-\myfig{chap01/1_2.pdf}
+\myfig{1_2.pdf}
 \myput{64}{Cache consistency problem}
 \myputn{62}{Snooping}
 \myput{60}{Memory consistency problem}
@@ -65,7 +65,7 @@
 \myputn{54}{Padding}
 \myfigend
 
-\myfig{chap01/1_3.pdf}
+\myfig{1_3.pdf}
 \myput{63}{Clusters}
 \myput{60}{Networks}
 \myput{57}{Message passing}
@@ -94,7 +94,7 @@
 \ei
 \newpage
 
-\myfig{chap01/p13_mm_seq.pdf}
+\myfig{p13_mm_seq.pdf}
 \myfigend
 
 \ti{Embarrassingly Parallel}
@@ -106,30 +106,30 @@ disjoint from both the read and write sets of the other.
 \ei
 \newpage
 
-\myfig{chap01/p14a_mm_rows.pdf}
+\myfig{p14a_mm_rows.pdf}
 \myfigend
 
-\myfig{chap01/p14b_mm_cols.pdf}
+\myfig{p14b_mm_cols.pdf}
 \myfigend
 
-\myfig{chap01/p15a_mm_rows_cols.pdf}
+\myfig{p15a_mm_rows_cols.pdf}
 \myfigend
 
-\myfig{chap01/p15b_mm_nested_co.pdf}
+\myfig{p15b_mm_nested_co.pdf}
 \myput{63}{Can we parallelize the loop over {\tt k}?}
 \myfigend
 
-\myfig{chap01/p16a_mm_process.pdf}
+\myfig{p16a_mm_process.pdf}
 \myput{63}{Processes are named.}
 \myput{60}{Processes cannot be nested.}
 \myput{57}{Program does not wait for processes to end.}
 \myfigend
 
-\myfig{chap01/p16b_mm_strips.pdf}
+\myfig{p16b_mm_strips.pdf}
 \myput{60}{Useful because we often have only 4 or 8 cores.}
 \myfigend
 
-\myfig{chap01/1_4.pdf}
+\myfig{1_4.pdf}
 \myput{68}{Find the area under a function.}
 \myput{63}{Iterative approach:}
 \myputn{60}{Break region into many equal intervals.}
@@ -137,10 +137,10 @@ disjoint from both the read and write sets of the other.
 \myputn{54}{Break region in half, recursion on each half.}
 \myfigend
 
-\myfig{chap01/p18a_quad_iterative.pdf}
+\myfig{p18a_quad_iterative.pdf}
 \myfigend
 
-\myfig{chap01/p18b_quad_recursive.pdf}
+\myfig{p18b_quad_recursive.pdf}
 \myput{60}{Change the recursion to:}
 \myputn{56}{\tt co larea = quad(left, mid, fleft, fmid, larea);}
 \myputn{54}{\tt // rarea = quad(mid, right, fmid, fright, rarea);}
@@ -158,28 +158,28 @@ independent.
 \ii For example, quicksort.
 \ei
 
-\myfig{chap01/p18c_quad_co.pdf}
+\myfig{p18c_quad_co.pdf}
 \myfigend
 
 
-\myfig{chap01/1_5.pdf}
+\myfig{1_5.pdf}
 \myputn{70}{\tt sed -f Script \$* | tbl | eqn | groff Macros -}
 \myput{66}{Producers and consumers.}
 \myfigend
 
-\myfig{chap01/1_6.pdf}
+\myfig{1_6.pdf}
 \myput{63}{Web pages}
 \myput{60}{Graphics cards}
 \myfigend
 
-\myfig{chap01/1_7.pdf}
+\myfig{1_7.pdf}
 \myput{63}{Interacting peers}
 \myfigend
 
-\myfig{chap01/p23_mm_coord_worker.pdf}
+\myfig{p23_mm_coord_worker.pdf}
 \myfigend
 
-\myfig{chap01/p25_mm_circular.pdf}
+\myfig{p25_mm_circular.pdf}
 \myfigend
 
 \end{document}

@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.5.7)  20 JAN 2015 08:38
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.1.23)  27 FEB 2015 14:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**chap01
+**chap01.tex
 (./chap01.tex
 LaTeX2e <2011/06/27>
-Babel <3.9h> and hyphenation patterns for 78 languages loaded.
+Babel <3.9h> and hyphenation patterns for 2 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
@@ -275,10 +275,10 @@ e
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<chap01/1_1.pdf, id=9, 614.295pt x 794.97pt>
-File: chap01/1_1.pdf Graphic file (type pdf)
- <use chap01/1_1.pdf>
-Package pdftex.def Info: chap01/1_1.pdf used on input line 49.
+<figures/1_1.pdf, id=9, 614.295pt x 794.97pt>
+File: figures/1_1.pdf Graphic file (type pdf)
+ <use figures/1_1.pdf>
+Package pdftex.def Info: figures/1_1.pdf used on input line 49.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <20.74> on input line 50.
@@ -295,11 +295,11 @@ Overfull \hbox (195.48764pt too wide) in paragraph at lines 57--57
 Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 
 
-[2 <./chap01/1_1.pdf>] <chap01/1_2.pdf, id=19, 614.295pt x 794.97pt>
-File: chap01/1_2.pdf Graphic file (type pdf)
+[2 <./figures/1_1.pdf>] <figures/1_2.pdf, id=19, 614.295pt x 794.97pt>
+File: figures/1_2.pdf Graphic file (type pdf)
 
-<use chap01/1_2.pdf>
-Package pdftex.def Info: chap01/1_2.pdf used on input line 59.
+<use figures/1_2.pdf>
+Package pdftex.def Info: figures/1_2.pdf used on input line 59.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
 Overfull \hbox (195.48764pt too wide) in paragraph at lines 66--66
@@ -310,11 +310,11 @@ Overfull \hbox (195.48764pt too wide) in paragraph at lines 66--66
 Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 
 
-[3 <./chap01/1_2.pdf>] <chap01/1_3.pdf, id=29, 614.295pt x 794.97pt>
-File: chap01/1_3.pdf Graphic file (type pdf)
+[3 <./figures/1_2.pdf>] <figures/1_3.pdf, id=29, 614.295pt x 794.97pt>
+File: figures/1_3.pdf Graphic file (type pdf)
 
-<use chap01/1_3.pdf>
-Package pdftex.def Info: chap01/1_3.pdf used on input line 68.
+<use figures/1_3.pdf>
+Package pdftex.def Info: figures/1_3.pdf used on input line 68.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
 Overfull \hbox (195.48764pt too wide) in paragraph at lines 72--72
@@ -325,18 +325,18 @@ Overfull \hbox (195.48764pt too wide) in paragraph at lines 72--72
 Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 
 
-[4 <./chap01/1_3.pdf>]
+[4 <./figures/1_3.pdf>]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 84.
  (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <20.74> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 84.
-[5] <chap01/p13_mm_seq.pdf, id=42, 614.295pt x 794.97pt>
-File: chap01/p13_mm_seq.pdf Graphic file (type pdf)
+ [5] <figures/p13_mm_seq.pdf, id=42, 614.295pt x 794.97pt>
+File: figures/p13_mm_seq.pdf Graphic file (type pdf)
 
-<use chap01/p13_mm_seq.pdf>
-Package pdftex.def Info: chap01/p13_mm_seq.pdf used on input line 97.
+<use figures/p13_mm_seq.pdf>
+Package pdftex.def Info: figures/p13_mm_seq.pdf used on input line 97.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
 Overfull \hbox (195.48764pt too wide) in paragraph at lines 98--98
@@ -347,12 +347,12 @@ Overfull \hbox (195.48764pt too wide) in paragraph at lines 98--98
 Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 
 
-[6 <./chap01/p13_mm_seq.pdf>] [7]
-<chap01/p14a_mm_rows.pdf, id=55, 614.295pt x 794.97pt>
-File: chap01/p14a_mm_rows.pdf Graphic file (type pdf)
+[6 <./figures/p13_mm_seq.pdf>] [7]
+<figures/p14a_mm_rows.pdf, id=55, 614.295pt x 794.97pt>
+File: figures/p14a_mm_rows.pdf Graphic file (type pdf)
 
-<use chap01/p14a_mm_rows.pdf>
-Package pdftex.def Info: chap01/p14a_mm_rows.pdf used on input line 109.
+<use figures/p14a_mm_rows.pdf>
+Package pdftex.def Info: figures/p14a_mm_rows.pdf used on input line 109.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
 Overfull \hbox (195.48764pt too wide) in paragraph at lines 110--110
@@ -363,12 +363,12 @@ Overfull \hbox (195.48764pt too wide) in paragraph at lines 110--110
 Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 
 
-[8 <./chap01/p14a_mm_rows.pdf>]
-<chap01/p14b_mm_cols.pdf, id=64, 614.295pt x 794.97pt>
-File: chap01/p14b_mm_cols.pdf Graphic file (type pdf)
+[8 <./figures/p14a_mm_rows.pdf>]
+<figures/p14b_mm_cols.pdf, id=64, 614.295pt x 794.97pt>
+File: figures/p14b_mm_cols.pdf Graphic file (type pdf)
 
-<use chap01/p14b_mm_cols.pdf>
-Package pdftex.def Info: chap01/p14b_mm_cols.pdf used on input line 112.
+<use figures/p14b_mm_cols.pdf>
+Package pdftex.def Info: figures/p14b_mm_cols.pdf used on input line 112.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
 Overfull \hbox (195.48764pt too wide) in paragraph at lines 113--113
@@ -379,12 +379,12 @@ Overfull \hbox (195.48764pt too wide) in paragraph at lines 113--113
 Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 
 
-[9 <./chap01/p14b_mm_cols.pdf>]
-<chap01/p15a_mm_rows_cols.pdf, id=73, 614.295pt x 794.97pt>
-File: chap01/p15a_mm_rows_cols.pdf Graphic file (type pdf)
+[9 <./figures/p14b_mm_cols.pdf>]
+<figures/p15a_mm_rows_cols.pdf, id=73, 614.295pt x 794.97pt>
+File: figures/p15a_mm_rows_cols.pdf Graphic file (type pdf)
 
-<use chap01/p15a_mm_rows_cols.pdf>
-Package pdftex.def Info: chap01/p15a_mm_rows_cols.pdf used on input line 115.
+<use figures/p15a_mm_rows_cols.pdf>
+Package pdftex.def Info: figures/p15a_mm_rows_cols.pdf used on input line 115.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
 Overfull \hbox (195.48764pt too wide) in paragraph at lines 116--116
@@ -395,12 +395,12 @@ Overfull \hbox (195.48764pt too wide) in paragraph at lines 116--116
 Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 
 
-[10 <./chap01/p15a_mm_rows_cols.pdf>]
-<chap01/p15b_mm_nested_co.pdf, id=82, 614.295pt x 794.97pt>
-File: chap01/p15b_mm_nested_co.pdf Graphic file (type pdf)
+[10 <./figures/p15a_mm_rows_cols.pdf>]
+<figures/p15b_mm_nested_co.pdf, id=82, 614.295pt x 794.97pt>
+File: figures/p15b_mm_nested_co.pdf Graphic file (type pdf)
 
-<use chap01/p15b_mm_nested_co.pdf>
-Package pdftex.def Info: chap01/p15b_mm_nested_co.pdf used on input line 118.
+<use figures/p15b_mm_nested_co.pdf>
+Package pdftex.def Info: figures/p15b_mm_nested_co.pdf used on input line 118.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
 Overfull \hbox (195.48764pt too wide) in paragraph at lines 120--120
@@ -411,12 +411,12 @@ Overfull \hbox (195.48764pt too wide) in paragraph at lines 120--120
 Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 
 
-[11 <./chap01/p15b_mm_nested_co.pdf>]
-<chap01/p16a_mm_process.pdf, id=92, 614.295pt x 794.97pt>
-File: chap01/p16a_mm_process.pdf Graphic file (type pdf)
+[11 <./figures/p15b_mm_nested_co.pdf>]
+<figures/p16a_mm_process.pdf, id=92, 614.295pt x 794.97pt>
+File: figures/p16a_mm_process.pdf Graphic file (type pdf)
 
-<use chap01/p16a_mm_process.pdf>
-Package pdftex.def Info: chap01/p16a_mm_process.pdf used on input line 122.
+<use figures/p16a_mm_process.pdf>
+Package pdftex.def Info: figures/p16a_mm_process.pdf used on input line 122.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
 Overfull \hbox (195.48764pt too wide) in paragraph at lines 126--126
@@ -427,12 +427,12 @@ Overfull \hbox (195.48764pt too wide) in paragraph at lines 126--126
 Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 
 
-[12 <./chap01/p16a_mm_process.pdf>]
-<chap01/p16b_mm_strips.pdf, id=101, 614.295pt x 794.97pt>
-File: chap01/p16b_mm_strips.pdf Graphic file (type pdf)
+[12 <./figures/p16a_mm_process.pdf>]
+<figures/p16b_mm_strips.pdf, id=101, 614.295pt x 794.97pt>
+File: figures/p16b_mm_strips.pdf Graphic file (type pdf)
 
-<use chap01/p16b_mm_strips.pdf>
-Package pdftex.def Info: chap01/p16b_mm_strips.pdf used on input line 128.
+<use figures/p16b_mm_strips.pdf>
+Package pdftex.def Info: figures/p16b_mm_strips.pdf used on input line 128.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
 Overfull \hbox (195.48764pt too wide) in paragraph at lines 130--130
@@ -443,11 +443,11 @@ Overfull \hbox (195.48764pt too wide) in paragraph at lines 130--130
 Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 
 
-[13 <./chap01/p16b_mm_strips.pdf>]
-<chap01/1_4.pdf, id=111, 614.295pt x 794.97pt>
-File: chap01/1_4.pdf Graphic file (type pdf)
- <use chap01/1_4.pdf>
-Package pdftex.def Info: chap01/1_4.pdf used on input line 132.
+[13 <./figures/p16b_mm_strips.pdf>]
+<figures/1_4.pdf, id=111, 614.295pt x 794.97pt>
+File: figures/1_4.pdf Graphic file (type pdf)
+ <use figures/1_4.pdf>
+Package pdftex.def Info: figures/1_4.pdf used on input line 132.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
 Overfull \hbox (195.48764pt too wide) in paragraph at lines 138--138
@@ -458,13 +458,13 @@ Overfull \hbox (195.48764pt too wide) in paragraph at lines 138--138
 Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 
 
-[14 <./chap01/1_4.pdf>]
-<chap01/p18a_quad_iterative.pdf, id=126, 614.295pt x 794.97pt>
-File: chap01/p18a_quad_iterative.pdf Graphic file (type pdf)
+[14 <./figures/1_4.pdf>]
+<figures/p18a_quad_iterative.pdf, id=126, 614.295pt x 794.97pt>
+File: figures/p18a_quad_iterative.pdf Graphic file (type pdf)
 
-<use chap01/p18a_quad_iterative.pdf>
-Package pdftex.def Info: chap01/p18a_quad_iterative.pdf used on input line 140.
-
+<use figures/p18a_quad_iterative.pdf>
+Package pdftex.def Info: figures/p18a_quad_iterative.pdf used on input line 140
+.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
 Overfull \hbox (195.48764pt too wide) in paragraph at lines 141--141
@@ -475,13 +475,13 @@ Overfull \hbox (195.48764pt too wide) in paragraph at lines 141--141
 Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 
 
-[15 <./chap01/p18a_quad_iterative.pdf>]
-<chap01/p18b_quad_recursive.pdf, id=135, 614.295pt x 794.97pt>
-File: chap01/p18b_quad_recursive.pdf Graphic file (type pdf)
+[15 <./figures/p18a_quad_iterative.pdf>]
+<figures/p18b_quad_recursive.pdf, id=135, 614.295pt x 794.97pt>
+File: figures/p18b_quad_recursive.pdf Graphic file (type pdf)
 
-<use chap01/p18b_quad_recursive.pdf>
-Package pdftex.def Info: chap01/p18b_quad_recursive.pdf used on input line 143.
-
+<use figures/p18b_quad_recursive.pdf>
+Package pdftex.def Info: figures/p18b_quad_recursive.pdf used on input line 143
+.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
 Overfull \hbox (195.48764pt too wide) in paragraph at lines 149--149
@@ -492,12 +492,12 @@ Overfull \hbox (195.48764pt too wide) in paragraph at lines 149--149
 Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 
 
-[16 <./chap01/p18b_quad_recursive.pdf>]
-<chap01/p18c_quad_co.pdf, id=145, 614.295pt x 794.97pt>
-File: chap01/p18c_quad_co.pdf Graphic file (type pdf)
+[16 <./figures/p18b_quad_recursive.pdf>]
+<figures/p18c_quad_co.pdf, id=145, 614.295pt x 794.97pt>
+File: figures/p18c_quad_co.pdf Graphic file (type pdf)
 
-<use chap01/p18c_quad_co.pdf>
-Package pdftex.def Info: chap01/p18c_quad_co.pdf used on input line 161.
+<use figures/p18c_quad_co.pdf>
+Package pdftex.def Info: figures/p18c_quad_co.pdf used on input line 161.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
 Overfull \hbox (195.48764pt too wide) in paragraph at lines 162--162
@@ -508,11 +508,11 @@ Overfull \hbox (195.48764pt too wide) in paragraph at lines 162--162
 Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 
 
-[18 <./chap01/p18c_quad_co.pdf>]
-<chap01/1_5.pdf, id=157, 614.295pt x 794.97pt>
-File: chap01/1_5.pdf Graphic file (type pdf)
- <use chap01/1_5.pdf>
-Package pdftex.def Info: chap01/1_5.pdf used on input line 165.
+[18 <./figures/p18c_quad_co.pdf>]
+<figures/1_5.pdf, id=157, 614.295pt x 794.97pt>
+File: figures/1_5.pdf Graphic file (type pdf)
+ <use figures/1_5.pdf>
+Package pdftex.def Info: figures/1_5.pdf used on input line 165.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
 Overfull \hbox (195.48764pt too wide) in paragraph at lines 168--168
@@ -523,11 +523,11 @@ Overfull \hbox (195.48764pt too wide) in paragraph at lines 168--168
 Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 
 
-[19 <./chap01/1_5.pdf>] <chap01/1_6.pdf, id=171, 614.295pt x 794.97pt>
-File: chap01/1_6.pdf Graphic file (type pdf)
+[19 <./figures/1_5.pdf>] <figures/1_6.pdf, id=171, 614.295pt x 794.97pt>
+File: figures/1_6.pdf Graphic file (type pdf)
 
-<use chap01/1_6.pdf>
-Package pdftex.def Info: chap01/1_6.pdf used on input line 170.
+<use figures/1_6.pdf>
+Package pdftex.def Info: figures/1_6.pdf used on input line 170.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
 Overfull \hbox (195.48764pt too wide) in paragraph at lines 173--173
@@ -538,11 +538,11 @@ Overfull \hbox (195.48764pt too wide) in paragraph at lines 173--173
 Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 
 
-[20 <./chap01/1_6.pdf>] <chap01/1_7.pdf, id=184, 614.295pt x 794.97pt>
-File: chap01/1_7.pdf Graphic file (type pdf)
+[20 <./figures/1_6.pdf>] <figures/1_7.pdf, id=184, 614.295pt x 794.97pt>
+File: figures/1_7.pdf Graphic file (type pdf)
 
-<use chap01/1_7.pdf>
-Package pdftex.def Info: chap01/1_7.pdf used on input line 175.
+<use figures/1_7.pdf>
+Package pdftex.def Info: figures/1_7.pdf used on input line 175.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
 Overfull \hbox (195.48764pt too wide) in paragraph at lines 177--177
@@ -553,13 +553,13 @@ Overfull \hbox (195.48764pt too wide) in paragraph at lines 177--177
 Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 
 
-[21 <./chap01/1_7.pdf>]
-<chap01/p23_mm_coord_worker.pdf, id=200, 614.295pt x 794.97pt>
-File: chap01/p23_mm_coord_worker.pdf Graphic file (type pdf)
+[21 <./figures/1_7.pdf>]
+<figures/p23_mm_coord_worker.pdf, id=200, 614.295pt x 794.97pt>
+File: figures/p23_mm_coord_worker.pdf Graphic file (type pdf)
 
-<use chap01/p23_mm_coord_worker.pdf>
-Package pdftex.def Info: chap01/p23_mm_coord_worker.pdf used on input line 179.
-
+<use figures/p23_mm_coord_worker.pdf>
+Package pdftex.def Info: figures/p23_mm_coord_worker.pdf used on input line 179
+.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
 Overfull \hbox (195.48764pt too wide) in paragraph at lines 180--180
@@ -570,12 +570,12 @@ Overfull \hbox (195.48764pt too wide) in paragraph at lines 180--180
 Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 
 
-[22 <./chap01/p23_mm_coord_worker.pdf>]
-<chap01/p25_mm_circular.pdf, id=209, 614.295pt x 794.97pt>
-File: chap01/p25_mm_circular.pdf Graphic file (type pdf)
+[22 <./figures/p23_mm_coord_worker.pdf>]
+<figures/p25_mm_circular.pdf, id=209, 614.295pt x 794.97pt>
+File: figures/p25_mm_circular.pdf Graphic file (type pdf)
 
-<use chap01/p25_mm_circular.pdf>
-Package pdftex.def Info: chap01/p25_mm_circular.pdf used on input line 182.
+<use figures/p25_mm_circular.pdf>
+Package pdftex.def Info: figures/p25_mm_circular.pdf used on input line 182.
 (pdftex.def)             Requested size: 921.44023pt x 1192.45209pt.
 
 Overfull \hbox (195.48764pt too wide) in paragraph at lines 183--183
@@ -586,22 +586,22 @@ Overfull \hbox (195.48764pt too wide) in paragraph at lines 183--183
 Overfull \vbox (505.88649pt too high) has occurred while \output is active []
 
 
-[23 <./chap01/p25_mm_circular.pdf>] (./chap01.aux) ) 
+[23 <./figures/p25_mm_circular.pdf>] (./chap01.aux) ) 
 Here is how much of TeX's memory you used:
- 2658 strings out of 493304
- 39457 string characters out of 6139872
- 107699 words of memory out of 5000000
- 6085 multiletter control sequences out of 15000+600000
+ 2658 strings out of 495028
+ 39534 string characters out of 6181497
+ 103429 words of memory out of 5000000
+ 5836 multiletter control sequences out of 15000+600000
  6856 words of font info for 25 fonts, out of 8000000 for 9000
- 957 hyphenation exceptions out of 8191
- 37i,5n,23p,235b,146s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmtt12.pfb>
-Output written on chap01.pdf (23 pages, 84246 bytes).
+ 14 hyphenation exceptions out of 8191
+ 37i,5n,23p,239b,146s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmtt12.pfb>
+Output written on chap01.pdf (23 pages, 84256 bytes).
 PDF statistics:
  237 PDF objects out of 1000 (max. 8388607)
  177 compressed objects within 2 object streams
