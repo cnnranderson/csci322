@@ -7,6 +7,9 @@
 \usepackage{multicol}
 \usepackage{overpic}
 \usepackage{hyperref}
+\usepackage{color}
+\newcommand{\blue}{{\tt\color{blue}blue}}
+\newcommand{\red}{{\tt\color{red}red}}
 
 \usepackage{fancyvrb}
 \setlength{\parindent}{0in}
@@ -569,12 +572,91 @@ used by a single process at a time:
 \myfigend
 
 \ti{\S 9.6.2 Termination detection in a ring}
+\bi
+\ii Assume {\em all} communication goes around the ring.
+\ii Processes start out active (\red).
+\ii Each process notes when it becomes idle (\blue).
+\bi\ii idle: either terminated or waiting for a message.\ei
+\ii When an idle process receives a (non-token) message it becomes
+active 
+(\red).
+\ii {\tt T[1]} holds the token initially.
+ When {\tt T[1]} becomes idle, it passes the token to {\tt T[2]}.
+\ii When an idle process receives the token, it passes it on and
+remains idle (\blue).
+\ii If {\tt T[1]} has been {\em continuously idle} when the token gets
+back:
+\bi
+\ii There can be no messages left in the system; the token has
+``flushed'' the pipe.
+\ii All processes became idle when they passed the token.
+\ii The computation has terminated.
+\ei
+\ii Otherwise, become idle and start the token again.
+\ei
 
 
 \myfig{9_16.pdf}
 \myfigend
+
+\ti{\S 9.6.3 Termination detection in a graph}
+\bi
+\ii Assume complete graph.
+\ii Can be extended to other cases.
+\ei
+
 \myfig{9_17.pdf}
+\myput{65}{Ring algorithm will not work:}
+\myput{60}{{\tt T[1]} becomes idle and sends token to {\tt T[2]}}.
+\myput{57}{{\tt T[2]} becomes idle and sends token to {\tt T[3]}}.
+\myputn{54}{but at the same time, {\tt T[3]} sends a real message to {\tt
+    T[2]}.}
+\myput{51}{{\tt T[3]} becomes idle and sends token to {\tt T[1]}.}
 \myfigend
+
+\ti{Generalizing the ring token algorithm to graphs}
+\bi
+\ii We ensure that the token traverses {\em every} edge of the graph.
+\ii The token will visit each process multiple times.
+\ii If {\em every} process remains continuously idle while the token leaves,
+makes a complete circuit of every edge, and returns, then the computation has
+terminated. 
+\ii Every complete graph contains a cycle that includes every edge.
+\ii To implement the algorithm, we precompute:
+\bi
+\ii Let {\tt c} be one of these cycles, and {\tt nc} be its length.
+\ii Each process keeps track of the order in which its outgoing edges
+occur in {\tt c}.
+\ei
+\ii The token will be passed around this cycle by each node.
+\ii Each node can detect when the token has completed this cycle.
+\ei
+
+\ti{Graph token termination algorithm}
+\bi
+\ii Token value starts out as 0.
+\ii All processes start out \red.
+\ii When a process receives a regular message, it turns \red.
+\ii When a process recieves the token, it turns (or remains) \blue.
+\ii If a process is  \red\ when it gets the token, it resets the
+token value to 0.
+\ii If a process is \blue\ when it gets the token, it increments the
+token value.
+\ii Invariant {\em GRAPH:}\\
+\rule{1in}{0in}{\tt token} has value V $\Rightarrow$\\
+\rule{1.5in}{0in}( the last V channels in cycle {\tt c} were empty \\
+\rule{2in}{0in}$\land$\\
+\rule{1.75in}{0in}the last V processes to receive the token were {\tt
+  \blue} )
+\ii If any process gets a token with value {\tt nc}, computation has
+terminated. 
+\ii Note:  process actually terminated just before token takes last lap:
+\bi
+\ii one lap turns everybody \blue
+\ii next lap checks to make sure everybody is still \blue.
+\ei
+\ei
+
 \myfig{9_18.pdf}
 \myfigend
 
@@ -584,6 +666,50 @@ used by a single process at a time:
 \myfigend
 \myfig{9_20.pdf}
 \myfigend
+
+\ti{\S 9.7.2 Decentralized Dining Philosophers}
+
+\bi
+\ii Forks are either {\tt dirty} or {\tt clean}.
+\ii Whenever a philosopher eats, those forks become {\tt dirty}.
+\ii A waiter can let their own philosopher eat over and over with their own {\tt
+  dirty} forks.
+\ii If a waiter requests a {\tt dirty} fork from another waiter,
+\bi\ii the
+waiter cleans it and gives it over.\ei
+\ii If a waiter holds a {\tt clean} fork,
+\bi\ii it is not given up
+until their philosopher eats and it becomes {\tt dirty}.\ei
+\ii Note:  Must start in asymmetric configuration with all forks {\tt dirty}.
+\ei
+
+\ti{Decentralized Dining Philosophers}
+
+
+
+\bigskip
+
+If a waiter wants a fork that another holds, he will eventually get
+it:
+\bi
+\ii If the fork is dirty and not in use, 
+\bi\ii it is immediately handed
+over.\ei
+\ii If the fork is dirty and in use,\bi\ii eventually the philosopher will
+finish and it will be handed over.\ei
+\ii If the other fork is clean
+\bi\ii the other philosopher is hungry 
+\ii the other waiter just got both forks, or
+\ii the other waiter is waiting for the second fork.
+\bi\ii
+In this last case, the other waiter will eventually get it because
+there is no state in which every waiter holds one clean fork and wants
+a second.
+\ei
+\ei
+\ei
+
+
 \myfigsp{.95}{1}{9_21.pdf}
 \myfigend
 \myfigsp{1}{2}{9_21.pdf}
